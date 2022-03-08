@@ -1,0 +1,21 @@
+.backg {
+  @apply mb-4;
+}
+.line {
+  @apply relative ml-4 border-l border-gray-400 dark:border-gray-700;
+}
+.explist {
+  @apply mb-10 ml-4;
+}
+.topdiv {
+  @apply absolute -left-1.5 h-3 w-3 rounded-full border border-white bg-green-400 dark:border-gray-900 dark:bg-gray-700;
+}
+.time {
+  @apply prose mb-1 text-sm font-normal uppercase leading-none dark:prose-invert;
+}
+.title {
+  @apply text-lg font-semibold text-green-900 dark:text-blue-500;
+}
+.description {
+  @apply prose prose-slate text-base font-normal dark:prose-invert;
+}

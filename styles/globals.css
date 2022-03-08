@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scroll-offset: 40px;
+}
+
+.navButton {
+  @apply my-1 flex transform items-center align-middle text-xl font-medium text-gray-700 transition-all dark:text-gray-200 md:mx-4 md:my-0;
+}
+.dark-mode-label {
+  @apply relative flex items-center text-xl;
+}
+body {
+  @apply bg-gray-50 transition-all duration-300 dark:bg-gray-800;
+}
+#hero,
+nav {
+  background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  /* animation: gradient 60s ease infinite; */
+}
+html {
+  scroll-behavior: smooth;
+}
+.sectionheading {
+  @apply prose py-10 text-center text-5xl dark:prose-invert;
+}
+.subsectionheading {
+  @apply prose scale-50 py-5 text-center text-5xl dark:prose-invert;
+}
+.badge-arrange {
+  @apply flex flex-wrap content-center items-center justify-center text-center;
+}
+:target:before {
+  content: "";
+  display: block;
+  height: var(--scroll-offset);
+  margin: -var(--scroll-offset) 0 0;
+}
