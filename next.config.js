@@ -8,6 +8,9 @@ const nextConfig = withPWA({
     skipWaiting: true,
     disable: process.env.NODE_ENV === "development",
   },
+  images: {
+    domains: ['img.shields.io'],
+  },
 });
 
 module.exports = nextConfig;

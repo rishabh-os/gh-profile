@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {fontFamily: {
+      'victormono': ['Victor Mono', 'monospace'],
+      'sora': ['Sora', 'sans-serif'],
+      'manrope':['Manrope', 'sans-serif']
+    }},
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"),
+            require('@tailwindcss/forms'),
+          ],
 };

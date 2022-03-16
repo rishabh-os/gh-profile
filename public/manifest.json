@@ -6,7 +6,7 @@
   "start_url": "/",
   "name": "Rishabh's Profile",
   "short_name": "RP",
-  "description": "My personal website, hosted on GitHub Pages. Made with React, Next.js, and TailwindCSS.",
+  "description": "My personal website, hosted on Vercel. Made with React, Next.js, and TailwindCSS.",
   "icons": [
     {
       "src": "/icon-192x192.png",

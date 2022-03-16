@@ -4,9 +4,9 @@ const Experience = () => {
     <div>
       <section
         id="Experience"
-        className="backg content-center items-center justify-center md:flex"
+        className="flex-col content-center items-center justify-center md:flex"
       >
-        <h2 className="sectionheading">Experience</h2>
+        <h2 className="sectionheading sm:mx-0">Experience</h2>
         <ol className="line">
           <li className="explist">
             <div className="topdiv"></div>
@@ -82,10 +82,9 @@ const Experience = () => {
       </section>
       <section
         id="Education"
-        className="backg content-center items-center justify-center md:flex"
+        className="flex-col content-center items-center justify-center md:flex"
       >
-        <h2 className="sectionheading">Education</h2>
-
+        <h2 className="sectionheading sm:mx-0">Education</h2>
         <ol className="line">
           <li className="explist">
             <div className="topdiv"></div>
