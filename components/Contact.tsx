@@ -1,15 +1,35 @@
-import Image from "next/image";
-import { Component, useState, useReducer } from "react";
+import { stringify } from "querystring";
+import { useState } from "react";
 import { SocialIcon } from "react-social-icons";
-import { CgEnter } from "react-icons/cg";
 
 const Contact = () => {
-  const handleSubmit = (event: any) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
-    // alert("You have submitted the form with" + message);
+    const endpoint: string = process.env.NEXT_PUBLIC_EMAIL_API!;
+    const body = JSON.stringify({
+      senderName: name,
+      senderEmail: email,
+      message: message,
+    });
+    const requestOptions = {
+      method: "POST",
+      body,
+    };
+    console.log(endpoint);
+
+    const res = await fetch(endpoint, requestOptions)
+      .then((response) => {
+        if (!response.ok) throw new Error("Error in fetch");
+        return response.json();
+      })
+      .then((response) => {
+        console.log("Email sent successfully!");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
-  const handleChange = (event: any) => {};
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -36,9 +56,7 @@ const Contact = () => {
           />
         </div>
       </div>
-      <p className="txt">
-        Feel free to contact me through the form below!(WIP)
-      </p>
+      <p className="txt">Feel free to contact me through the form below!</p>
       <form
         onSubmit={handleSubmit}
         className="mx-auto w-11/12 grid-cols-8 grid-rows-4 content-center items-center
@@ -71,13 +89,12 @@ const Contact = () => {
         />
         <button
           type="submit"
-          disabled
-          className="group relative inline-flex rounded-lg bg-gradient-to-br from-green-400 to-blue-600
-           p-0.5 text-center text-sm font-medium text-gray-900 hover:cursor-not-allowed hover:text-white group-hover:from-green-400
+          className="group relative col-span-2 col-start-4 inline-flex rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-0.5
+           text-center text-sm font-medium text-gray-900 hover:text-white group-hover:from-green-400
             group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800"
         >
-          <span className=" rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900">
-            Submit <CgEnter className="inline " />
+          <span className="w-full rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900">
+            Submit
           </span>
         </button>
       </form>

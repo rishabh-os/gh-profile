@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Rishabh's Profile</title>
+        <title>Rishabh&apos;s Profile</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
