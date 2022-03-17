@@ -1,14 +1,19 @@
+import { PageProgress } from "./../components/PageProgress";
 import type { NextPage } from "next";
 import { useState } from "react";
-import Navbar from "../components/navbar";
-import AboutMe from "../components/AboutMe";
-import Experience from "../components/Experience";
-import Skills from "../components/Skills";
-import Interests from "../components/Interests";
+import Navbar from "../components/sections/navbar";
+import AboutMe from "../components/sections/AboutMe";
+import Experience from "../components/sections/Experience";
+import Skills from "../components/sections/Skills";
+import Interests from "../components/sections/Interests";
 import Head from "next/head";
-import Contact from "../components/Contact";
-
+import Contact from "../components/sections/Contact";
+import { motion } from "framer-motion";
+import Parallax from "../components/Parallax";
 const Home: NextPage = () => {
+  const date = new Date();
+  const month = date.toLocaleString("default", { month: "long" });
+  const displayDate = month + " " + date.getFullYear().toString();
   return (
     <div>
       <Head>
@@ -31,28 +36,66 @@ const Home: NextPage = () => {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        {/* <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" /> */}
         <meta name="msapplication-TileColor" content="#23a6d5" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Navbar />
-      <section className=" hero flex h-[70vh] items-center justify-center">
-        <h1 className="mx-2 justify-center text-center text-7xl font-bold text-gray-800 dark:text-gray-100">
-          Welcome to my
-          <br />
-          website!
-        </h1>
+      <PageProgress />
+      <section className="hero flex h-[70vh] items-center justify-center ">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 1,
+                duration: 1,
+              },
+            },
+          }}
+        >
+          <h1 className="mx-2 justify-center text-center font-victormono text-7xl font-bold text-gray-800 dark:text-gray-100">
+            Welcome to my
+            <br />
+            website!
+          </h1>
+        </motion.div>
       </section>
-      <AboutMe />
-      <Interests />
+      {/* <AboutMe /> */}
+      <Parallax>
+        {" "}
+        <AboutMe />
+      </Parallax>
+      <motion.div
+        initial={{ opacity: 0, x: 500 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
+        <Interests />
+      </motion.div>
       <Experience />
       <section id="Projects">
         <div className="divider"></div>
       </section>
       <Skills />
       <Contact />
-      <footer className="footer flex justify-center bg-gray-700 p-4 text-white">
-        <p>Copyright © {new Date().getFullYear()}</p>
+      <footer className="footer flex justify-center bg-gray-700 p-4 text-center text-white">
+        <p>
+          Copyright © {displayDate} <br /> If you like the monospace font, check
+          out{" "}
+          <a
+            href="https://github.com/rubjo/victor-mono"
+            className=" underline decoration-blue-500 decoration-2 underline-offset-2 transition-all hover:bg-blue-500"
+          >
+            Victor Mono
+          </a>
+        </p>
       </footer>
     </div>
   );

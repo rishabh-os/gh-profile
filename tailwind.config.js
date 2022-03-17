@@ -8,7 +8,8 @@ module.exports = {
     extend: {fontFamily: {
       'victormono': ['Victor Mono', 'monospace'],
       'sora': ['Sora', 'sans-serif'],
-      'manrope':['Manrope', 'sans-serif']
+      'manrope':['Manrope', 'sans-serif'],
+      'inter':['Inter', 'sans-serif']
     }},
   },
   plugins: [require("@tailwindcss/typography"),

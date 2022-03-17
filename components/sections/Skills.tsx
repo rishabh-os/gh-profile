@@ -1,15 +1,15 @@
-import SkillBadge from "./SkillsBadge";
-const python = require("../assets/Python-logo-notext.svg");
-const flutter = require("../assets/logo_flutter_1080px_clr.png");
-const dart = require("../assets/logo_dart_1080px_clr.png");
-const tf = require("../assets/TF_White_Icon.svg");
-const plotly = require("../assets/logo-plotly.svg");
-const vue = require("../assets/Vue.js_Logo_2.svg");
-const react = require("../assets/React.svg");
-const sklearn = require("../assets/scikit-learn-logo.svg");
-const mongo = require("../assets/Logomark_RGB_Spring-Green.png");
-const aws = require("../assets/Amazon_Web_Services_Logo.svg");
-const tailwind = require("../assets/tailwindcss-mark.svg");
+import SkillBadge from "../SkillsBadge";
+const python = require("../../assets/Python-logo-notext.svg");
+const flutter = require("../../assets/logo_flutter_1080px_clr.png");
+const dart = require("../../assets/logo_dart_1080px_clr.png");
+const tf = require("../../assets/TF_White_Icon.svg");
+const plotly = require("../../assets/logo-plotly.svg");
+const vue = require("../../assets/Vue.js_Logo_2.svg");
+const react = require("../../assets/React.svg");
+const sklearn = require("../../assets/scikit-learn-logo.svg");
+const mongo = require("../../assets/Logomark_RGB_Spring-Green.png");
+const aws = require("../../assets/Amazon_Web_Services_Logo.svg");
+const tailwind = require("../../assets/tailwindcss-mark.svg");
 const img_dim = 25;
 
 const Skills = () => {

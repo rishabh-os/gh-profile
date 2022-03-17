@@ -1,7 +1,11 @@
 import { useState } from "react";
-import useDarkMode from "./useDarkMode";
+import useDarkMode from "../useDarkMode";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+import { useMotionValue, useViewportScroll } from "framer-motion";
+
 const Navbar = () => {
+  const { scrollYProgress } = useViewportScroll();
+  const [topshadow, setTopshadow] = useState("");
   const [menuOpen, setMenuOpen] = useState("h-0 overflow-hidden");
   const [colorTheme, setTheme] = useDarkMode();
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
@@ -13,9 +17,13 @@ const Navbar = () => {
     e ? setTheme("dark") : setTheme("light");
     setIsDark(e);
   }
-
+  scrollYProgress.onChange((v) => {
+    setTopshadow(v > 0 ? "shadow-lg" : "");
+  });
   return (
-    <nav className="hero fixed top-0 z-50 w-full bg-white shadow dark:bg-gray-800">
+    <nav
+      className={`fixed top-0 z-50 w-full transition-shadow duration-1000 ${topshadow}`}
+    >
       <div className=" px-2 py-2 md:flex md:justify-end">
         <div className="flex flex-row">
           <DarkModeSwitch
