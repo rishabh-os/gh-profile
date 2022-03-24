@@ -5,6 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@300&family=Sora:wght@300&display=swap");
 root {
   --scroll-offset: 40px;
+  --light-mode-bg: white;
+  --dark-mode-bg: bg-gray-800;
 }
 
 .navButton {
@@ -14,7 +16,7 @@ root {
   @apply relative flex items-center text-xl;
 }
 body {
-  @apply w-full bg-gray-50 transition-all duration-300 dark:bg-gray-800;
+  @apply w-full bg-white transition-all duration-300 dark:bg-gray-800;
   overflow: overlay;
   overflow-x: hidden;
 }
@@ -39,11 +41,9 @@ body {
 *::-webkit-scrollbar-thumb {
   @apply rounded-3xl bg-slate-600;
 }
-.hero,
-nav {
-  background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+.hero {
   background-size: 400% 400%;
-  /* animation: gradient 60s ease infinite; */
+  @apply bg-gradient-to-r from-[#23a6d5] to-[#23d5ab];
 }
 html {
   scroll-behavior: smooth;
@@ -73,5 +73,18 @@ html {
 md:col-span-7;
 }
 .txt {
-  @apply prose mx-auto py-4 px-4 text-center font-inter dark:prose-invert;
+  @apply prose mx-auto py-4 px-4 text-center font-inter dark:prose-invert md:px-0;
+}
+
+.fade-bottom:after {
+  content: "";
+  width: 100%;
+  height: 25vh;
+  display: block;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  @apply bg-gradient-to-b from-transparent to-white transition-all dark:to-gray-800;
 }

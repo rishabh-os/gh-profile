@@ -1,9 +1,13 @@
 import Image from "next/image";
 const pp = require("../../assets/PXL_20220111_082227181.jpg");
+
 const AboutMe = () => {
   const img_size = 200;
   return (
-    <section id="AboutMe" className="">
+    <section
+      id="AboutMe"
+      className="mx-10 my-2 rounded-3xl border-2 border-slate-700 shadow-2xl shadow-teal-400"
+    >
       <h2 className="sectionheading">About Me</h2>
       <div className="flex items-center justify-center">
         <Image

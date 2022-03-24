@@ -8,16 +8,11 @@ function ProjectCard(
   description: string
 ) {
   return (
-    <div className=" md:flex md:h-[670px] md:max-w-sm">
+    <div className="md:max-w-sm">
       <div className="mx-4 my-4 rounded-lg border border-gray-200 bg-white px-2 py-2 shadow-md dark:border-gray-700 dark:bg-gray-800">
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <Image
-            className="inline-block h-10 w-10 scale-150 object-cover text-center ring-2 ring-white transition-all hover:scale-100"
-            src={img}
-            alt="Profile image"
-            layout="intrinsic"
-          />
-        </a>
+        <div className="max-w-60 relative mx-auto w-60 overflow-clip rounded-xl ">
+          <Image src={img} layout="responsive"></Image>
+        </div>
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {title}

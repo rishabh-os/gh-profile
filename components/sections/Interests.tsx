@@ -1,5 +1,6 @@
-const react = require("../../assets/Moon Warrior title.jpg");
+const sidekickSS = require("../../assets/info.png");
 import ProjectCard from "./ProjectCard";
+import Image from "next/image";
 const Interests = () => {
   return (
     <section id="Interests">
@@ -18,17 +19,17 @@ const Interests = () => {
       <div className="flex flex-col md:flex-row md:items-center md:justify-center ">
         {ProjectCard(
           "https://github.com/rishabh-os/dnd_sidekick",
-          react,
+          sidekickSS,
           "Sidekick",
           "A DnD companion app made in Flutter"
         )}
-        {ProjectCard(
+        {/* {ProjectCard(
           "https://github.com/rishabh-os/",
-          react,
+          sidekickSS,
           "SpeedTimer",
           "A timer for speed solving Rubik's cubes and other twisty puzzles"
           // "A DnD companion app made in Flutter"
-        )}
+        )} */}
       </div>
     </section>
   );

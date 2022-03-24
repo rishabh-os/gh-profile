@@ -7,22 +7,22 @@ const Navbar = () => {
   const { scrollYProgress } = useViewportScroll();
   const [topshadow, setTopshadow] = useState("");
   const [menuOpen, setMenuOpen] = useState("h-0 overflow-hidden");
-  const [colorTheme, setTheme] = useDarkMode();
+  const [, setTheme] = useDarkMode();
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
   function toggleMenu() {
     setMenuOpen(menuOpen == "h-fit" ? "h-0 overflow-hidden" : "h-fit");
   }
   const [isDark, setIsDark] = useState(false);
   function toggleDarkModeButton(e: boolean) {
-    e ? setTheme("dark") : setTheme("light");
+    e ? setTheme("light") : setTheme("dark");
     setIsDark(e);
   }
   scrollYProgress.onChange((v) => {
-    setTopshadow(v > 0 ? "shadow-lg" : "");
+    setTopshadow(v > 0.001 ? "shadow-lg" : "");
   });
   return (
     <nav
-      className={`fixed top-0 z-50 w-full transition-shadow duration-1000 ${topshadow}`}
+      className={`hero fixed top-0 z-50 w-full transition-shadow duration-1000 ${topshadow}`}
     >
       <div className=" px-2 py-2 md:flex md:justify-end">
         <div className="flex flex-row">
@@ -86,7 +86,7 @@ const Navbar = () => {
               >
                 <span
                   className="relative inline-flex w-full items-center justify-center rounded-md px-5 py-2.5 transition-all duration-150
-                 ease-in group-hover:bg-gray-200 group-hover:bg-opacity-100 dark:group-hover:bg-black"
+                 ease-in group-hover:bg-gray-200 group-hover:bg-opacity-100 dark:group-hover:bg-gray-800"
                 >
                   Contact me!
                 </span>

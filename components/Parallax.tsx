@@ -1,4 +1,4 @@
-import { useState, useRef, useLayoutEffect, ReactNode } from "react";
+import { useState, useRef, useEffect, ReactNode } from "react";
 import {
   motion,
   useViewportScroll,
@@ -12,7 +12,7 @@ type ParallaxProps = {
   offset?: number;
 };
 
-const Parallax = ({ children, offset = 50 }: ParallaxProps): JSX.Element => {
+const Parallax = ({ children, offset = 100 }: ParallaxProps): JSX.Element => {
   const prefersReducedMotion = useReducedMotion();
   const [elementTop, setElementTop] = useState(0);
   const [clientHeight, setClientHeight] = useState(0);
@@ -24,9 +24,9 @@ const Parallax = ({ children, offset = 50 }: ParallaxProps): JSX.Element => {
   const final = elementTop + offset;
 
   const yRange = useTransform(scrollY, [initial, final], [offset, -offset]);
-  const y = useSpring(yRange, { stiffness: 400, damping: 90 });
+  const y = useSpring(yRange, { stiffness: 1000, damping: 100 });
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const element = ref.current;
     const onResize = () => {
       setElementTop(

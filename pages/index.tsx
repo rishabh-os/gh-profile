@@ -10,6 +10,7 @@ import Head from "next/head";
 import Contact from "../components/sections/Contact";
 import { motion } from "framer-motion";
 import Parallax from "../components/Parallax";
+import Fade from "../components/Fade";
 const Home: NextPage = () => {
   const date = new Date();
   const month = date.toLocaleString("default", { month: "long" });
@@ -41,32 +42,35 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <PageProgress />
-      <section className="hero flex h-[70vh] items-center justify-center ">
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: {
-              scale: 0.8,
-              opacity: 0,
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              transition: {
-                delay: 1,
-                duration: 1,
+
+      <Fade>
+        <section className="fade-bottom hero relative flex h-[70vh] items-center justify-center ">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                scale: 0.8,
+                opacity: 0,
               },
-            },
-          }}
-        >
-          <h1 className="mx-2 justify-center text-center font-victormono text-7xl font-bold text-gray-800 dark:text-gray-100">
-            Welcome to my
-            <br />
-            website!
-          </h1>
-        </motion.div>
-      </section>
+              visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  delay: 1,
+                  duration: 1,
+                },
+              },
+            }}
+          >
+            <h1 className="mx-2 justify-center text-center font-victormono text-7xl font-bold text-gray-800 dark:text-gray-100">
+              Welcome to my
+              <br />
+              website!
+            </h1>
+          </motion.div>
+        </section>
+      </Fade>
       {/* <AboutMe /> */}
       <Parallax>
         {" "}
