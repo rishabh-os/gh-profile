@@ -1,4 +1,6 @@
-const sidekickSS = require("../../assets/info.png");
+const sidekickSS = require("../../assets/list.png");
+const dotfiles = require("../../assets/dotfiles.png");
+const mimamsa = require("../../assets/image10.png");
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
 const Interests = () => {
@@ -16,20 +18,28 @@ const Interests = () => {
       <h3 className="txt ">
         Here are some of my personal projects that I have worked on.
       </h3>
-      <div className="flex flex-col md:flex-row md:items-center md:justify-center ">
+      <div className="flex flex-col items-center justify-center md:flex-row ">
         {ProjectCard(
           "https://github.com/rishabh-os/dnd_sidekick",
+          "GitHub",
           sidekickSS,
           "Sidekick",
           "A DnD companion app made in Flutter"
         )}
-        {/* {ProjectCard(
-          "https://github.com/rishabh-os/",
-          sidekickSS,
-          "SpeedTimer",
-          "A timer for speed solving Rubik's cubes and other twisty puzzles"
-          // "A DnD companion app made in Flutter"
-        )} */}
+        {ProjectCard(
+          "https://github.com/rishabh-os/Dot-Files",
+          "GitHub",
+          dotfiles,
+          "Dot Files",
+          "A collection of all my dot files for the (objectively) best desktop experience"
+        )}
+        {ProjectCard(
+          "https://gist.github.com/rishabh-os/41aed05521d2e207d7208b4159edec6a",
+          "Gist",
+          mimamsa,
+          "Mimamsa Buzzers",
+          "An app for handling the final Mains event for Mimamsa, a national level quiz competition for undergraduates"
+        )}
       </div>
     </section>
   );

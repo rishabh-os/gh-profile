@@ -14,7 +14,7 @@ const Navbar = () => {
   }
   const [isDark, setIsDark] = useState(false);
   function toggleDarkModeButton(e: boolean) {
-    e ? setTheme("light") : setTheme("dark");
+    e ? setTheme("dark") : setTheme("light");
     setIsDark(e);
   }
   scrollYProgress.onChange((v) => {

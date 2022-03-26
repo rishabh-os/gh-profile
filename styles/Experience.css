@@ -2,7 +2,7 @@
   @apply mb-4;
 }
 .line {
-  @apply relative ml-4 border-l-[3px] border-gray-400 dark:border-gray-600;
+  @apply relative mx-4 border-l-[3px] border-gray-400 dark:border-gray-600;
 }
 .explist {
   @apply mb-10 ml-4;
