@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 function useDarkMode() {
+  // ! Make the app read the proper theme from cookies
   const [theme, setTheme] = useState(
     typeof window !== "undefined" ? localStorage.theme : "light"
   );

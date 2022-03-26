@@ -7,9 +7,9 @@ export function PageProgress({}) {
   useEffect(() => yRange.onChange((v) => setIsComplete(v >= 1)), [yRange]);
 
   return (
-    <div className="fixed top-20 left-4 z-40 h-10 w-10 ">
+    <div className="fixed top-2 left-4 z-[100] h-10 w-10 ">
       <svg
-        className="progress-icon aspect-square stroke-teal-400 dark:stroke-sky-600"
+        className="progress-icon aspect-square stroke-blue-800/80"
         viewBox="0 0 50 50"
       >
         <motion.path
@@ -30,7 +30,7 @@ export function PageProgress({}) {
           fill="none"
           strokeWidth="5"
           //   stroke="black"
-          d="M14,26 L 22,33 L 35,16"
+          d="M13,26 L 22,33 L 34,17"
           initial={true}
           strokeDasharray="0 1"
           animate={{

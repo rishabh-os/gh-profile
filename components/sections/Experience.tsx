@@ -55,7 +55,7 @@ const Experience = () => {
               <div className="topdiv"></div>
               <time className="time">December 2018</time>
               <h3 className="title">
-                Signal Analysis, under C. V. Dharmadhikari, IISER, Pune
+                Stellar Signal Analysis, under C. V. Dharmadhikari, IISER, Pune
               </h3>
               <p className="description">
                 Worked on setting up and eliminating noise from antennas to

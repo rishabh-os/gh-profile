@@ -9,6 +9,7 @@ module.exports = {
       'victormono': ['Victor Mono', 'monospace'],
       'sora': ['Sora', 'sans-serif'],
       'manrope':['Manrope', 'sans-serif'],
+      'roboto':["Roboto", 'sans-serif'],
       'inter':['Inter', 'sans-serif']
     }},
   },
