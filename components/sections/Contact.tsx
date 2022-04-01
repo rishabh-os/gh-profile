@@ -1,8 +1,34 @@
-import { stringify } from "querystring";
 import { useState } from "react";
 import { SocialIcon } from "react-social-icons";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const emailSuccess = () =>
+    toast.success("Email sent successfully!", {
+      position: "bottom-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  const emailError = () =>
+    toast.error(
+      "Something went wrong. Please check your internet connection. If all else fails, open an issue on GitHub.",
+      {
+        position: "bottom-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      }
+    );
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     const endpoint: string = process.env.NEXT_PUBLIC_EMAIL_API!;
@@ -24,9 +50,14 @@ const Contact = () => {
       })
       .then((response) => {
         console.log("Email sent successfully!");
+        emailSuccess();
+        setName("");
+        setEmail("");
+        setMessage("");
       })
       .catch((error) => {
         console.log(error);
+        emailError();
       });
   };
 
@@ -36,8 +67,8 @@ const Contact = () => {
   return (
     <section id="Contact" className="h-fit">
       <h2 className="sectionheading">Contact Details</h2>
-      <p className="txt">
-        Here are some links to my accounts across the Internet
+      <p className="txt -my-5">
+        Here are some links to my accounts across the Internet:
       </p>
       <p className="prose mx-auto py-4 px-4 dark:prose-invert"></p>
       <div className="flex items-center justify-center space-x-4">
@@ -101,6 +132,17 @@ const Contact = () => {
           </span>
         </button>
       </form>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </section>
   );
 };

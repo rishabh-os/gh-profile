@@ -7,7 +7,7 @@ export function PageProgress({}) {
   useEffect(() => yRange.onChange((v) => setIsComplete(v >= 1)), [yRange]);
 
   return (
-    <div className="fixed top-2 left-4 z-[100] h-10 w-10 ">
+    <div className="fixed top-2 left-4 z-[100] h-10 w-10 md:top-4 ">
       <svg
         className="progress-icon aspect-square stroke-blue-800/80"
         viewBox="0 0 50 50"

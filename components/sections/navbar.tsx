@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className=" px-2 py-2 md:flex md:justify-end">
         <div className="flex flex-row">
           <DarkModeSwitch
-            className="ml-auto mt-1 md:mt-3"
+            className="ml-auto mt-1 md:mt-[14px]"
             sunColor="white"
             moonColor="black"
             onChange={(e) => toggleDarkModeButton(e)}
@@ -85,7 +85,7 @@ const Navbar = () => {
                 bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium text-white  hover:text-black dark:text-white md:ml-2"
               >
                 <span
-                  className="relative inline-flex w-full items-center justify-center rounded-md px-5 py-2.5 transition-all duration-150
+                  className="relative inline-flex w-full items-center justify-center rounded-md px-5 py-2.5 text-lg transition-all duration-150
                  ease-in group-hover:bg-gray-200 group-hover:bg-opacity-100 dark:group-hover:bg-gray-800"
                 >
                   Contact me!
