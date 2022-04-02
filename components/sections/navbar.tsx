@@ -60,26 +60,26 @@ const Navbar = () => {
         </div>
         <div className={` ml-2  ${menuOpen} md:h-fit`}>
           <div className="flex flex-col md:mx-2 md:flex-row">
-            <a className="navButton" href="#">
+            <a className="navButton" href="#" onClick={toggleMenu}>
               Home
             </a>
-            <a className="navButton" href="#AboutMe">
+            <a className="navButton" href="#AboutMe" onClick={toggleMenu}>
               About Me
             </a>
-            <a className="navButton" href="#Interests">
+            <a className="navButton" href="#Interests" onClick={toggleMenu}>
               Interests
             </a>
-            <a className="navButton" href="#Experience">
+            <a className="navButton" href="#Experience" onClick={toggleMenu}>
               Experience
             </a>
-            <a className="navButton" href="#Education">
+            <a className="navButton" href="#Education" onClick={toggleMenu}>
               Education
             </a>
-            <a className="navButton" href="#Skills">
+            <a className="navButton" href="#Skills" onClick={toggleMenu}>
               Skills
             </a>
             {/*//? Contact me button */}
-            <a href="#Contact">
+            <a href="#Contact" onClick={toggleMenu}>
               <button
                 className="group my-1 mr-2 w-40 items-center justify-center overflow-hidden whitespace-nowrap rounded-lg
                 bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium text-white  hover:text-black dark:text-white md:ml-2"

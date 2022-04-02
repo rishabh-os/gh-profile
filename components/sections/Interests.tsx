@@ -1,7 +1,8 @@
 const sidekickSS = require("../../assets/list.png");
 const dotfiles = require("../../assets/dotfiles.png");
 const mimamsa = require("../../assets/image10.png");
-import ProjectCard from "./ProjectCard";
+const website = require("../../assets/website.png");
+import ProjectCard from "../ProjectCard";
 import Image from "next/image";
 const Interests = () => {
   return (
@@ -10,15 +11,17 @@ const Interests = () => {
       <p className="txt">
         {" "}
         Although I&apos;m a physics graduate on paper, what I&apos;m truly
-        passionate about is any related to computers and coding. I&apos;m very
-        interested in machine learning and AI. I also love to develop
-        applications for other people. <br /> I&apos;m also a Linux and FOSS
-        enthusiast. I use Arch BTW &#40;&#58;
+        passionate about is anything related to computers and coding. I&apos;m
+        very interested in machine learning and AI. I also love to develop
+        applications for other people.
+        <br />
+        I&apos;m also a Linux and FOSS enthusiast.
+        <br />I use Arch BTW &#40;&#58;
       </p>
       <h3 className="txt ">
         Here are some of my personal projects that I have worked on.
       </h3>
-      <div className="flex flex-col items-center justify-center md:flex-row ">
+      <div className="flex flex-col flex-wrap items-center justify-center md:flex-row ">
         {ProjectCard(
           "https://github.com/rishabh-os/dnd_sidekick",
           "GitHub",
@@ -39,6 +42,13 @@ const Interests = () => {
           mimamsa,
           "Mimamsa Buzzers",
           "An app for handling the final Mains event for Mimamsa, a national level quiz competition for undergraduates"
+        )}
+        {ProjectCard(
+          "https://github.com/rishabh-os/gh-profile",
+          "GitHub",
+          website,
+          "This website!",
+          "My personal profile on the web, made with React, Next.js and TailwindCSS"
         )}
       </div>
     </section>
