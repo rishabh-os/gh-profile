@@ -10,7 +10,7 @@ root {
 
 .navButton {
   @apply my-1 flex transform items-center rounded-xl px-3 align-middle font-inter text-xl font-medium
-  text-gray-700 transition-all hover:bg-teal-200/30 dark:text-gray-200 hover:dark:bg-teal-800/30 md:my-0;
+  text-gray-700 transition-all hover:bg-teal-200/30 dark:text-white hover:dark:bg-teal-800/30 md:my-0;
 }
 .dark-mode-label {
   @apply relative flex items-center text-xl;

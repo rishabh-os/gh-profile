@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export function PageProgress({}) {
   const { scrollYProgress } = useViewportScroll();
   const [isComplete, setIsComplete] = useState(false);
-  const yRange = useTransform(scrollYProgress, [0, 0.95], [0, 1]);
+  const yRange = useTransform(scrollYProgress, [0, 0.97], [0, 1]);
   useEffect(() => yRange.onChange((v) => setIsComplete(v >= 1)), [yRange]);
 
   return (
@@ -19,7 +19,7 @@ export function PageProgress({}) {
           strokeDasharray="0 1"
           d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
           style={{
-            pathLength: scrollYProgress,
+            pathLength: yRange,
             rotate: 90,
             translateX: 5,
             translateY: 5,
