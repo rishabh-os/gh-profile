@@ -12,7 +12,7 @@ type ParallaxProps = {
   offset?: number;
 };
 
-const Parallax = ({ children, offset = 100 }: ParallaxProps): JSX.Element => {
+const Parallax = ({ children, offset = 120 }: ParallaxProps): JSX.Element => {
   const prefersReducedMotion = useReducedMotion();
   const [elementTop, setElementTop] = useState(0);
   const [clientHeight, setClientHeight] = useState(0);

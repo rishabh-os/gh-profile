@@ -42,7 +42,7 @@ body {
   @apply rounded-3xl bg-slate-600;
 }
 .hero {
-  background-size: 400% 400%;
+  background-size: 300% 300%;
   @apply bg-gradient-to-r from-[#23a6d5] to-[#23d5ab];
 }
 html {

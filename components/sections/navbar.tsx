@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useDarkMode from "../useDarkMode";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import { useMotionValue, useViewportScroll } from "framer-motion";
+import { useViewportScroll } from "framer-motion";
 
 const Navbar = () => {
   const { scrollYProgress } = useViewportScroll();
@@ -12,7 +12,8 @@ const Navbar = () => {
   function toggleMenu() {
     setMenuOpen(menuOpen == "h-fit" ? "h-0 overflow-hidden" : "h-fit");
   }
-  const [isDark, setIsDark] = useState(false);
+  var x = typeof window !== "undefined" ? localStorage.theme : "light";
+  const [isDark, setIsDark] = useState(x === "dark");
   function toggleDarkModeButton(e: boolean) {
     e ? setTheme("dark") : setTheme("light");
     setIsDark(e);

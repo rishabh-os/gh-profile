@@ -17,7 +17,7 @@ export function PageProgress({}) {
           strokeWidth="8"
           //   stroke="black"
           strokeDasharray="0 1"
-          d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
+          d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,1"
           style={{
             pathLength: yRange,
             rotate: 90,
