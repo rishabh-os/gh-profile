@@ -15,7 +15,7 @@ const Interests = () => {
         very interested in machine learning and AI. I also love to develop
         applications for other people.
         <br />
-        I&apos;m also a Linux and FOSS enthusiast.
+        I also happen to be a Linux and FOSS enthusiast.
         <br />I use Arch BTW &#40;&#58;
       </p>
       <h3 className="txt ">

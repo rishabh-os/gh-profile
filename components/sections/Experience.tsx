@@ -1,4 +1,4 @@
-import { HiArrowRight } from "react-icons/hi";
+import { HiArrowRight, HiDocumentText, HiChartSquareBar } from "react-icons/hi";
 const Experience = () => {
   return (
     <div>
@@ -14,16 +14,28 @@ const Experience = () => {
                 AlgoAnalytics, Pune
               </h3>
               <p className="description">
-                Utilizing state-of-the-art unsupervised anomaly and outlier
-                detection techniques to develop an automated system that reports
-                incidents in real-time to bolster security for customers.
+                Utilizing unsupervised anomaly and outlier detection techniques
+                to develop an automated system that reports incidents in
+                real-time to bolster security for customers.
               </p>
-              {/* <a
-                href="#Experience"
-                className="inline-flex items-center rounded-lg border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              <a
+                href="/output_print.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
               >
-                Learn more <HiArrowRight className="ml-2" />
-              </a> */}
+                <HiDocumentText className="mr-2 h-5 w-5" /> Thesis{" "}
+                <HiArrowRight className="ml-2" />
+              </a>
+              <a
+                href="https://thesis-presentation.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              >
+                <HiChartSquareBar className="mr-2 h-5 w-5" />
+                Defense Presentation <HiArrowRight className="ml-2" />
+              </a>
             </li>
             <li className="explist">
               <div className="topdiv"></div>
