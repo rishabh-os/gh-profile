@@ -3,7 +3,6 @@ const dotfiles = require("../../assets/dotfiles.png");
 const mimamsa = require("../../assets/image10.png");
 const website = require("../../assets/website.png");
 import ProjectCard from "../ProjectCard";
-import Image from "next/image";
 const Interests = () => {
   return (
     <section id="Interests">

@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Navbar />
       <PageProgress />
 
-      <section className="fade-bottom hero relative flex h-[70vh] items-center justify-center ">
+      <section className="fade-bottom hero relative flex h-[47vh] items-center justify-center ">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -36,13 +36,14 @@ const Home: NextPage = () => {
             },
           }}
         >
-          <h1 className="mx-2 justify-center text-center font-victormono text-7xl font-bold text-gray-800 dark:text-gray-100">
+          <h1 className="mx-2 mt-48 justify-center text-center font-victormono text-7xl font-bold text-gray-800 ">
             Welcome to my
             <br />
             website!
           </h1>
         </motion.div>
       </section>
+      <div className="layer1"></div>
 
       <Parallax>
         <AboutMe />

@@ -14,7 +14,7 @@
   @apply prose mb-1 text-sm font-normal uppercase leading-none dark:prose-invert;
 }
 .title {
-  @apply text-lg font-semibold text-green-900 dark:text-blue-500;
+  @apply text-lg font-semibold text-green-700 dark:text-green-500;
 }
 .description {
   @apply prose prose-slate text-base font-normal dark:prose-invert;

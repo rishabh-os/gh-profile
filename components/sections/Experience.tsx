@@ -8,7 +8,7 @@ const Experience = () => {
           <ol className="line">
             <li className="explist">
               <div className="topdiv"></div>
-              <time className="time">June 2021 - Current</time>
+              <time className="time">June 2021 - May 2022</time>
               <h3 className="title">
                 Anomaly Detection in CCTV Footage, under Aniruddha Pant,
                 AlgoAnalytics, Pune
@@ -22,7 +22,7 @@ const Experience = () => {
                 href="/output_print.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                className="mr-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-blue-400"
               >
                 <HiDocumentText className="mr-2 h-5 w-5" /> Thesis{" "}
                 <HiArrowRight className="ml-2" />
@@ -31,7 +31,7 @@ const Experience = () => {
                 href="https://thesis-presentation.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                className="mr-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-blue-400"
               >
                 <HiChartSquareBar className="mr-2 h-5 w-5" />
                 Defense Presentation <HiArrowRight className="ml-2" />
@@ -97,7 +97,7 @@ const Experience = () => {
           <ol className="line">
             <li className="explist">
               <div className="topdiv"></div>
-              <time className="time">AUGUST 2017 - CURRENT</time>
+              <time className="time">AUGUST 2017 - May 2022</time>
               <h3 className="title">
                 BS-MS Dual Degree in Physics, IISER, Pune
               </h3>
