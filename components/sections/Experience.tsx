@@ -1,7 +1,7 @@
 import { HiArrowRight, HiDocumentText, HiChartSquareBar } from "react-icons/hi";
 const Experience = () => {
   return (
-    <div>
+    <div className="mx-auto max-w-[38rem]">
       <section id="Experience">
         <div className="h-fit flex-col content-center items-center justify-center md:flex">
           <h2 className="sectionheading">Experience</h2>
@@ -39,7 +39,7 @@ const Experience = () => {
             </li>
             <li className="explist">
               <div className="topdiv"></div>
-              <time className="time">August 2020 - May 2020</time>
+              <time className="time">August 2020 - May 2021</time>
               <h3 className="title">
                 Analysis of Gravitational Wave Data using Machine Learning,
                 under Anupreeta More, IUCAA, Pune
@@ -101,7 +101,13 @@ const Experience = () => {
               <h3 className="title">
                 BS-MS Dual Degree in Physics, IISER, Pune
               </h3>
-              <p className="description"></p>
+              <p className="description">
+                There isn't much to say academically here, so instead I'll just
+                say a few words about the experiences I've had at IISER. I'm
+                extremely grateful to all my friends for the best 5 years of my
+                life. IISER was an unforgettable adventure, and one that I will
+                cherish for the rest of my life.
+              </p>
             </li>
           </ol>
         </div>

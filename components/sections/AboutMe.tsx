@@ -20,8 +20,10 @@ const AboutMe = () => {
           />
         </div>
         <p className="txt">
-          Hi, my name&apos;s Rishabh Wanjari. I&apos;m currently a 5th year
-          student at IISER, Pune.
+          Hi, my name&apos;s Rishabh Wanjari. I completed my BS-MS at IISER,
+          Pune. I currently work at Deloitte.
+          <br />
+          And no, I'm still not over my college life ending.
         </p>
       </section>
     </div>
