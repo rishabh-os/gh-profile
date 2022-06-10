@@ -102,11 +102,11 @@ const Experience = () => {
                 BS-MS Dual Degree in Physics, IISER, Pune
               </h3>
               <p className="description">
-                There isn't much to say academically here, so instead I'll just
-                say a few words about the experiences I've had at IISER. I'm
-                extremely grateful to all my friends for the best 5 years of my
-                life. IISER was an unforgettable adventure, and one that I will
-                cherish for the rest of my life.
+                There isn&apos;t much to say academically here, so instead
+                I&apos;ll just say a few words about the experiences I&apos;ve
+                had at IISER. I&apos;m extremely grateful to all my friends for
+                the best 5 years of my life. IISER was an unforgettable
+                adventure, and one that I will cherish for the rest of my life.
               </p>
             </li>
           </ol>
