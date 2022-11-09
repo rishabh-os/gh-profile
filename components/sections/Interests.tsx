@@ -8,14 +8,13 @@ const Interests = () => {
     <section id="Interests">
       <h2 className="sectionheading">Interests</h2>
       <p className="txt">
-        {" "}
         Although I&apos;m a physics graduate on paper, what I&apos;m truly
         passionate about is anything related to computers and coding. I&apos;m
-        very interested in machine learning and AI. I also love to develop
+        very interested in machine learning and AI. I love to develop
         applications for other people.
         <br />
         I also happen to be a Linux and FOSS enthusiast.
-        <br />I use Arch BTW &#40;&#58;
+        <br />
       </p>
       <h3 className="txt ">
         Here are some of my personal projects that I have worked on.

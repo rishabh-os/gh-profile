@@ -10,6 +10,8 @@ const sklearn = require("../../assets/scikit-learn-logo.svg");
 const mongo = require("../../assets/Logomark_RGB_Spring-Green.png");
 const aws = require("../../assets/Amazon_Web_Services_Logo.svg");
 const tailwind = require("../../assets/tailwindcss-mark.svg");
+const julia = require("../../assets/julia.png");
+const rust = require("../../assets/rust-logo.svg");
 const img_dim = 25;
 
 const Skills = () => {
@@ -75,7 +77,7 @@ const Skills = () => {
             exp={2}
           />
           <SkillBadge
-            classNames="bg-gradient-to-r from-sky-600 to-sky-500 shadow-sky-800/50"
+            classNames="bg-gradient-to-r from-sky-600 to-sky-500 shadow-sky-500/50"
             icon={react}
             img_dim={img_dim}
             name="React.js"
@@ -101,6 +103,23 @@ const Skills = () => {
             img_dim={img_dim}
             name="TailwindCSS"
             exp={2}
+          />
+        </div>
+        <h3 className="subsectionheading">Fleeting Interests</h3>
+        <div className="badge-arrange">
+          <SkillBadge
+            classNames="bg-gradient-to-r from-gray-600 to-gray-500 shadow-gray-500/50"
+            icon={julia}
+            img_dim={img_dim}
+            name="Julia"
+            exp={0}
+          />
+          <SkillBadge
+            classNames="bg-gradient-to-r from-[#CE412B] to-orange-600 shadow-orange-500/50"
+            icon={rust}
+            img_dim={img_dim}
+            name="Rust"
+            exp={0}
           />
         </div>
       </div>

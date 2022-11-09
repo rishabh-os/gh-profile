@@ -96,10 +96,12 @@ const Contact = () => {
         className="mx-auto w-11/12 grid-cols-8 grid-rows-4 content-center items-center
         justify-center object-center text-left md:grid md:w-[45rem]"
       >
-        <label htmlFor="form_name" className="contact-label ">Name</label>
+        <label htmlFor="form_name" className="contact-label ">
+          Name
+        </label>
 
         <input
-        id="form_name"
+          id="form_name"
           required
           autoComplete="name"
           className="contact-input"
@@ -107,9 +109,11 @@ const Contact = () => {
           onChange={(e) => setName(e.target.value)}
           value={name}
         />
-        <label htmlFor="form_email" className="contact-label ">Email ID</label>
+        <label htmlFor="form_email" className="contact-label ">
+          Email ID
+        </label>
         <input
-        id="form_email"
+          id="form_email"
           required
           autoComplete="email"
           className="contact-input"
@@ -117,9 +121,11 @@ const Contact = () => {
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
-        <label htmlFor="form_message" className="contact-label ">Message</label>
+        <label htmlFor="form_message" className="contact-label ">
+          Message
+        </label>
         <textarea
-        id="form_message"
+          id="form_message"
           className="contact-input h-20 resize-none"
           onChange={(e) => setMessage(e.target.value)}
           value={message}
@@ -130,7 +136,7 @@ const Contact = () => {
            text-center text-sm font-medium text-gray-900 hover:text-white group-hover:from-green-400
             group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800"
         >
-          <span className="w-full rounded-md bg-white px-5 py-2.5 transition-all duration-150 ease-in group-hover:bg-opacity-0 dark:bg-gray-800">
+          <span className="w-full rounded-md bg-white px-5 py-2.5 font-bold uppercase tracking-wider transition-all duration-150 ease-in group-hover:bg-opacity-0 dark:bg-gray-800">
             Submit
           </span>
         </button>

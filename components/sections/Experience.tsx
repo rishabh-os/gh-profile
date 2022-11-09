@@ -1,5 +1,6 @@
 import { HiArrowRight, HiDocumentText, HiChartSquareBar } from "react-icons/hi";
 const Experience = () => {
+  // TODO Add Deloitte and Flowchart project
   return (
     <div className="mx-auto max-w-[38rem]">
       <section id="Experience">

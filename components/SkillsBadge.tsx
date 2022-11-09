@@ -20,7 +20,9 @@ function SkillBadge({ icon, img_dim, name, classNames, exp }: Props) {
         />
         <p className=" prose ml-2 font-bold text-white">{name}</p>
       </button>
-      <p className="prose text-center dark:prose-invert">{exp} years</p>
+      {exp > 0 && (
+        <p className="prose text-center dark:prose-invert">{exp} years</p>
+      )}
     </div>
   );
 }
