@@ -11,6 +11,7 @@
   "dependencies": {
     "flowbite": "^1.3.4",
     "framer-motion": "^6.2.8",
+    "gradient-path": "^2.3.0",
     "next": "12.1.0",
     "next-pwa": "^5.4.4",
     "react": "17.0.2",

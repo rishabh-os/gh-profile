@@ -60,7 +60,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className={` ml-2  ${menuOpen} md:h-fit`}>
-          <div className="flex flex-col md:mx-2 md:flex-row">
+          <div className="md:space-x- flex flex-col md:mx-2 md:flex-row">
             <a className="navButton" href="#" onClick={toggleMenu}>
               Home
             </a>
@@ -83,11 +83,11 @@ const Navbar = () => {
             <a href="#Contact" onClick={toggleMenu}>
               <button
                 className="group my-1 mr-2 w-40 items-center justify-center overflow-hidden whitespace-nowrap rounded-lg
-                bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium text-white  hover:text-black dark:text-white md:ml-2"
+                bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-white  hover:text-black dark:text-white md:ml-2"
               >
                 <span
-                  className="relative inline-flex w-full items-center justify-center rounded-md px-5 py-2.5 text-lg transition-all duration-150
-                 ease-in group-hover:bg-gray-200 group-hover:bg-opacity-100 dark:group-hover:bg-gray-800"
+                  className="relative inline-flex w-full items-center justify-center rounded-md px-5 py-2.5 font-inter text-lg font-bold transition-all
+                 duration-150 ease-in group-hover:bg-gray-200 group-hover:bg-opacity-100 dark:group-hover:bg-gray-800"
                 >
                   Contact me!
                 </span>
