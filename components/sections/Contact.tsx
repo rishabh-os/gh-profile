@@ -137,7 +137,7 @@ const Contact = () => {
             group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800"
         >
           <span className="w-full rounded-md bg-white px-5 py-2.5 font-bold uppercase tracking-wider transition-all duration-150 ease-in group-hover:bg-opacity-0 dark:bg-gray-800">
-            Submit
+            Send
           </span>
         </button>
       </form>

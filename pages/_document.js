@@ -29,6 +29,13 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/favicon-16x16.png"
           />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap"
             rel="stylesheet"
@@ -43,6 +50,11 @@ class MyDocument extends Document {
           />
           <link
             href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css"
+            rel="stylesheet"
+          />
+          {/* //? For Arch */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Herr+Von+Muellerhoff&family=Lato&family=Ms+Madi&family=Pinyon+Script&display=swap"
             rel="stylesheet"
           />
         </Head>

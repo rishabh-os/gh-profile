@@ -12,9 +12,8 @@ const Interests = () => {
         passionate about is anything related to computers and coding. I&apos;m
         very interested in machine learning and AI. I love to develop
         applications for other people.
-        <br />
-        I also happen to be a Linux and FOSS enthusiast.
-        <br />
+        <br />I also happen to be a Linux and FOSS enthusiast.
+        <p className="font-Pinyon text-3xl tracking-wide">I use Arch BTW</p>
       </p>
       <h3 className="txt ">
         Here are some of my personal projects that I have worked on.
