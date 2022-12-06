@@ -1,7 +1,9 @@
-const sidekickSS = require("../../assets/list.png");
-const dotfiles = require("../../assets/dotfiles.png");
-const mimamsa = require("../../assets/image10.png");
-const website = require("../../assets/website.png");
+import sidekickSS from "../../assets/list.png";
+import dotfiles from "../../assets/dotfiles.png";
+import mimamsa from "../../assets/image10.png";
+import website from "../../assets/website.png";
+import temtem from "../../assets/temtem_preview.jpg";
+import flowchart from "../../assets/flowchart.png";
 import ProjectCard from "../ProjectCard";
 const Interests = () => {
   return (
@@ -20,18 +22,24 @@ const Interests = () => {
       </h3>
       <div className="flex flex-col flex-wrap items-center justify-center md:flex-row ">
         {ProjectCard(
+          <div>
+            {" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            dicta inventore non provident qui officia sapiente ducimus. Saepe,
+            reiciendis ipsam quas incidunt delectus natus nostrum, cum adipisci
+            aut ut quo?
+          </div>,
+          "More Info",
+          flowchart,
+          "React Flowchart Project",
+          "A 3 month freelance project, taken from conceptual idea to execution."
+        )}
+        {ProjectCard(
           "https://github.com/rishabh-os/dnd_sidekick",
           "GitHub",
           sidekickSS,
           "Sidekick",
-          "A DnD companion app made in Flutter"
-        )}
-        {ProjectCard(
-          "https://github.com/rishabh-os/Dot-Files",
-          "GitHub",
-          dotfiles,
-          "Dot Files",
-          "A collection of all my dot files for the (objectively) best desktop experience"
+          "A DnD companion app made with Flutter"
         )}
         {ProjectCard(
           "https://gist.github.com/rishabh-os/41aed05521d2e207d7208b4159edec6a",
@@ -46,6 +54,21 @@ const Interests = () => {
           website,
           "This website!",
           "My personal profile on the web, made with React, Next.js and TailwindCSS"
+        )}
+        {ProjectCard(
+          "https://github.com/rishabh-os/Temdex",
+          "GitHub",
+          temtem,
+          "Temdex",
+          "A comprehensive and up-to-date encyclopedia for the game Temtem."
+        )}
+
+        {ProjectCard(
+          "https://github.com/rishabh-os/Dot-Files",
+          "GitHub",
+          dotfiles,
+          "Dot Files",
+          "A collection of all my dot files for the (objectively) best desktop experience"
         )}
       </div>
     </section>
