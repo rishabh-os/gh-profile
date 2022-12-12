@@ -81,7 +81,7 @@ const Skills = () => {
             icon={react}
             img_dim={img_dim}
             name="React.js"
-            exp={1}
+            exp={3}
           />
           <SkillBadge
             classNames="bg-gradient-to-r from-[#001e2b] to-slate-800 shadow-slate-900/50"
