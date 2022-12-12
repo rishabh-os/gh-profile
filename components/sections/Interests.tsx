@@ -25,10 +25,20 @@ const Interests = () => {
         {ProjectCard(
           <div>
             {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            dicta inventore non provident qui officia sapiente ducimus. Saepe,
-            reiciendis ipsam quas incidunt delectus natus nostrum, cum adipisci
-            aut ut quo?
+            This project is a web application that is similar to other project
+            management tools. The aim was to make use of the flowchart canvas to
+            enhance the experience and enable easy visualization of non-linear
+            flows, with a focus on clean, beautiful UI/UX. The UI follows a
+            WYSIWYG (What You See Is What You Get) approach. This includes a
+            fully interactive and editable flowchart that lets the user
+            customize the color and labels of the nodes and edges. There is also
+            functionality for adding links to other nodes.
+            <br /> A file management system is also present in the sidebar,
+            which lets the user manage multiple flowcharts and their directory
+            structure in a drag and drop manner.
+            <br /> There was also significant work done on a backend to manage
+            the data in this project. It was made using Neo4j with a strict
+            GraphQL schema.
           </div>,
           "More Info",
           flowchart,
