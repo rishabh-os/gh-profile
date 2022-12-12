@@ -23,7 +23,7 @@ body {
 
 *::-webkit-scrollbar {
   display: block;
-  @apply w-2;
+  @apply w-3;
 }
 
 *::-webkit-scrollbar-button {
@@ -59,7 +59,7 @@ html {
   @apply prose mx-auto py-10 text-center font-manrope text-5xl dark:prose-invert;
 }
 .subsectionheading {
-  @apply prose mx-auto scale-50 py-5 text-center font-sora text-5xl  dark:prose-invert;
+  @apply prose mx-auto scale-50 py-5 text-center font-inter text-5xl  dark:prose-invert;
 }
 .badge-arrange {
   @apply flex flex-wrap justify-center;

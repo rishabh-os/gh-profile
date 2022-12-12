@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/react-modal": "^3.13.1",
     "flowbite": "^1.3.4",
-    "framer-motion": "^7.6.19",
+    "framer-motion": "^6.2.8",
     "gradient-path": "^2.3.0",
     "next": "^13.0.6",
     "next-pwa": "^5.6.0",

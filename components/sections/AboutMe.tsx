@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 const pp = require("../../assets/PXL_20220111_082227181.jpg");
 
 const AboutMe = () => {

@@ -1,9 +1,4 @@
-import {
-  useViewportScroll,
-  useTransform,
-  useSpring,
-  motion,
-} from "framer-motion";
+import { useViewportScroll, useTransform, useSpring, motion } from "framer-motion";
 import { useState, useRef, useEffect, ReactNode } from "react";
 
 type ParallaxProps = {

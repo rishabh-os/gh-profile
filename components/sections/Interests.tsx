@@ -9,18 +9,19 @@ const Interests = () => {
   return (
     <section id="Interests">
       <h2 className="sectionheading">Interests</h2>
-      <p className="txt">
+      <div className="txt">
         Although I&apos;m a physics graduate on paper, what I&apos;m truly
         passionate about is anything related to computers and coding. I&apos;m
         very interested in machine learning and AI. I love to develop
         applications for other people.
         <br />I also happen to be a Linux and FOSS enthusiast.
-        <p className="font-Pinyon text-3xl tracking-wide">I use Arch BTW</p>
-      </p>
+        <div className="font-Pinyon text-3xl tracking-wide">I use Arch BTW</div>
+      </div>
       <h3 className="txt ">
         Here are some of my personal projects that I have worked on.
       </h3>
-      <div className="flex flex-col flex-wrap items-center justify-center md:flex-row ">
+      <div className="flex flex-col flex-wrap items-center justify-center md:flex-row xl:mx-auto xl:max-w-7xl">
+        {/* //? The xl: arguments limit the items to 3 columns on larger displays */}
         {ProjectCard(
           <div>
             {" "}
@@ -49,18 +50,18 @@ const Interests = () => {
           "An app for handling the final Mains event for Mimamsa, a national level quiz competition for undergraduates"
         )}
         {ProjectCard(
-          "https://github.com/rishabh-os/gh-profile",
-          "GitHub",
-          website,
-          "This website!",
-          "My personal profile on the web, made with React, Next.js and TailwindCSS"
-        )}
-        {ProjectCard(
           "https://github.com/rishabh-os/Temdex",
           "GitHub",
           temtem,
           "Temdex",
           "A comprehensive and up-to-date encyclopedia for the game Temtem."
+        )}
+        {ProjectCard(
+          "https://github.com/rishabh-os/gh-profile",
+          "GitHub",
+          website,
+          "This website!",
+          "My personal profile on the web, made with React, Next.js and TailwindCSS"
         )}
 
         {ProjectCard(
