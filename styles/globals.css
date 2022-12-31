@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-root {
-  --light-mode-bg: white;
-  --dark-mode-bg: bg-gray-800;
-}
-
 .navButton {
   background-size: 600%;
   @apply my-1 flex transform items-center rounded-xl px-2 align-middle font-victormono text-xl font-semibold hover:bg-fuchsia-800/10
