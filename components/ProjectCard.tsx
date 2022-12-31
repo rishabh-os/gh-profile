@@ -1,6 +1,7 @@
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Image from "next/legacy/image";
 import { confirmAlert } from "react-confirm-alert";
+import { useEffect } from "react";
 
 function ProjectCard(
   link: string | JSX.Element,
@@ -28,8 +29,26 @@ function ProjectCard(
       },
     });
   }
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-project");
+          }
+          // ? Use this part if you want to redo the animation each time instead of only once
+          // else {
+          //   entry.target.classList.remove("animate-project");
+          // }
+        });
+      });
+      const expElements = document.querySelectorAll(".anim");
+      expElements.forEach((el) => observer.observe(el));
+    }
+  });
   return (
-    <div className="max-w-sm">
+    <div className="anim max-w-sm">
       <div className="mx-4 my-4 rounded-lg border border-gray-200 bg-white px-2 py-2 shadow-md dark:border-gray-700 dark:bg-gray-800">
         <div className="mx-auto h-auto max-h-60 w-80 overflow-clip rounded-xl ">
           <Image src={img} layout="responsive" alt="Project Picture"></Image>

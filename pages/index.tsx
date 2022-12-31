@@ -30,7 +30,7 @@ const Home: NextPage = () => {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: 1,
+                delay: 0.5,
                 duration: 1,
               },
             },

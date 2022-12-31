@@ -5,7 +5,7 @@
   @apply relative mx-4 border-l-[2px] border-indigo-400 dark:border-indigo-500;
 }
 .explist {
-  @apply mb-10 ml-4;
+  @apply mb-10 ml-4
 }
 .topdiv {
   @apply absolute -left-[9px] h-4 w-4 rounded-full bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 ;
@@ -21,4 +21,12 @@
 }
 .description {
   @apply prose prose-slate text-base font-normal dark:prose-invert;
+}
+.animate-explist{
+  @apply !opacity-100 !translate-x-0 !blur-0
+  /* ? Not sure why the !important symbol is required here */
+}
+
+.animated {
+  @apply transition-all duration-[800ms] opacity-0 translate-x-full blur-sm ease-out
 }
