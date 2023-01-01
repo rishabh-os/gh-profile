@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const emailSuccess = () =>
-    toast.success("Email sent successfully!", {
+    toast.success("Message sent successfully!", {
       position: "bottom-center",
       autoClose: 3000,
       hideProgressBar: false,
@@ -72,14 +72,14 @@ const Contact = () => {
       </p>
       <p className="prose mx-auto py-4 px-4 dark:prose-invert"></p>
       <div className="flex items-center justify-center space-x-4">
-        <div className="rounded-full bg-white">
+        <div className="rounded-full border-2 bg-white">
           <SocialIcon
             url="https://github.com/rishabh-os"
             target="_blank"
             rel="noopener noreferrer"
           />
         </div>
-        <div className="rounded-full bg-white">
+        <div className="rounded-full border-2 bg-white">
           <SocialIcon
             url="https://www.linkedin.com/in/rishabh-wanjari/"
             target="_blank"

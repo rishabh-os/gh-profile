@@ -56,7 +56,7 @@ const Experience = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     key="ThesisLink"
-                    className="mr-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-blue-400"
+                    className="mr-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 transition-all hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-blue-400"
                   >
                     <HiDocumentText className="mr-2 h-5 w-5" /> Thesis{" "}
                     <HiArrowRight className="ml-2" />
@@ -66,7 +66,7 @@ const Experience = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     key="PresentationLink"
-                    className="mr-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-blue-400"
+                    className="mr-2 mt-2 inline-flex items-center rounded-lg border border-gray-200 py-2 px-4 text-sm text-gray-900 transition-all hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-blue-400"
                   >
                     <HiChartSquareBar className="mr-2 h-5 w-5" />
                     Defense Presentation <HiArrowRight className="ml-2" />

@@ -49,7 +49,7 @@ function ProjectCard(
   });
   return (
     <div className="anim max-w-sm">
-      <div className="mx-4 my-4 rounded-lg border border-gray-200 bg-white px-2 py-2 shadow-md dark:border-gray-700 dark:bg-gray-800">
+      <div className="mx-4 my-4 rounded-lg border border-gray-200 bg-white px-2 py-2 shadow-lg dark:border-gray-700 dark:bg-gray-800">
         <div className="mx-auto h-auto max-h-60 w-80 overflow-clip rounded-xl ">
           <Image src={img} layout="responsive" alt="Project Picture"></Image>
         </div>
@@ -66,7 +66,7 @@ function ProjectCard(
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-lg bg-blue-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="inline-flex items-center rounded-lg bg-blue-700 py-2 px-3 text-center text-sm font-medium text-white transition-all hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               {linktext}
               <HiArrowRight className="ml-2" />
@@ -75,7 +75,7 @@ function ProjectCard(
             <div>
               <button
                 onClick={submit}
-                className="inline-flex items-center rounded-lg bg-blue-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="inline-flex items-center rounded-lg bg-blue-700 py-2 px-3 text-center text-sm font-medium text-white transition-all hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {linktext} <HiArrowRight className="ml-2" />
               </button>
