@@ -5,6 +5,10 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* //? Content for social share */}
+          <meta property="og:image" content="/website.png" key="ogimage" />
+          <meta name="twitter:card" content="summary_large_image"></meta>
+
           <link rel="apple-touch-icon" href="/icon.png"></link>
           <meta name="theme-color" content="#23a6d5" />
           <meta name="msapplication-TileColor" content="#23a6d5" />
