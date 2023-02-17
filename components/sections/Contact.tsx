@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HiArrowRight, HiDocumentText, HiDownload } from "react-icons/hi";
 import { SocialIcon } from "react-social-icons";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -93,8 +94,7 @@ const Contact = () => {
       </p>
       <form
         onSubmit={handleSubmit}
-        className="mx-auto w-11/12 grid-cols-8 grid-rows-4 content-center items-center
-        justify-center object-center text-left md:grid md:w-[45rem]"
+        className="mx-auto w-11/12 grid-cols-8 grid-rows-4 content-center items-center justify-center object-center text-left md:grid md:w-[45rem]"
       >
         <label htmlFor="form_name" className="contact-label ">
           Name
@@ -132,9 +132,7 @@ const Contact = () => {
         />
         <button
           type="submit"
-          className="group col-span-2 col-start-4 mx-auto my-4 flex rounded-lg bg-gradient-to-br from-green-400 to-blue-600 object-center p-0.5
-           text-center text-sm font-medium text-gray-900 hover:text-white group-hover:from-green-400
-            group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800"
+          className="group col-span-2 col-start-4 mx-auto my-4 flex rounded-lg bg-gradient-to-br from-green-400 to-blue-600 object-center p-0.5           text-center text-sm font-medium text-gray-900 hover:text-white group-hover:from-green-400 group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800"
         >
           <span className="w-full rounded-md bg-white px-5 py-2.5 font-bold uppercase tracking-wider transition-all duration-150 ease-in group-hover:bg-opacity-0 dark:bg-gray-800">
             Send

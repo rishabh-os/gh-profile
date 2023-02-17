@@ -21,7 +21,7 @@ function SkillBadge({ icon, img_dim, name, classNames, exp }: Props) {
       style={{
         scale: isInView ? 1 : 2,
         opacity: isInView ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.6,0,.56,1) 0.4s",
+        transition: "all 0.9s cubic-bezier(0.6,0,.56,1) 0.2s",
       }}
     >
       <button type="button" className={buttonClasses + classNames} disabled>

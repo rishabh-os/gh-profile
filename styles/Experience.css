@@ -5,7 +5,7 @@
   @apply relative mx-4 border-l-[2px] border-indigo-400 dark:border-indigo-500;
 }
 .explist {
-  @apply mb-10 ml-4
+  @apply mb-8 ml-4 last:mb-4
 }
 .topdiv {
   @apply absolute -left-[9px] h-4 w-4 rounded-full bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 ;

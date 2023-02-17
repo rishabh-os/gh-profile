@@ -63,6 +63,8 @@ const Home: NextPage = () => {
           out{" "}
           <a
             href="https://github.com/rubjo/victor-mono"
+            target="_blank"
+            rel="noopener noreferrer"
             className=" underline decoration-blue-500 decoration-2 underline-offset-2 transition-all hover:bg-blue-500"
           >
             Victor Mono

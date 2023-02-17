@@ -41,15 +41,27 @@ const Experience = () => {
 
   return (
     <div className="mx-auto max-w-[38rem]">
+      <section id="Work Experience">
+        <div className="h-fit flex-col content-center items-center justify-center md:flex">
+          <h2 className="sectionheading sm:mx-0">Work Experience</h2>
+          <ol className="line">
+            {ExpInfo(
+              "June 2022 - Current",
+              "Associate Solution Advisor, Deloitte",
+              "Engaged in thorough analysis and validation of financial models for banks. Conducted assessments, used statistical methods, and collaborated with teams to improve accuracy and performance."
+            )}
+          </ol>
+        </div>
+      </section>
       <section id="Experience">
         <div className="h-fit flex-col content-center items-center justify-center md:flex">
-          <h2 className="sectionheading">Experience</h2>
+          <h2 className="sectionheading">Project Experience</h2>
           <ol className="line">
             {[
               ExpInfo(
                 "June 2021 - May 2022",
                 "Anomaly Detection in CCTV Footage, under Aniruddha Pant, AlgoAnalytics, Pune",
-                "Utilizing unsupervised anomaly and outlier detection techniques to develop an automated system that reports incidents in real-time to bolster security for customers.",
+                "An advanced system using unsupervised anomaly and outlier detection techniques was developed to enhance security for customers through real-time reporting of incidents.",
                 [
                   <a
                     href="/output_print.pdf"
@@ -76,22 +88,22 @@ const Experience = () => {
               ExpInfo(
                 "August 2020 - May 2021",
                 "Analysis of Gravitational Wave Data using Machine Learning, under Anupreeta More, IUCAA, Pune",
-                "Using unsupervised machine learning algorithms to identify and classify different types of signals in LIGO data using bicoherence maps of the signals as the input."
+                "LIGO data was analyzed using unsupervised machine learning algorithms to identify and classify diverse signals, utilizing bicoherence maps as input data"
               ),
               ExpInfo(
                 "December 2019 - June 2020",
                 "Applicaitions of Machine Learning in quantum Information, under T. S. Mahesh, IISER, Pune",
-                "Simulation of multi-qubit systems to better understand the usefulness of quantum discord and other quantum correlations, using a Restricted Boltzmann Machine network."
+                "A multi-qubit system was simulated to gain greater insight into the practical value of quantum discord and other quantum correlations, utilizing a Restricted Boltzmann machine."
               ),
               ExpInfo(
                 "December 2018",
                 "Stellar Signal Analysis, under C. V. Dharmadhikari, IISER, Pune",
-                "Worked on setting up and eliminating noise from antennas to record radiation from the night sky. This was done by using the Lecher Wire as a basis."
+                "Worked on setting up and eliminating noise from antennas to record radiation from the night sky, using a Lecher Wire as the basis."
               ),
               ExpInfo(
                 "May 2018 - July 2018",
                 "N-Body Simulations and Analysis, under Najam Hassan, University of Osmania",
-                "Simulations were performed using Python and Fortran with Sverre Aarseth's n-body simulation programs to model stellar interactions in clusters."
+                "Stellar interaction modeling in clusters was performed through simulations using Python and Fortran with Sverre Aarseth's highly regarded n-body simulation programs."
               ),
             ]}
           </ol>
