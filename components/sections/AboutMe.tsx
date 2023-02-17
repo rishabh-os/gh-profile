@@ -1,8 +1,7 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 const pp = require("../../assets/PXL_20220111_082227181.jpg");
 
 const AboutMe = () => {
-  const img_size = 200;
   return (
     <div className="mx-auto flex items-center justify-center">
       <section
@@ -12,11 +11,12 @@ const AboutMe = () => {
         <h2 className="sectionheading">About Me</h2>
         <div className="flex items-center justify-center">
           <Image
-            className=" inline-block h-10 w-10 rounded-full object-cover text-center"
+            className=" inline-block h-52 w-52 rounded-full object-cover text-center"
             src={pp}
             alt="Profile image"
-            height={img_size}
-            width={img_size}
+            sizes="(max-width: 768px) 30vw,
+              (max-width: 1200px) 30vw,
+              30vw"
           />
         </div>
         <p className="txt">
