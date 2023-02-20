@@ -25,12 +25,7 @@ function SkillBadge({ icon, img_dim, name, classNames, exp }: Props) {
       }}
     >
       <button type="button" className={buttonClasses + classNames} disabled>
-        <Image
-          src={icon}
-          alt="Profile image"
-          height={img_dim}
-          width={img_dim}
-        />
+        <Image src={icon} alt="Skill image" width={img_dim} />
         <p className=" prose ml-2 font-bold text-white">{name}</p>
       </button>
       {exp > 0 && (

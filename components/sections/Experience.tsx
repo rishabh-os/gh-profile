@@ -27,7 +27,7 @@ const Experience = () => {
     buttons: Array<React.ReactNode> = []
   ) {
     return (
-      <li className="explist">
+      <li className="explist" key={title}>
         <div className="topdiv"></div>
         <div className="animated">
           <time className="time">{time}</time>

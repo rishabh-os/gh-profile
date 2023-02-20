@@ -59,8 +59,7 @@ const Home: NextPage = () => {
       <Contact />
       <footer className="footer flex justify-center bg-gray-700 p-4 text-center text-white">
         <p>
-          Copyright © {displayDate} <br /> If you like the monospace font, check
-          out{" "}
+          {displayDate} <br /> If you like the monospace font, check out{" "}
           <a
             href="https://github.com/rubjo/victor-mono"
             target="_blank"
