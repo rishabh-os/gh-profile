@@ -5,6 +5,8 @@ import website from "../../assets/website.png";
 import temtem from "../../assets/temtem_preview.jpg";
 import flowchart from "../../assets/flowchart.png";
 import ProjectCard from "../ProjectCard";
+import FlowchartDetails from "./FlowchartDetails";
+
 const Interests = () => {
   return (
     <section id="Interests">
@@ -23,23 +25,7 @@ const Interests = () => {
       <div className="flex flex-col flex-wrap items-center justify-center md:flex-row xl:mx-auto xl:max-w-7xl">
         {/* //? The xl: arguments limit the items to 3 columns on larger displays */}
         {ProjectCard(
-          <div>
-            {" "}
-            This project is a web application that is similar to other project
-            management tools. The aim was to make use of the flowchart canvas to
-            enhance the experience and enable easy visualization of non-linear
-            flows, with a focus on clean, beautiful UI/UX. The UI follows a
-            WYSIWYG (What You See Is What You Get) approach. This includes a
-            fully interactive and editable flowchart that lets the user
-            customize the color and labels of the nodes and edges. There is also
-            functionality for adding links to other nodes.
-            <br /> A file management system is also present in the sidebar,
-            which lets the user manage multiple flowcharts and their directory
-            structure in a drag and drop manner.
-            <br /> There was also significant work done on a backend to manage
-            the data in this project. It was made using Neo4j with a strict
-            GraphQL schema.
-          </div>,
+          <FlowchartDetails />,
           "More Info",
           flowchart,
           "React Flowchart Project",

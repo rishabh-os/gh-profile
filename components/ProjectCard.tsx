@@ -3,18 +3,18 @@ import Image from "next/image";
 import { confirmAlert } from "react-confirm-alert";
 import { useEffect } from "react";
 
-function ProjectCard(
+const ProjectCard = (
   link: string | JSX.Element,
   linktext: string,
   img: any,
   title: string,
   description: string
-) {
+) => {
   function submit() {
     confirmAlert({
       customUI: ({ onClose }) => {
         return (
-          <div className="mx-4 my-4 min-w-min max-w-xl rounded-lg border-gray-200 bg-white px-2 py-2 dark:border-gray-700 dark:bg-gray-800 dark:text-white">
+          <div className="mx-4 my-4 max-h-screen min-w-min max-w-3xl overflow-y-scroll rounded-lg border-gray-200 bg-white px-2 py-2 dark:border-gray-700 dark:bg-gray-800 dark:text-white">
             {link}
             <div className="py-2">
               <button
@@ -85,6 +85,6 @@ function ProjectCard(
       </div>
     </div>
   );
-}
+};
 
 export default ProjectCard;

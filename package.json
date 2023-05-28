@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^13.4.4",
     "@types/react-modal": "^3.16.0",
     "flowbite": "^1.6.5",
     "framer-motion": "^10.12.16",
