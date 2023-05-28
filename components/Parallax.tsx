@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, ReactNode } from "react";
 import {
   motion,
-  useViewportScroll,
+  useScroll,
   useTransform,
   useSpring,
   useReducedMotion,
@@ -18,7 +18,7 @@ const Parallax = ({ children, offset = 120 }: ParallaxProps): JSX.Element => {
   const [clientHeight, setClientHeight] = useState(0);
   const ref = useRef(null);
 
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
 
   const initial = elementTop - clientHeight;
   const final = elementTop + offset;

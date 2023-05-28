@@ -19,7 +19,7 @@ function ProjectCard(
             <div className="py-2">
               <button
                 onClick={onClose}
-                className="inline-flex items-center rounded-lg bg-blue-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 <HiArrowLeft className="mr-2" /> Back
               </button>
@@ -54,7 +54,7 @@ function ProjectCard(
           <Image src={img} alt="Project Picture"></Image>
         </div>
         <div className="p-5">
-          <h4 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h4 className="mb-2 font-inter text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {title}
           </h4>
 
@@ -66,7 +66,7 @@ function ProjectCard(
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-lg bg-blue-700 py-2 px-3 text-center text-sm font-medium text-white transition-all hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white transition-all hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               {linktext}
               <HiArrowRight className="ml-2" />
@@ -75,7 +75,7 @@ function ProjectCard(
             <div>
               <button
                 onClick={submit}
-                className="inline-flex items-center rounded-lg bg-blue-700 py-2 px-3 text-center text-sm font-medium text-white transition-all hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white transition-all hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {linktext} <HiArrowRight className="ml-2" />
               </button>

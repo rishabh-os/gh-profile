@@ -44,21 +44,18 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap"
             rel="stylesheet"
           />
+
           <link
-            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@300&family=Roboto:wght@300&family=Sora:wght@300&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@300&display=swap"
             rel="stylesheet"
           />
           <link
             href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css"
             rel="stylesheet"
           />
-          {/* //? For Arch */}
+          {/* //? For Arch BTW */}
           <link
-            href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Herr+Von+Muellerhoff&family=Lato&family=Ms+Madi&family=Pinyon+Script&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
             rel="stylesheet"
           />
         </Head>

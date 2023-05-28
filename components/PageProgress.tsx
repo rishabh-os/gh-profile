@@ -1,13 +1,19 @@
-import { motion, useTransform, useViewportScroll } from "framer-motion";
-import { useEffect, useState } from "react";
+import {
+  motion,
+  useTransform,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
+import { useState } from "react";
 export function PageProgress({}) {
-  const { scrollYProgress } = useViewportScroll();
+  const { scrollYProgress } = useScroll();
   const [isComplete, setIsComplete] = useState(false);
   const yRange = useTransform(scrollYProgress, [0, 0.97], [0, 1]);
-  useEffect(() => yRange.onChange((v) => setIsComplete(v >= 1)), [yRange]);
+
+  useMotionValueEvent(scrollYProgress, "change", (v) => setIsComplete(v >= 1));
 
   return (
-    <div className="fixed top-2 left-4 z-[100] h-10 w-10 md:top-4 ">
+    <div className="fixed left-4 top-2 z-[100] h-10 w-10 md:top-4 ">
       <svg
         className="progress-icon aspect-square stroke-gray-800/80"
         viewBox="0 0 50 50"

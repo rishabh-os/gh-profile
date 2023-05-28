@@ -1,10 +1,10 @@
 import { useState } from "react";
 import useDarkMode from "../useDarkMode";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import { useViewportScroll } from "framer-motion";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 
 const Navbar = () => {
-  const { scrollYProgress } = useViewportScroll();
+  const { scrollYProgress } = useScroll();
   const [topshadow, setTopshadow] = useState("");
   const [menuOpen, setMenuOpen] = useState("h-0 overflow-hidden");
   const [, setTheme] = useDarkMode();
@@ -18,7 +18,7 @@ const Navbar = () => {
     e ? setTheme("dark") : setTheme("light");
     setIsDark(e);
   }
-  scrollYProgress.onChange((v) => {
+  useMotionValueEvent(scrollYProgress, "change", (v) => {
     setTopshadow(v > 0.001 ? "shadow-lg" : "");
   });
   return (

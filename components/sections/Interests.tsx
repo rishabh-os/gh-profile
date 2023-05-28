@@ -15,7 +15,7 @@ const Interests = () => {
         very interested in machine learning and AI. I love to develop
         applications for other people.
         <br />I also happen to be a Linux and FOSS enthusiast.
-        <div className="font-Pinyon text-3xl tracking-wide">I use Arch BTW</div>
+        <div className="font-pinyon text-3xl tracking-wide">I use Arch BTW</div>
       </div>
       <h3 className="txt ">
         Here are some of my personal projects that I have worked on.
