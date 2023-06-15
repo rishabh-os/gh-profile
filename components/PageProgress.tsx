@@ -8,9 +8,9 @@ import { useState } from "react";
 export function PageProgress({}) {
   const { scrollYProgress } = useScroll();
   const [isComplete, setIsComplete] = useState(false);
-  const yRange = useTransform(scrollYProgress, [0, 0.97], [0, 1]);
+  const yRange = useTransform(scrollYProgress, [0, 0.95], [0, 1]);
 
-  useMotionValueEvent(scrollYProgress, "change", (v) => setIsComplete(v >= 1));
+  useMotionValueEvent(yRange, "change", (v) => setIsComplete(v >= 1));
 
   return (
     <div className="fixed left-4 top-2 z-[100] h-10 w-10 md:top-4 ">
