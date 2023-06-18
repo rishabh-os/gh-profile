@@ -15,7 +15,6 @@ const Home: NextPage = () => {
   return (
     <div>
       <Navbar />
-      <PageProgress />
 
       <section className="fade-bottom hero relative flex h-[47vh] items-center justify-center ">
         <motion.div

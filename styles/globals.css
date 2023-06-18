@@ -4,16 +4,14 @@
 
 .navButton {
   background-size: 600%;
-  @apply my-1 flex transform items-center rounded-xl px-2 align-middle font-victormono text-xl font-semibold hover:bg-fuchsia-800/10
-  text-gray-700 transition-all duration-300 md:my-0;
+  @apply my-1 flex transform items-center rounded-xl px-2 py-1 align-middle font-victormono text-xl font-semibold hover:bg-fuchsia-800/10 justify-center
+  text-gray-700 transition-all duration-300 lg:my-0;
 }
 .dark-mode-label {
   @apply relative flex items-center text-xl;
 }
 body {
   @apply w-full bg-white font-inter transition-all duration-300 dark:bg-gray-800;
-  overflow: overlay;
-  overflow-x: hidden;
 }
 
 *::-webkit-scrollbar {

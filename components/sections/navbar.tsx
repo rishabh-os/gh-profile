@@ -2,6 +2,7 @@ import { useState } from "react";
 import useDarkMode from "../useDarkMode";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useMotionValueEvent, useScroll } from "framer-motion";
+import { PageProgress } from "../PageProgress";
 
 const Navbar = () => {
   const { scrollYProgress } = useScroll();
@@ -25,10 +26,11 @@ const Navbar = () => {
     <nav
       className={`hero fixed top-0 z-50 w-full transition-shadow duration-1000 ${topshadow}`}
     >
-      <div className=" px-2 py-2 md:flex md:justify-end">
+      <PageProgress />
+      <div className=" px-2 py-2 lg:flex lg:justify-end">
         <div className="flex flex-row">
           <DarkModeSwitch
-            className="ml-auto mt-1 md:mt-[14px]"
+            className="ml-auto mt-1 lg:mt-[14px]"
             sunColor="white"
             moonColor="black"
             onChange={(e) => toggleDarkModeButton(e)}
@@ -36,7 +38,7 @@ const Navbar = () => {
             checked={isDark}
           />
           {/* <!-- Mobile menu button --> */}
-          <div className="scale-75 focus:outline-none md:hidden ">
+          <div className="scale-75 focus:outline-none lg:hidden ">
             <button
               className="group flex h-10 w-10 flex-col items-center rounded"
               onClick={toggleMenu}
@@ -59,8 +61,8 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div className={` ml-2  ${menuOpen} md:h-fit`}>
-          <div className="md:space-x- flex flex-col md:mx-2 md:flex-row">
+        <div className={` ml-2  ${menuOpen} flex justify-center lg:h-fit`}>
+          <div className="flex flex-col lg:mx-2 lg:flex-row">
             <a className="navButton" href="#" onClick={toggleMenu}>
               Home
             </a>
@@ -83,7 +85,7 @@ const Navbar = () => {
             <a href="#Contact" onClick={toggleMenu}>
               <button
                 className="group my-1 mr-2 w-40 items-center justify-center overflow-hidden whitespace-nowrap rounded-lg
-                bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-white  hover:text-black dark:text-white md:ml-2"
+                bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-white  hover:text-black dark:text-white lg:ml-2"
               >
                 <span
                   className="relative inline-flex w-full items-center justify-center rounded-md px-5 py-2.5 font-inter text-lg font-bold transition-all
