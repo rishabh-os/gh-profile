@@ -13,7 +13,8 @@ const Home: NextPage = () => {
   const month = date.toLocaleString("default", { month: "long" });
   const displayDate = month + " " + date.getFullYear().toString();
   return (
-    <div>
+    // ? This gets rid of the horizontal scrollbar in animations
+    <div className="overflow-clip">
       <Navbar />
 
       <section className="fade-bottom hero relative flex h-[47vh] items-center justify-center ">

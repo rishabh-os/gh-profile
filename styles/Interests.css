@@ -32,7 +32,7 @@ transition-delay: 200ms;
     }
 
     .anim:nth-child(3) {
-        transition-delay: 00ms;
+        transition-delay: 0ms;
     }
 
     .anim:nth-child(4) {
