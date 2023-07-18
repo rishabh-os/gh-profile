@@ -17,7 +17,7 @@ function SkillBadge({ icon, img_dim, name, classNames, exp }: Props) {
   return (
     <motion.div
       ref={ref}
-      className="mb-2"
+      className="mb-2 font-inter"
       style={{
         scale: isInView ? 1 : 2,
         opacity: isInView ? 1 : 0,
@@ -26,7 +26,7 @@ function SkillBadge({ icon, img_dim, name, classNames, exp }: Props) {
     >
       <button type="button" className={buttonClasses + classNames} disabled>
         <Image src={icon} alt="Skill image" width={img_dim} />
-        <p className=" prose ml-2 font-bold text-white">{name}</p>
+        <p className=" prose ml-2 font-[500] text-white">{name}</p>
       </button>
       {exp > 0 && (
         <p className="prose text-center dark:prose-invert">{exp} years</p>

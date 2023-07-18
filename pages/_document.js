@@ -46,10 +46,10 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link
+          {/* <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@300&display=swap"
             rel="stylesheet"
-          />
+          /> */}
           <link
             href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css"
             rel="stylesheet"

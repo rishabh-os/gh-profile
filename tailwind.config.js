@@ -8,9 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         victormono: ["Victor Mono", "monospace"],
-        manrope: ["Manrope", "sans-serif"],
-        inter: ["Inter", "sans-serif"],
-        pinyon: ["Pinyon Script", "cursive"],
+        manrope: ["var(--font-manrope)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
+        pinyon: ["var(--font-pinyon)", "cursive"],
       },
     },
   },

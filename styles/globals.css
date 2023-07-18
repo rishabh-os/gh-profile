@@ -11,7 +11,7 @@
   @apply relative flex items-center text-xl;
 }
 body {
-  @apply w-full bg-white font-inter transition-all duration-300 dark:bg-gray-800;
+  @apply w-full bg-white transition-all duration-300 dark:bg-gray-800;
 }
 
 *::-webkit-scrollbar {
@@ -65,13 +65,12 @@ html {
 }
 
 .contact-label {
-  @apply prose mb-1 block text-base font-bold dark:prose-invert md:col-span-1;
+  @apply prose mb-1 block text-base font-[500] font-inter dark:prose-invert md:col-span-1;
 }
 .contact-input {
-  @apply mb-2 block w-full rounded-lg border-2 border-gray-400 bg-gray-50 text-sm
-  text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400
-md:col-span-7;
+  @apply mb-2 block w-full font-inter rounded-lg border-2 border-gray-400 bg-gray-50 text-sm
+  text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 md:col-span-7;
 }
 .txt {
-  @apply prose mx-auto py-4 px-4 text-center dark:prose-invert md:px-0;
+  @apply prose font-inter mx-auto py-4 px-4 text-center dark:prose-invert md:px-0;
 }

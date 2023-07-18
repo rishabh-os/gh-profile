@@ -71,7 +71,7 @@ const Contact = () => {
       <p className="txt -my-5">
         Here are some links to my accounts across the Internet:
       </p>
-      <p className="prose mx-auto py-4 px-4 dark:prose-invert"></p>
+      <p className="prose mx-auto px-4 py-4 dark:prose-invert"></p>
       <div className="flex items-center justify-center space-x-4">
         <div className="rounded-full border-2 bg-white">
           <SocialIcon
@@ -96,7 +96,7 @@ const Contact = () => {
         onSubmit={handleSubmit}
         className="mx-auto w-11/12 grid-cols-8 grid-rows-4 content-center items-center justify-center object-center text-left md:grid md:w-[45rem]"
       >
-        <label htmlFor="form_name" className="contact-label ">
+        <label htmlFor="form_name" className="contact-label">
           Name
         </label>
 
@@ -109,7 +109,7 @@ const Contact = () => {
           onChange={(e) => setName(e.target.value)}
           value={name}
         />
-        <label htmlFor="form_email" className="contact-label ">
+        <label htmlFor="form_email" className="contact-label">
           Email ID
         </label>
         <input
@@ -121,7 +121,7 @@ const Contact = () => {
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
-        <label htmlFor="form_message" className="contact-label ">
+        <label htmlFor="form_message" className="contact-label">
           Message
         </label>
         <textarea
@@ -134,7 +134,7 @@ const Contact = () => {
           type="submit"
           className="group col-span-2 col-start-4 mx-auto my-4 flex rounded-lg bg-gradient-to-br from-green-400 to-blue-600 object-center p-0.5           text-center text-sm font-medium text-gray-900 hover:text-white group-hover:from-green-400 group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800"
         >
-          <span className="w-full rounded-md bg-white px-5 py-2.5 font-bold uppercase tracking-wider transition-all duration-150 ease-in group-hover:bg-opacity-0 dark:bg-gray-800">
+          <span className="w-full rounded-md bg-white px-5 py-2.5 font-inter font-bold uppercase tracking-widest transition-all duration-150 ease-in group-hover:bg-opacity-0 dark:bg-gray-800">
             Send
           </span>
         </button>

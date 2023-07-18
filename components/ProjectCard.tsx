@@ -58,7 +58,7 @@ const ProjectCard = (
             {title}
           </h4>
 
-          <p className="mb-3 h-20 max-w-fit overflow-hidden font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 h-20 max-w-fit overflow-hidden font-inter text-gray-700 dark:text-gray-400">
             {description}
           </p>
           {typeof link === "string" ? (
