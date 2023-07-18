@@ -1,5 +1,5 @@
 import Image from "next/image";
-const pp = require("../../assets/PXL_20220111_082227181.jpg");
+import pp from "../../assets/PXL_20220111_082227181.jpg";
 
 const AboutMe = () => {
   return (
