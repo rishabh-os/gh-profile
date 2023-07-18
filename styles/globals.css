@@ -79,3 +79,4 @@ html {
 .click-button {
   @apply inline-flex items-center rounded-lg bg-[#23a6d5] px-3 py-2 text-center text-sm font-medium font-inter text-gray-800 transition-all hover:bg-[#219DCA] focus:ring-4 focus:ring-[#219DCA]
 }
+/* The above shade was found by lowering lightness until it no longer met AA contrast standards */
