@@ -40,6 +40,7 @@ const Navbar = () => {
           {/* <!-- Mobile menu button --> */}
           <div className="scale-75 focus:outline-none lg:hidden ">
             <button
+            aria-label="Expand menu button"
               className="group flex h-10 w-10 flex-col items-center rounded"
               onClick={toggleMenu}
             >

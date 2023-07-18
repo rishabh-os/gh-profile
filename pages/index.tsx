@@ -1,6 +1,6 @@
 import { PageProgress } from "./../components/PageProgress";
 import type { NextPage } from "next";
-import Navbar from "../components/sections/navbar";
+import Navbar from "../components/sections/Navigation";
 import AboutMe from "../components/sections/AboutMe";
 import Experience from "../components/sections/Experience";
 import Skills from "../components/sections/Skills";
@@ -21,15 +21,21 @@ const Home: NextPage = () => {
         <motion.div
           initial="hidden"
           animate="visible"
+
           variants={{
             hidden: {
-              scale: 0.8,
+              scale: 0.5,
               opacity: 0,
             },
             visible: {
               scale: 1,
               opacity: 1,
               transition: {
+               type: "spring",
+               bounce: 1,
+               stiffness: 100,
+               damping: 10,
+               restSpeed: 0.5,
                 delay: 0.5,
                 duration: 1,
               },
