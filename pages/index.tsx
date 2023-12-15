@@ -1,4 +1,3 @@
-import { PageProgress } from "./../components/PageProgress";
 import type { NextPage } from "next";
 import Navbar from "../components/sections/Navigation";
 import AboutMe from "../components/sections/AboutMe";
@@ -9,7 +8,7 @@ import Contact from "../components/sections/Contact";
 import { motion } from "framer-motion";
 import Parallax from "../components/Parallax";
 const Home: NextPage = () => {
-  const date = new Date();
+  const date = new Date(process.env.NEXT_PUBLIC_LASTMOD ?? "2023-12-01");
   const month = date.toLocaleString("default", { month: "long" });
   const displayDate = month + " " + date.getFullYear().toString();
   return (
