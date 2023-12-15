@@ -21,7 +21,6 @@ const Home: NextPage = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-
           variants={{
             hidden: {
               scale: 0.5,
@@ -31,11 +30,11 @@ const Home: NextPage = () => {
               scale: 1,
               opacity: 1,
               transition: {
-               type: "spring",
-               bounce: 1,
-               stiffness: 100,
-               damping: 10,
-               restSpeed: 0.5,
+                type: "spring",
+                bounce: 1,
+                stiffness: 100,
+                damping: 10,
+                restSpeed: 0.5,
                 delay: 0.5,
                 duration: 1,
               },

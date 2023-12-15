@@ -45,11 +45,18 @@ const Experience = () => {
         <div className="h-fit flex-col content-center items-center justify-center md:flex">
           <h2 className="sectionheading sm:mx-0">Work Experience</h2>
           <ol className="line">
-            {ExpInfo(
-              "June 2022 - Current",
-              "Associate Solution Advisor, Deloitte",
-              "Engaged in thorough analysis and validation of financial models for banks. Conducted assessments, used statistical methods, and collaborated with teams to improve accuracy and performance."
-            )}
+            {[
+              ExpInfo(
+                "September 2023 - Current",
+                "Data Scientist, Foundazione Bruno Kessler, Italy",
+                "Working with large scale state of the art deep learning models for analyzing time series data to enable precise predictions."
+              ),
+              ExpInfo(
+                "June 2022 - June 2023",
+                "Associate Solution Advisor, Deloitte, India",
+                "Engaged in thorough analysis and validation of financial models for banks. Conducted assessments, used statistical methods, and collaborated with teams to improve accuracy and performance."
+              ),
+            ]}
           </ol>
         </div>
       </section>
@@ -102,7 +109,7 @@ const Experience = () => {
               ),
               ExpInfo(
                 "May 2018 - July 2018",
-                "N-Body Simulations and Analysis, under Najam Hassan, University of Osmania",
+                "N-Body Simulations and Analysis, under Najam Hassan, University of Osmania, Hyderabad",
                 "Stellar interaction modeling in clusters was performed through simulations using Python and Fortran with Sverre Aarseth's highly regarded n-body simulation programs."
               ),
             ]}

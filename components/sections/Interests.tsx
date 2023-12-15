@@ -6,6 +6,7 @@ import temtem from "../../assets/temtem_preview.jpg";
 import flowchart from "../../assets/flowchart.png";
 import ProjectCard from "../ProjectCard";
 import FlowchartDetails from "./FlowchartDetails";
+import nowcasting from "../../assets/nowcasting-fbk.png";
 
 const Interests = () => {
   return (
@@ -19,11 +20,18 @@ const Interests = () => {
         <br />I also happen to be a Linux and FOSS enthusiast.
         <div className="font-pinyon text-3xl tracking-wide">I use Arch BTW</div>
       </div>
-      <h3 className="txt ">
-        Here are some of my personal projects that I have worked on.
+      <h3 className="txt">
+        Here are some of the projects that I have worked on.
       </h3>
       <div className="flex flex-col flex-wrap items-center justify-center md:flex-row xl:mx-auto xl:max-w-7xl">
         {/* //? The xl: arguments limit the items to 3 columns on larger displays */}
+        {ProjectCard(
+          "https://nowcasting.fbk.eu/",
+          "Website",
+          nowcasting,
+          "Nowcasting FBK",
+          "A web app to accurately predict the next hour of weather all across Italy."
+        )}
         {ProjectCard(
           <FlowchartDetails />,
           "More Info",
