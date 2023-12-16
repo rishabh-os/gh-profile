@@ -4,10 +4,6 @@ const withPWA = require("next-pwa")({
   skipWaiting: true,
   disable: process.env.NODE_ENV === "development",
 });
-const nextConfig = withPWA({
-  images: {
-    domains: ["img.shields.io"],
-  },
-});
+const nextConfig = withPWA({});
 
 module.exports = nextConfig;
