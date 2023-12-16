@@ -4,7 +4,7 @@
 
 .navButton {
   background-size: 600%;
-  @apply my-1 flex transform items-center rounded-xl px-2 py-1 align-middle font-victormono text-xl font-semibold hover:bg-fuchsia-800/10 justify-center
+  @apply my-1 flex transform items-center rounded-xl px-2 py-1 align-middle font-victormono text-xl font-semibold hover:bg-white/20 justify-center
   text-gray-800 transition-all duration-300 lg:my-0;
 }
 .dark-mode-label {

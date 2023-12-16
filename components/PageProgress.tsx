@@ -15,7 +15,7 @@ export function PageProgress({}) {
   return (
     <div className="fixed left-4 top-2 z-[100] h-10 w-10 lg:top-4 ">
       <svg
-        className="progress-icon aspect-square stroke-gray-800/80"
+        className="progress-icon aspect-square stroke-gray-800"
         viewBox="0 0 50 50"
       >
         <motion.path

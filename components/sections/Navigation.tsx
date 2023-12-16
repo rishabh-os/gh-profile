@@ -9,7 +9,7 @@ const Navbar = () => {
   const [topshadow, setTopshadow] = useState("");
   const [menuOpen, setMenuOpen] = useState("h-0 overflow-hidden");
   const [, setTheme] = useDarkMode();
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 bg-gray-800`;
   function toggleMenu() {
     setMenuOpen(menuOpen == "h-fit" ? "h-0 overflow-hidden" : "h-fit");
   }
@@ -30,9 +30,10 @@ const Navbar = () => {
       <div className=" px-2 py-2 lg:flex lg:justify-end">
         <div className="flex flex-row">
           <DarkModeSwitch
-            className="ml-auto mt-1 lg:mt-[14px]"
+            // ? stroke-none gets rid of the weird outline in the moon
+            className="ml-auto mt-1 lg:mt-[14px] stroke-none"
             sunColor="white"
-            moonColor="black"
+            moonColor="#1f2937"
             onChange={(e) => toggleDarkModeButton(e)}
             size={30}
             checked={isDark}
@@ -40,7 +41,7 @@ const Navbar = () => {
           {/* <!-- Mobile menu button --> */}
           <div className="scale-75 focus:outline-none lg:hidden ">
             <button
-            aria-label="Expand menu button"
+              aria-label="Expand menu button"
               className="group flex h-10 w-10 flex-col items-center rounded"
               onClick={toggleMenu}
             >
@@ -86,10 +87,10 @@ const Navbar = () => {
             <a href="#Contact" onClick={toggleMenu}>
               <button
                 className="group my-1 mr-2 w-40 items-center justify-center overflow-hidden whitespace-nowrap rounded-lg
-                bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-white  hover:text-black dark:text-white lg:ml-2"
+                bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-white hover:text-black dark:text-white lg:ml-2"
               >
                 <span
-                  className="relative inline-flex w-full items-center justify-center rounded-md px-5 py-2.5 font-inter text-lg font-bold tracking-wide transition-all
+                  className="relative inline-flex w-full items-center justify-center rounded-md px-5 py-2.5 font-manrope text-lg font-bold tracking-wider transition-all
                  duration-150 ease-in group-hover:bg-gray-200 group-hover:bg-opacity-100 dark:group-hover:bg-gray-800"
                 >
                   Contact me!
