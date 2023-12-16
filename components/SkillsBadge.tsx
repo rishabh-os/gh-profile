@@ -25,7 +25,7 @@ function SkillBadge({ icon, name, classNames, exp }: SkillProps) {
     >
       <button type="button" className={buttonClasses + classNames} disabled>
         {/* //? You can set the width directly but doing it through CSS is better */}
-        <Image src={icon} alt="Skill image" className="w-6" />
+        <Image src={icon} alt="Skill image" className="max-w-[28px] max-h-7" />
         <p className="prose ml-2 font-[500] text-white">{name}</p>
       </button>
       {exp > 0 && (
