@@ -55,13 +55,13 @@ const Skills = () => {
         <h3 className="subsectionheading">App Development</h3>
         <div className="badge-arrange">
           <SkillBadge
-            classNames="bg-gradient-to-r from-blue-500 to-sky-400 shadow-blue-600"
+            classNames="bg-gradient-to-r from-blue-500 to-sky-400 shadow-blue-400"
             icon={flutter}
             name="Flutter"
             exp={3}
           />
           <SkillBadge
-            classNames="bg-gradient-to-r from-blue-500 to-sky-400 shadow-blue-600"
+            classNames="bg-gradient-to-r from-blue-500 to-sky-400 shadow-blue-400"
             icon={dart}
             name="Dart"
             exp={3}
@@ -82,7 +82,7 @@ const Skills = () => {
             exp={3}
           />
           <SkillBadge
-            classNames="bg-gradient-to-r from-green-700 to-green-600 shadow-green-600"
+            classNames="bg-gradient-to-r from-green-700 to-green-600 shadow-green-500"
             icon={mongo}
             name="MongoDB"
             exp={1}
