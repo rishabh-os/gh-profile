@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-interface Props {
+interface SkillProps {
   icon: any;
   name: string;
   classNames: string;
   exp: number;
 }
-function SkillBadge({ icon, name, classNames, exp }: Props) {
+function SkillBadge({ icon, name, classNames, exp }: SkillProps) {
   const buttonClasses =
     "m-4 flex h-12 w-40 content-center items-center justify-center rounded-lg px-2 py-2.5 text-center shadow-lg ";
 

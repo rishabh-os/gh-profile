@@ -5,7 +5,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { useState } from "react";
-export function PageProgress({}) {
+export function PageProgress() {
   const { scrollYProgress } = useScroll();
   const [isComplete, setIsComplete] = useState(false);
   const yRange = useTransform(scrollYProgress, [0, 0.95], [0, 1]);

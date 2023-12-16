@@ -2,14 +2,21 @@ import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Image from "next/image";
 import { confirmAlert } from "react-confirm-alert";
 import { useEffect } from "react";
-
-function ProjectCard(
-  link: string | JSX.Element,
-  linktext: string,
-  img: any,
-  title: string,
-  description: string
-) {
+// ? Need to define interface so that I can use it as a JSX element
+interface ProjectProps {
+  link: string | JSX.Element;
+  linktext: string;
+  img: any;
+  title: string;
+  description: string;
+}
+function ProjectCard({
+  link,
+  linktext,
+  img,
+  title,
+  description,
+}: ProjectProps) {
   function submit() {
     confirmAlert({
       customUI: ({ onClose }) => {
@@ -46,8 +53,8 @@ function ProjectCard(
   });
   return (
     <div className="anim max-w-sm">
-      <div className="mx-4 my-4 rounded-lg border border-gray-200 bg-white px-2 py-2 shadow-lg dark:border-gray-700 dark:bg-gray-800">
-        <div className="mx-auto h-auto max-h-60 w-80 overflow-clip rounded-xl ">
+      <div className="mx-4 my-4 rounded-xl border border-gray-200 bg-white px-2 py-2 shadow-lg dark:border-gray-700 dark:bg-gray-800">
+        <div className="mx-auto h-auto max-h-60 w-80 overflow-clip rounded-xl mt-[7px]">
           <Image src={img} alt="Project Picture"></Image>
         </div>
         <div className="p-5">
