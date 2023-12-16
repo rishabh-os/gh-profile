@@ -23,7 +23,7 @@
   @apply prose prose-slate text-base font-normal dark:prose-invert;
 }
 .animate-explist{
-  @apply !opacity-100 !translate-x-0
+  @apply !opacity-100 !translate-x-0 -translate-y-1
   /* ? Not sure why the !important symbol is required here */
 }
 
