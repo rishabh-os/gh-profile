@@ -48,7 +48,7 @@ const Experience = () => {
             {[
               ExpInfo(
                 "September 2023 - Current",
-                "Data Scientist, Foundazione Bruno Kessler, Italy",
+                "Data Scientist, Fondazione Bruno Kessler, Italy",
                 "Working with large scale state of the art deep learning models for analyzing time series data to enable precise predictions."
               ),
               ExpInfo(

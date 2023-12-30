@@ -21,7 +21,7 @@ const AboutMe = () => {
         </div>
         <p className="txt">
           Hi, my name&apos;s Rishabh Wanjari. I completed my BS-MS at IISER,
-          Pune. I currently work at FBK, Italy.
+          Pune. I currently work at Fondazione Bruno Kessler, Italy.
           <br />
           And no, I&apos;m still not over my college life ending.
         </p>
