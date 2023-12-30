@@ -40,7 +40,7 @@ const Experience = () => {
   }
 
   return (
-    <div className="mx-auto max-w-[38rem]">
+    <div className="mx-auto max-w-2xl">
       <section id="Work Experience">
         <div className="h-fit flex-col content-center items-center justify-center md:flex">
           <h2 className="sectionheading sm:mx-0">Work Experience</h2>
@@ -101,7 +101,7 @@ const Experience = () => {
               ),
               ExpInfo(
                 "December 2019 - June 2020",
-                "Applicaitions of Machine Learning in quantum Information, under T. S. Mahesh, IISER, Pune",
+                "Applicaitions of Machine Learning in Quantum Information, under T. S. Mahesh, IISER, Pune",
                 "A multi-qubit system was simulated to gain greater insight into the practical value of quantum discord and other quantum correlations, utilizing a Restricted Boltzmann machine."
               ),
               ExpInfo(
