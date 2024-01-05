@@ -19,7 +19,7 @@ const Skills = () => {
     <section id="Skills">
       <h2 className="sectionheading">Skills</h2>
       <div className="-mt-5">
-        <h3 className="subsectionheading ">Machine Learning</h3>
+        <h3 className="subsectionheading">Machine Learning</h3>
         <div className="badge-arrange">
           <SkillBadge
             classNames="bg-gradient-to-r from-sky-500 to-sky-400 shadow-sky-500"

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { HiArrowRight, HiDocumentText, HiDownload } from "react-icons/hi";
 import { SocialIcon } from "react-social-icons";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

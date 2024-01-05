@@ -54,12 +54,9 @@ const Home: NextPage = () => {
       </Parallax>
 
       <Interests />
-
       <Experience />
-      <section id="Projects">
-        <div className="divider"></div>
-      </section>
       <Skills />
+
       <Contact />
       <footer className="footer flex justify-center bg-gray-700 p-4 text-center text-white">
         <p>
