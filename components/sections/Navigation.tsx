@@ -88,7 +88,7 @@ const Navbar = () => {
               >
                 <span
                   className="relative inline-flex w-full items-center justify-center rounded-md px-5 py-2.5 font-manrope text-lg font-bold tracking-wider transition-all
-                 duration-150 ease-in group-hover:bg-gray-200 group-hover:bg-opacity-100 dark:group-hover:bg-gray-800"
+                 duration-150 ease-in group-hover:bg-gray-200 group-hover:bg-opacity-100 dark:group-hover:bg-gray-800 dark:group-hover:text-white"
                 >
                   Contact me!
                 </span>
