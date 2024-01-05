@@ -77,9 +77,6 @@ const Navbar = () => {
             <a className="navButton" href="#Experience" onClick={toggleMenu}>
               Experience
             </a>
-            <a className="navButton" href="#Education" onClick={toggleMenu}>
-              Education
-            </a>
             <a className="navButton" href="#Skills" onClick={toggleMenu}>
               Skills
             </a>
