@@ -7,6 +7,7 @@ import flowchart from "../../assets/flowchart.png";
 import ProjectCard from "../ProjectCard";
 import FlowchartDetails from "./FlowchartDetails";
 import nowcasting from "../../assets/nowcasting-fbk.png";
+import moniz from "../../assets/moniz.png";
 
 const Interests = () => {
   return (
@@ -32,7 +33,13 @@ const Interests = () => {
           title="Nowcasting FBK"
           description="A web app to accurately predict the next hour of weather all across Italy."
         />
-
+        <ProjectCard
+          link="https://github.com/rishabh-os/moniz"
+          linktext="GitHub"
+          img={moniz}
+          title="Moniz"
+          description="An app to manage and keep track of your expenses."
+        />
         <ProjectCard
           link={<FlowchartDetails />}
           linktext="More Info"
