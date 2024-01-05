@@ -87,10 +87,12 @@ export function ExpInfo({
                     transition: {
                       height: {
                         duration: 0.4,
+                        ease: "circInOut",
                       },
                       opacity: {
-                        duration: 0.25,
+                        duration: 0.4,
                         delay: 0.15,
+                        ease: "circInOut",
                       },
                     },
                   }
@@ -100,14 +102,17 @@ export function ExpInfo({
                     transition: {
                       height: {
                         duration: 0.4,
+                        ease: "circInOut",
                       },
                       opacity: {
-                        duration: 0.25,
+                        duration: 0.4,
+                        delay: -0.15,
+                        ease: "circInOut",
                       },
                     },
-                    // transitionEnd: {
-                    //   display: "none",
-                    // },
+                    transitionEnd: {
+                      display: "none",
+                    },
                   }
             }
           >
