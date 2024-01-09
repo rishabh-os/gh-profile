@@ -1,18 +1,19 @@
 import SkillBadge from "../SkillsBadge";
-import python from "../../assets/logos/Python-logo-notext.svg";
+import python from "../../assets/logos/python.svg";
 import flutter from "../../assets/logos/flutter.svg";
 import dart from "../../assets/logos/dart.svg";
-import tf from "../../assets/logos/TF_White_Icon.svg";
-import pytorch from "../../assets/logos/PyTorch_logo_icon.svg";
-import plotly from "../../assets/logos/logo-plotly.svg";
-import vue from "../../assets/logos/Vue.js_Logo_2.svg";
-import react from "../../assets/logos/React.svg";
-import sklearn from "../../assets/logos/scikit-learn-logo.svg";
-import mongo from "../../assets/logos/MongoDB_Logomark_White.svg";
-import aws from "../../assets/logos/Amazon_Web_Services_Logo.svg";
-import tailwind from "../../assets/logos/tailwindcss-mark.svg";
+import tf from "../../assets/logos/tensorflow.svg";
+import pytorch from "../../assets/logos/pytorch.svg";
+import plotly from "../../assets/logos/plotly.svg";
+import vue from "../../assets/logos/vue.svg";
+import react from "../../assets/logos/react.svg";
+import sklearn from "../../assets/logos/scikit-learn.svg";
+import mongo from "../../assets/logos/mongodb.svg";
+import aws from "../../assets/logos/aws.svg";
+import tailwind from "../../assets/logos/tailwindcss.svg";
 import julia from "../../assets/logos/julia.svg";
-import rust from "../../assets/logos/rust-logo.svg";
+import rust from "../../assets/logos/rust.svg";
+import astro from "../../assets/logos/astro.svg";
 
 const Skills = () => {
   return (
@@ -80,6 +81,12 @@ const Skills = () => {
             icon={react}
             name="React.js"
             exp={3}
+          />
+          <SkillBadge
+            classNames="bg-gradient-to-r from-[#E03871] to-[#EE40EE] shadow-purple-500"
+            icon={astro}
+            name="Astro"
+            exp={1}
           />
           <SkillBadge
             classNames="bg-gradient-to-r from-green-700 to-green-600 shadow-green-500"

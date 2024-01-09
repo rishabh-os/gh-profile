@@ -26,6 +26,3 @@ And installable as a PWA! (if you choose to do so)
     ```bash
     yarn build
     ```
-
-## TODO
-- Add more details to experience and make it collapsible
