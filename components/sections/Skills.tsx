@@ -83,7 +83,7 @@ const Skills = () => {
             exp={3}
           />
           <SkillBadge
-            classNames="bg-gradient-to-r from-[#E03871] to-[#EE40EE] shadow-purple-500"
+            classNames="bg-gradient-to-r from-[#E03871] to-[#EE40EE] shadow-pink-500"
             icon={astro}
             name="Astro"
             exp={1}
