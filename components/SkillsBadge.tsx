@@ -20,7 +20,7 @@ function SkillBadge({ icon, name, classNames, exp }: SkillProps) {
       style={{
         scale: isInView ? 1 : 2,
         opacity: isInView ? 1 : 0,
-        transition: "all 1.5s cubic-bezier(0.05, 0.7, 0.1, 1.0) 0.4s",
+        transition: "all 1.5s cubic-bezier(0.05, 0.7, 0.1, 1.0) 0.6s",
       }}
     >
       <button type="button" className={buttonClasses + classNames} disabled>

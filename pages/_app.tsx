@@ -5,7 +5,7 @@ import "../styles/Interests.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
-import { Inter, Manrope, Pinyon_Script } from "next/font/google";
+import { Inter, Manrope, Pinyon_Script, Victor_Mono } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,13 +29,12 @@ const pinyon = Pinyon_Script({
   variable: "--font-pinyon",
 });
 
-// ? Present in Google Fonts but not in next/font/google
-// const victormono = Pinyon_Script({
-//   subsets: ["latin"],
-//   display: "swap",
-//   weight: "400",
-//   variable: "--font-victormono",
-// });
+const victormono = Victor_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+  variable: "--font-victormono",
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   const AnyComponent = Component as any;
@@ -49,7 +48,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <main
-        className={`${inter.variable} ${manrope.variable} ${pinyon.variable}`}
+        className={`${inter.variable} ${manrope.variable} ${pinyon.variable} ${victormono.variable}`}
       >
         <AnyComponent {...pageProps} />
       </main>
