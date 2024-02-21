@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { ReactNode, useState } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";

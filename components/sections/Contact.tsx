@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import { ToastContainer, toast } from "react-toastify";

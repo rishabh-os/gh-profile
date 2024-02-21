@@ -5,8 +5,8 @@ import Experience from "../components/sections/Experience";
 import Skills from "../components/sections/Skills";
 import Interests from "../components/sections/Interests";
 import Contact from "../components/sections/Contact";
-import { motion } from "framer-motion";
 import Parallax from "../components/Parallax";
+import MotionDiv from "../components/MotionDiv";
 const Home: NextPage = () => {
   const date = new Date(process.env.NEXT_PUBLIC_LASTMOD ?? "2023-12-01");
   const month = date.toLocaleString("default", { month: "long" });
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Navbar />
 
       <section className="fade-bottom hero relative flex h-[47vh] items-center justify-center ">
-        <motion.div
+        <MotionDiv
           initial="hidden"
           animate="visible"
           variants={{
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
             <br />
             website!
           </h1>
-        </motion.div>
+        </MotionDiv>
       </section>
       <div className="layer1"></div>
 

@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+"use client";
+import { useEffect } from "react";
 import { HiArrowRight, HiDocumentText, HiChartSquareBar } from "react-icons/hi";
 import { ExpInfo } from "../ExpInfo";
 const Experience = () => {
@@ -9,10 +10,6 @@ const Experience = () => {
           if (entry.isIntersecting) {
             entry.target.classList.add("animate-explist");
           }
-          // ? Use this part if you want to redo the animation each time instead of only once
-          // else {
-          //   entry.target.classList.remove("animate-explist");
-          // }
         });
       });
       const expElements = document.querySelectorAll(".animated");

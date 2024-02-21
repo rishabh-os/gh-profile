@@ -2,8 +2,6 @@ import "../styles/globals.css";
 import "../styles/Experience.css";
 import "../styles/Popup.css";
 import "../styles/Interests.css";
-import type { AppProps } from "next/app";
-import Head from "next/head";
 
 import { Inter, Manrope, Pinyon_Script, Victor_Mono } from "next/font/google";
 
@@ -36,24 +34,47 @@ const victormono = Victor_Mono({
   variable: "--font-victormono",
 });
 
-function MyApp({ Component, pageProps }: AppProps) {
-  const AnyComponent = Component as any;
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <>
-      <Head>
-        <title>Rishabh&apos;s Profile</title>
-        <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=10"
-        />
-      </Head>
-      <main
+    <html lang="en">
+      <body
         className={`${inter.variable} ${manrope.variable} ${pinyon.variable} ${victormono.variable}`}
       >
-        <AnyComponent {...pageProps} />
-      </main>
-    </>
+        {children}
+      </body>
+    </html>
   );
 }
 
-export default MyApp;
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Rishabh's Profile",
+  description: "Welcome to Next.js",
+  metadataBase: new URL("https://gh-profile-rishabh-os.vercel.app"),
+  manifest: "/site.webmanifest",
+  twitter: {
+    card: "summary_large_image",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/website.png",
+      },
+    ],
+  },
+};
+
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 10,
+  themeColor: "#23a6d5",
+};

@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import useDarkMode from "../useDarkMode";
 import { DarkModeSwitch } from "react-toggle-dark-mode";

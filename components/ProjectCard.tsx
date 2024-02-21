@@ -1,3 +1,5 @@
+"use client";
+
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Image from "next/image";
 import { confirmAlert } from "react-confirm-alert";
