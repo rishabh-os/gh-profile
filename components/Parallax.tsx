@@ -32,8 +32,7 @@ const Parallax = ({ children, offset = 120 }: ParallaxProps): JSX.Element => {
     const onResize = () => {
       setElementTop(
         //@ts-ignore
-        element.getBoundingClientRect().top + window.scrollY ||
-          window.pageYOffset
+        element.getBoundingClientRect().top + window.scrollY || window.scrollY
       );
       setClientHeight(window.innerHeight);
     };

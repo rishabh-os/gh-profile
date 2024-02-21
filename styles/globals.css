@@ -36,7 +36,6 @@ body {
 }
 .hero {
   @apply bg-[#23a6d5];
-
 }
 
 .layer1 {
@@ -77,6 +76,6 @@ html {
 }
 
 .click-button {
-  @apply inline-flex items-center rounded-lg border-2 border-[#23a6d5] px-3 py-2 text-center text-sm font-medium font-inter text-[#23a6d5] transition-all hover:bg-[#23a6d5] hover:text-white
+  @apply inline-flex items-center rounded-lg border-2 border-[#23a6d5] px-3 py-2 text-center text-sm font-medium font-inter text-[#23a6d5] transition-all hover:bg-[#23a6d5] hover:text-white;
 }
 /* The above shade was found by lowering lightness until it no longer met AA contrast standards */

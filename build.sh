@@ -3,4 +3,4 @@
 
 DATE_WITH_TIME=`date "+%Y-%m-%d"`
 
-NEXT_PUBLIC_LASTMOD=$DATE_WITH_TIME next build
+NEXT_PUBLIC_LASTMOD=$DATE_WITH_TIME yarn next build

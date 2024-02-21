@@ -10,23 +10,17 @@
   },
   "dependencies": {
     "@types/react-modal": "^3.16.3",
-    "flowbite": "^2.3.0",
     "framer-motion": "^11.0.5",
-    "gradient-path": "^2.3.0",
     "next": "^14.1.0",
     "next-pwa": "^5.6.0",
     "react": "^18.2.0",
     "react-confirm-alert": "^3.0.6",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
-    "react-modal": "^3.16.1",
-    "react-social-badge": "^1.0.6",
     "react-social-icons": "^6.14.0",
     "react-toastify": "^10.0.4",
     "react-toggle-dark-mode": "^1.1.1",
-    "rodal": "^2.1.0",
     "sharp": "^0.33.2",
-    "simplebar-react": "^3.2.4",
     "victormono": "^1.5.6"
   },
   "devDependencies": {
@@ -43,5 +37,5 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.1.0"
 }
