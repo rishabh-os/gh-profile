@@ -15,12 +15,15 @@
   .anim:nth-child(3) {
     transition-delay: 400ms;
   }
+
   .anim:nth-child(4) {
     transition-delay: 0ms;
   }
+
   .anim:nth-child(5) {
     transition-delay: 200ms;
   }
+
   .anim:nth-child(6) {
     transition-delay: 400ms;
   }
