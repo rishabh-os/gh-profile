@@ -3,6 +3,7 @@ import "../styles/Experience.css";
 import "../styles/Popup.css";
 import "../styles/Interests.css";
 
+import type { Metadata, Viewport } from "next";
 import { Inter, Manrope, Pinyon_Script, Victor_Mono } from "next/font/google";
 
 const inter = Inter({
@@ -50,11 +51,9 @@ export default function RootLayout({
 	);
 }
 
-import type { Metadata } from "next";
-
 export const metadata: Metadata = {
 	title: "Rishabh's Profile",
-	description: "Welcome to Next.js",
+	description: "My personal profile on the web!",
 	metadataBase: new URL("https://gh-profile-rishabh-os.vercel.app"),
 	manifest: "/site.webmanifest",
 	twitter: {
@@ -68,8 +67,6 @@ export const metadata: Metadata = {
 		],
 	},
 };
-
-import type { Viewport } from "next";
 
 export const viewport: Viewport = {
 	width: "device-width",
