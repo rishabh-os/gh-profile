@@ -40,7 +40,7 @@ const Home: NextPage = () => {
 						},
 					}}
 				>
-					<h1 className="mx-2 mt-48 justify-center text-center font-victormono text-7xl font-bold text-gray-800">
+					<h1 className="mx-2 mt-48 justify-center text-center font-victormono text-7xl font-bold text-slate-800">
 						Welcome to my
 						<br />
 						website!

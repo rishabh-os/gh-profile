@@ -23,7 +23,7 @@ function ProjectCard({
 		confirmAlert({
 			customUI: ({ onClose }) => {
 				return (
-					<div className="mx-4 my-4 max-h-screen min-w-min max-w-3xl overflow-y-scroll rounded-lg border-gray-200 bg-white px-2 py-2 dark:border-gray-700 dark:bg-gray-800 dark:text-white">
+					<div className="mx-4 my-4 max-h-screen min-w-min max-w-3xl overflow-y-scroll rounded-lg border-gray-200 bg-white px-2 py-2 dark:border-gray-700 dark:bg-slate-800 dark:text-white">
 						{link}
 						<div className="py-2">
 							<button type="button" onClick={onClose} className="click-button">
@@ -58,7 +58,7 @@ function ProjectCard({
 	});
 	return (
 		<div className="anim max-w-sm">
-			<div className="mx-4 my-4 rounded-xl border border-gray-200 bg-white px-2 py-2 shadow-lg dark:border-gray-700 dark:bg-gray-800">
+			<div className="mx-4 my-4 rounded-xl border border-gray-200 bg-white px-2 py-2 shadow-lg dark:border-gray-700 dark:bg-slate-800">
 				<div className="mx-auto h-auto max-h-60 w-80 overflow-clip rounded-xl mt-[7px]">
 					<Image src={img} alt="Project Picture" />
 				</div>
