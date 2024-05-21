@@ -55,7 +55,6 @@ export const metadata: Metadata = {
 	title: "Rishabh's Profile",
 	description: "My personal profile on the web!",
 	metadataBase: new URL("https://gh-profile-rishabh-os.vercel.app"),
-	manifest: "/site.webmanifest",
 	twitter: {
 		card: "summary_large_image",
 	},
