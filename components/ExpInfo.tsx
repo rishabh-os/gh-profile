@@ -80,14 +80,11 @@ export function ExpInfo({
 					</button>
 					<motion.div
 						className="description"
-						id={title}
-						initial={false}
 						animate={
 							shouldAnimate
 								? {
 										height: "auto",
 										opacity: 1,
-										display: "block",
 										transition: {
 											height: {
 												duration: 0.4,
@@ -99,7 +96,7 @@ export function ExpInfo({
 												ease: "circInOut",
 											},
 										},
-								  }
+									}
 								: {
 										height: 0,
 										opacity: 0,
@@ -114,13 +111,10 @@ export function ExpInfo({
 												ease: "circInOut",
 											},
 										},
-										transitionEnd: {
-											display: "none",
-										},
-								  }
+									}
 						}
 					>
-						<div className="p-2 mt-2 bg-gray-200 dark:bg-gray-700 rounded-2xl">
+						<div className="p-2 mt-2 bg-gray-200 dark:bg-gray-700 rounded-md mb-1">
 							{details}
 						</div>
 					</motion.div>
