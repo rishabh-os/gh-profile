@@ -46,7 +46,7 @@ const Navbar = () => {
 							type="button"
 							aria-label="Expand menu button"
 							className="group flex h-10 w-10 flex-col items-center rounded"
-							onClick={toggleMenu}
+							onMouseDown={toggleMenu}
 						>
 							<div
 								className={`${genericHamburgerLine} ${
@@ -67,6 +67,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className={` ml-2  ${menuOpen} flex justify-center lg:h-fit`}>
+					{/* //? These have to be onClick otherwise the links don't work */}
 					<div className="flex flex-col lg:mx-2 lg:flex-row">
 						<button type="button" onClick={toggleMenu} className="navButton">
 							<a href="# ">Home</a>
@@ -88,7 +89,7 @@ const Navbar = () => {
 
 						<button
 							type="button"
-							onClick={toggleMenu}
+							onMouseDown={toggleMenu}
 							className="group my-1 mr-2 w-40 items-center justify-center overflow-hidden whitespace-nowrap rounded-lg
                 bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-white hover:text-black dark:text-white lg:ml-2"
 						>

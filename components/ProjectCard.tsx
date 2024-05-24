@@ -26,7 +26,11 @@ function ProjectCard({
 					<div className="mx-4 my-4 max-h-screen min-w-min max-w-3xl overflow-y-scroll rounded-lg border-gray-200 bg-white px-2 py-2 dark:border-gray-700 dark:bg-slate-800 dark:text-white">
 						{link}
 						<div className="py-2">
-							<button type="button" onClick={onClose} className="click-button">
+							<button
+								type="button"
+								onMouseDown={onClose}
+								className="click-button"
+							>
 								<HiArrowLeft className="mr-2" /> Back
 							</button>
 						</div>
@@ -82,7 +86,11 @@ function ProjectCard({
 						</a>
 					) : (
 						<div>
-							<button type="button" onClick={submit} className="click-button">
+							<button
+								type="button"
+								onMouseDown={submit}
+								className="click-button"
+							>
 								{linktext} <HiArrowRight className="ml-2" />
 							</button>
 						</div>
