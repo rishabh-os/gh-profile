@@ -6,6 +6,14 @@ export default defineNuxtConfig({
 		dataValue: "theme", // activate data-theme in <html> tag
 		classSuffix: "",
 	},
+	googleFonts: {
+		preload: true,
+		download: true,
+		families: {
+			Inter: "200..700",
+			"Victor Mono": "200..700",
+		},
+	},
 	modules: [
 		"@nuxtjs/tailwindcss",
 		"@nuxt/image",
@@ -14,12 +22,22 @@ export default defineNuxtConfig({
 		"@nuxtjs/color-mode",
 		"nuxt-icon",
 		"@vite-pwa/nuxt",
+		"@vueuse/motion/nuxt",
+		"nuxt-split-type",
 	],
+	site: {
+		name: "Rishabh's Profile",
+		description: "My personal website",
+		url: "https://gh-profile-rishabh-os.vercel.app",
+		defaultLocale: "en",
+	},
 	pwa: {
 		manifest: {
 			name: "Rishabh's Profile",
 			short_name: "RP",
 			start_url: "/",
+			id: "/",
+			description: "My personal website",
 			background_color: "#23a6d5",
 			display: "standalone",
 			theme_color: "#23a6d5",
@@ -42,6 +60,6 @@ export default defineNuxtConfig({
 				},
 			],
 		},
-		devOptions: { enabled: true },
+		devOptions: { enabled: false },
 	},
 });

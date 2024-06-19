@@ -4,4 +4,12 @@ module.exports = {
 	daisyui: {
 		themes: ["light", "dark", "pastel", "dracula"],
 	},
+	theme: {
+		extend: {
+			fontFamily: {
+				sans: ["Inter", "sans-serif"],
+				mono: ["Victor Mono", "monospace"],
+			},
+		},
+	},
 };
