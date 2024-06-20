@@ -5,7 +5,7 @@ const AboutMe = () => {
 	return (
 		<div className="mx-auto flex items-center justify-center">
 			<section
-				id="AboutMe"
+				id="About Me"
 				className="mx-4 my-2 max-w-lg rounded-3xl border-2 border-slate-700 bg-white px-4 shadow-2xl shadow-teal-400 dark:bg-slate-800"
 			>
 				<h2 className="sectionheading">About Me</h2>
