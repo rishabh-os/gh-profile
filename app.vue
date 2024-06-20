@@ -1,10 +1,14 @@
 <template>
   <NuxtPwaManifest />
   <Navbar />
-  <div class="flex flex-col justify-center items-center">
+  <div v-locomotive class="flex flex-col justify-center items-center">
     <Hero />
-    <Floating />
+    <div data-scrol-section class="h-screen">
+
+      <Floating />
+    </div>
   </div>
+  <div class="h-screen"></div>
 </template>
 
 <script setup>
