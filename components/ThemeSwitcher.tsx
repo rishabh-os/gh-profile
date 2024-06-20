@@ -21,7 +21,7 @@ export function ThemeSwitcher() {
 					setTheme(theme === "dark" ? "light" : "dark");
 				}}
 			>
-				Switch Mode
+				T
 			</Button>
 		</div>
 	);

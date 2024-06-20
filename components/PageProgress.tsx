@@ -13,7 +13,7 @@ export function PageProgress() {
 	useMotionValueEvent(yRange, "change", (v) => setIsComplete(v >= 1));
 
 	return (
-		<div className="fixed left-4 top-2 z-[100] h-10 w-10 lg:top-4 ">
+		<div className="h-10 w-10">
 			<svg
 				className="progress-icon aspect-square stroke-slate-800"
 				viewBox="0 0 50 50"

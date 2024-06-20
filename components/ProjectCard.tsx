@@ -1,9 +1,18 @@
 "use client";
 
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
-import Image, { type StaticImageData } from "next/image";
+import type { StaticImageData } from "next/image";
 import { confirmAlert } from "react-confirm-alert";
 import { useEffect } from "react";
+import {
+	Card,
+	CardFooter,
+	Image,
+	Button,
+	Link,
+	CardBody,
+} from "@nextui-org/react";
+
 // ? Need to define interface so that I can use it as a JSX element
 interface ProjectProps {
 	link: string | JSX.Element;
@@ -61,43 +70,52 @@ function ProjectCard({
 		}
 	});
 	return (
-		<div className="anim max-w-sm">
-			<div className="mx-4 my-4 rounded-xl border border-gray-200 bg-white px-2 py-2 shadow-lg dark:border-gray-700 dark:bg-slate-800">
-				<div className="mx-auto h-auto max-h-60 w-80 overflow-clip rounded-xl mt-[7px]">
-					<Image src={img} alt="Project Picture" />
-				</div>
-				<div className="p-5">
-					<h4 className="mb-2 font-inter text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-						{title}
-					</h4>
-
-					<p className="mb-3 h-20 max-w-fit overflow-hidden font-inter text-gray-700 dark:text-gray-400">
-						{description}
-					</p>
-					{typeof link === "string" ? (
-						<a
-							href={link}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="click-button"
+		<Card radius="lg" shadow="lg" className="anim border-none m-4 max-w-sm">
+			<div className="overflow-visible p-0">
+				<Image
+					radius="lg"
+					src={img.src}
+					width="100%"
+					className="w-full object-cover object-top max-h-64"
+					alt="Project Picture"
+				/>
+			</div>
+			<CardBody>
+				<h4 className="my-2 text-2xl font-bold tracking-tight">{title}</h4>
+				<p className="h-20 max-w-fit">{description}</p>
+			</CardBody>
+			<CardFooter className="justify-center">
+				{typeof link === "string" ? (
+					<Button
+						href={link}
+						isExternal
+						as={Link}
+						variant="ghost"
+						color="primary"
+						showAnchorIcon
+						disableRipple
+						anchorIcon={<HiArrowRight />}
+					>
+						{linktext}
+					</Button>
+				) : (
+					<div>
+						<Button
+							isExternal
+							as={Link}
+							variant="ghost"
+							color="primary"
+							showAnchorIcon
+							disableRipple
+							anchorIcon={<HiArrowRight />}
+							onPress={submit}
 						>
 							{linktext}
-							<HiArrowRight className="ml-2" />
-						</a>
-					) : (
-						<div>
-							<button
-								type="button"
-								onMouseDown={submit}
-								className="click-button"
-							>
-								{linktext} <HiArrowRight className="ml-2" />
-							</button>
-						</div>
-					)}
-				</div>
-			</div>
-		</div>
+						</Button>
+					</div>
+				)}
+			</CardFooter>
+		</Card>
 	);
 }
 
