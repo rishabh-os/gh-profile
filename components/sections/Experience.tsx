@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { HiArrowRight, HiDocumentText, HiChartSquareBar } from "react-icons/hi";
 import { ExpInfo } from "../ExpInfo";
+import { Button, Link } from "@nextui-org/react";
 const Experience = () => {
 	useEffect(() => {
 		if (typeof window !== "undefined") {
@@ -53,28 +54,26 @@ const Experience = () => {
 							description="An advanced system using unsupervised anomaly and outlier detection techniques was developed to enhance security for customers through real-time reporting of incidents."
 							details="I've included a link to my final presentation as well as my entire thesis. What more detail do you want?"
 							buttons={[
-								<a
+								<Button
+									as={Link}
+									isExternal
 									href="/output_print.pdf"
-									target="_blank"
-									rel="noopener noreferrer"
 									key="ThesisLink"
-									className="exp-button"
 								>
 									<HiDocumentText className="mr-2 h-5 w-5" />
 									Thesis
 									<HiArrowRight className="ml-2" />
-								</a>,
-								<a
+								</Button>,
+								<Button
+									as={Link}
+									isExternal
 									href="https://thesis-presentation.vercel.app"
-									target="_blank"
-									rel="noopener noreferrer"
 									key="PresentationLink"
-									className="exp-button"
 								>
 									<HiChartSquareBar className="mr-2 h-5 w-5" />
 									Defense Presentation
 									<HiArrowRight className="ml-2" />
-								</a>,
+								</Button>,
 							]}
 						/>
 

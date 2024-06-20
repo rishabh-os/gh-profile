@@ -1,9 +1,7 @@
-"use client";
-
-import { motion, AnimatePresence } from "framer-motion";
-import { type ReactNode, useState } from "react";
+import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";
-
+import { Accordion, AccordionItem, Card } from "@nextui-org/react";
 interface ExpInfoProps {
 	time: string;
 	title: string;
@@ -20,106 +18,62 @@ export function ExpInfo({
 	details,
 	buttons = [],
 }: ExpInfoProps) {
-	const [isOpen, setIsOpen] = useState(false);
-	const shouldAnimate = isOpen && details != null;
 	return (
 		<li className="explist" key={title}>
 			<div className="topdiv" />
 			<div className="animated">
 				<time className="time">{time}</time>
-				<div
-					className="flex flex-col w-full px-3 py-2 mt-1 rounded-lg border-2 border-gray-200 dark:border-gray-700 shadow-md"
-					onMouseDown={() => setIsOpen((prev) => !prev)}
-					onKeyDown={() => setIsOpen((prev) => !prev)}
-				>
-					<button
-						type="button"
-						aria-controls={title}
-						aria-expanded={shouldAnimate}
-						className={`grid grid-cols-12 justify-between text-left items-center ${
-							details ? "cursor-auto" : "cursor-default"
-						} `}
-					>
-						<div className="title col-span-11 pb-2">{title}</div>
-						{details ? (
-							<AnimatePresence initial={false} mode="wait">
-								<motion.div
-									className="text-gray-700 dark:text-gray-200 col-span-1 mx-auto"
-									key={shouldAnimate ? "minus" : "plus"}
-									initial={{
-										rotate: shouldAnimate ? -90 : 90,
-									}}
-									animate={{
-										rotate: 0,
-										transition: {
-											type: "tween",
-											duration: 0.15,
-											ease: "circOut",
-										},
-									}}
-									exit={{
-										rotate: shouldAnimate ? -90 : 90,
-										transition: {
-											type: "tween",
-											duration: 0.15,
-											ease: "circIn",
-										},
-									}}
-								>
-									{shouldAnimate ? (
-										<HiMinus className="h-5 w-5" />
-									) : (
-										<HiPlus className="h-5 w-5" />
-									)}
-								</motion.div>
-							</AnimatePresence>
-						) : (
-							<div />
-						)}
-						<div className="description col-span-full">{description}</div>
-					</button>
-					<motion.div
-						className="description"
-						animate={
-							shouldAnimate
-								? {
-										height: "auto",
-										opacity: 1,
-										transition: {
-											height: {
-												duration: 0.4,
-												ease: "circInOut",
+				<Card className="w-full py-1 px-3 mt-1">
+					{details ? (
+						<Accordion>
+							<AccordionItem
+								disabled
+								title={<div className="title pb-2">{title}</div>}
+								subtitle={<div className="description">{description}</div>}
+								textValue={details}
+								indicator={({ isOpen }) => (
+									<motion.div
+										initial={{
+											rotate: isOpen ? -90 : 90,
+											opacity: 1,
+										}}
+										animate={{
+											rotate: isOpen ? -90 : 0,
+											transition: {
+												type: "tween",
+												duration: 0.15,
+												ease: "easeInOut",
 											},
-											opacity: {
-												duration: 0.4,
-												delay: 0.15,
-												ease: "circInOut",
+										}}
+										exit={{
+											rotate: isOpen ? -90 : 90,
+											opacity: 0,
+											transition: {
+												type: "tween",
+												duration: 0.15,
+												ease: "easeInOut",
 											},
-										},
-									}
-								: {
-										height: 0,
-										opacity: 0,
-										transition: {
-											height: {
-												duration: 0.4,
-												ease: "circInOut",
-											},
-											opacity: {
-												duration: 0.4,
-												delay: -0.15,
-												ease: "circInOut",
-											},
-										},
-									}
-						}
-					>
-						<div className="p-2 mt-2 bg-gray-200 dark:bg-gray-700 rounded-md mb-1">
-							{details}
+										}}
+									>
+										{isOpen ? (
+											<HiMinus className="h-5 w-5" />
+										) : (
+											<HiPlus className="h-5 w-5" />
+										)}
+									</motion.div>
+								)}
+							>
+								<div className="">{details}</div>
+							</AccordionItem>
+						</Accordion>
+					) : (
+						<div className="py-4 px-3">
+							<div className="title pb-2">{title}</div>
+							<div className="description">{description}</div>
 						</div>
-					</motion.div>
-				</div>
-				{buttons}
+					)}
+				</Card>
+				{buttons.length > 0 && <div className="flex gap-2 mt-3">{buttons}</div>}
 			</div>
 		</li>
 	);
