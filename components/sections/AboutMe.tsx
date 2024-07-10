@@ -3,8 +3,6 @@ import {
 	Card,
 	CardBody,
 	Image,
-	Button,
-	Slider,
 	CardHeader,
 	CardFooter,
 } from "@nextui-org/react";

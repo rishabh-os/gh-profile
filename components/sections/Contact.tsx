@@ -1,7 +1,9 @@
 "use client";
+import { Button, Input } from "@nextui-org/react";
 import { type FormEvent, useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import { ToastContainer, toast } from "react-toastify";
+import { IoSend } from "react-icons/io5";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -14,7 +16,7 @@ const Contact = () => {
 			pauseOnHover: true,
 			draggable: true,
 			progress: undefined,
-			theme: "dark",
+			theme: "colored",
 		});
 	const emailError = () =>
 		toast.error(
@@ -27,14 +29,13 @@ const Contact = () => {
 				pauseOnHover: true,
 				draggable: true,
 				progress: undefined,
-				theme: "dark",
+				theme: "colored",
 			},
 		);
-	const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+	const handleSubmit = async (event: FormEvent) => {
 		event.preventDefault();
 		const endpoint: string = process.env.NEXT_PUBLIC_EMAIL_API ?? "";
 		const body = JSON.stringify({
-			senderName: name,
 			senderEmail: email,
 			message: message,
 		});
@@ -52,7 +53,6 @@ const Contact = () => {
 			.then((response) => {
 				console.log("Email sent successfully!");
 				emailSuccess();
-				setName("");
 				setEmail("");
 				setMessage("");
 			})
@@ -61,8 +61,6 @@ const Contact = () => {
 				emailError();
 			});
 	};
-
-	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 	return (
@@ -92,53 +90,41 @@ const Contact = () => {
 				If you don&apos;t prefer the above links, feel free to contact me
 				through the form below!
 			</p>
-			<form
-				onSubmit={handleSubmit}
-				className="mx-auto w-11/12 grid-cols-8 grid-rows-4 content-center items-center justify-center object-center text-left md:grid md:w-[45rem]"
-			>
-				<label htmlFor="form_name" className="contact-label">
-					Name
-				</label>
 
-				<input
-					id="form_name"
-					required
-					autoComplete="name"
-					className="contact-input"
-					type="text"
-					onChange={(e) => setName(e.target.value)}
-					value={name}
-				/>
-				<label htmlFor="form_email" className="contact-label">
-					Email ID
-				</label>
-				<input
-					id="form_email"
-					required
-					autoComplete="email"
-					className="contact-input"
+			<div className="flex flex-col gap-3 space-y-4 max-w-xl mx-auto pb-4">
+				<Input
+					style={{
+						all: "inherit",
+					}}
+					labelPlacement="outside"
+					size="lg"
 					type="email"
-					onChange={(e) => setEmail(e.target.value)}
+					errorMessage="Please enter a valid email"
+					label="Email"
 					value={email}
+					onValueChange={setEmail}
 				/>
-				<label htmlFor="form_message" className="contact-label">
-					Message
-				</label>
-				<textarea
-					id="form_message"
-					className="contact-input h-20 resize-none"
-					onChange={(e) => setMessage(e.target.value)}
+				<Input
+					style={{
+						all: "inherit",
+					}}
+					labelPlacement="outside"
+					size="lg"
+					label="Message"
 					value={message}
+					onValueChange={setMessage}
 				/>
-				<button
+				<Button
+					className="mx-auto bg-gradient-to-tr from-primary to-secondary"
 					type="submit"
-					className="group col-span-2 col-start-4 mx-auto my-4 flex rounded-lg bg-gradient-to-br from-green-400 to-blue-600 object-center p-0.5           text-center text-sm font-medium text-gray-900 hover:text-white group-hover:from-green-400 group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800"
+					onClick={(e) => handleSubmit(e)}
+					endContent={
+						<IoSend className="group-hover:animate-pulse transition-all" />
+					}
 				>
-					<span className="w-full rounded-md bg-white px-5 py-2.5 font-inter font-bold uppercase tracking-widest transition-all duration-150 ease-in group-hover:bg-opacity-0 dark:bg-slate-800">
-						Send
-					</span>
-				</button>
-			</form>
+					Send
+				</Button>
+			</div>
 			<ToastContainer
 				position="bottom-center"
 				autoClose={5000}
