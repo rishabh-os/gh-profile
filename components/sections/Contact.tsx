@@ -32,7 +32,7 @@ const Contact = () => {
 				If you don&apos;t prefer the above links, feel free to contact me via
 				email!
 				<div className="flex items-center justify-center">
-					<Card className="w-fit animated-gradient m-4 underline decoration-2 font-bold">
+					<Card className="w-fit animated-gradient m-4 underline decoration-2 font-bold text-white">
 						<CardBody>rishabhwanjari1@gmail.com</CardBody>
 					</Card>
 				</div>

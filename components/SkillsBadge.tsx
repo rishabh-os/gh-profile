@@ -10,7 +10,7 @@ interface SkillProps {
 	exp: number;
 }
 function SkillBadge({ icon, name, classNames, exp }: SkillProps) {
-	const buttonClasses =
+	const cardClasses =
 		"m-4 flex h-12 w-40 content-center items-center justify-center rounded-lg px-2 py-2.5 text-center shadow-lg ";
 
 	const ref = useRef(null);
@@ -25,11 +25,15 @@ function SkillBadge({ icon, name, classNames, exp }: SkillProps) {
 				transition: "all 1.5s cubic-bezier(0.05, 0.7, 0.1, 1.0) 0.6s",
 			}}
 		>
-			<button type="button" className={buttonClasses + classNames} disabled>
+			<div className={cardClasses + classNames}>
 				{/* //? You can set the width directly but doing it through CSS is better */}
-				<Image src={icon} alt="Skill image" className="max-w-[28px] max-h-7" />
+				<Image
+					src={icon}
+					alt={`${name} logo`}
+					className="max-w-[28px] max-h-7"
+				/>
 				<p className="prose ml-2 font-[500] text-white">{name}</p>
-			</button>
+			</div>
 			{exp > 0 && (
 				<p className="prose text-center dark:prose-invert">{exp} years</p>
 			)}

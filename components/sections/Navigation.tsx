@@ -10,7 +10,6 @@ import {
 	Link,
 	Button,
 } from "@nextui-org/react";
-import { PageProgress } from "../PageProgress";
 import { useState } from "react";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 
@@ -19,15 +18,16 @@ const Navigation = () => {
 	const menuItems = ["Home", "About Me", "Interests", "Experience", "Skills"];
 
 	return (
-		<Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen}>
+		<Navbar
+			onMenuOpenChange={setIsMenuOpen}
+			isMenuOpen={isMenuOpen}
+			isBlurred={false}
+		>
 			<NavbarContent>
 				<NavbarMenuToggle
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 					className="sm:hidden"
 				/>
-				<NavbarBrand>
-					<PageProgress />
-				</NavbarBrand>
 			</NavbarContent>
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
@@ -41,12 +41,17 @@ const Navigation = () => {
 			</NavbarContent>
 			<NavbarContent justify="end">
 				<NavbarItem>
-					<Button as={Link} color="primary" href="#" variant="flat">
-						Contact Me
-					</Button>
+					<ThemeSwitcher />
 				</NavbarItem>
 				<NavbarItem>
-					<ThemeSwitcher />
+					<Button
+						as={Link}
+						color="primary"
+						className="animated-gradient font-bold"
+						href="#Contact"
+					>
+						Contact Me
+					</Button>
 				</NavbarItem>
 			</NavbarContent>
 			{/* // ? Hides the scrollbar in the menu during the animation */}
