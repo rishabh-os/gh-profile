@@ -1,8 +1,6 @@
 "use client";
-import { Button, Card, CardBody, Link } from "@nextui-org/react";
+import { Card, CardBody } from "@nextui-org/react";
 import { SocialIcon } from "react-social-icons";
-import { IoSend } from "react-icons/io5";
-import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
 	return (
@@ -28,7 +26,7 @@ const Contact = () => {
 					/>
 				</div>
 			</div>
-			<p className="txt">
+			<div className="txt">
 				If you don&apos;t prefer the above links, feel free to contact me via
 				email!
 				<div className="flex items-center justify-center">
@@ -36,7 +34,7 @@ const Contact = () => {
 						<CardBody>rishabhwanjari1@gmail.com</CardBody>
 					</Card>
 				</div>
-			</p>
+			</div>
 		</section>
 	);
 };

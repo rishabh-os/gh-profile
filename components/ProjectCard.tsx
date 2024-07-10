@@ -56,10 +56,6 @@ function ProjectCard({
 					if (entry.isIntersecting) {
 						entry.target.classList.add("animate-project");
 					}
-					// ? Use this part if you want to redo the animation each time instead of only once
-					// else {
-					//   entry.target.classList.remove("animate-project");
-					// }
 				}
 			});
 			const expElements = document.querySelectorAll(".anim");
@@ -70,8 +66,8 @@ function ProjectCard({
 		}
 	});
 	return (
-		<Card radius="lg" shadow="lg" className="anim border-none m-4 max-w-sm">
-			<div className="overflow-visible p-0">
+		<Card radius="lg" shadow="lg" className="anim border-none m-4 w-96">
+			<div className="p-0">
 				<Image
 					radius="lg"
 					src={img.src}

@@ -19,11 +19,13 @@ const Interests = () => {
 				very interested in machine learning and AI. I love to develop
 				applications for other people.
 				<br />I also happen to be a Linux and FOSS enthusiast.
-				<div className="font-pinyon text-3xl tracking-wide">I use Arch BTW</div>
+				<div className="font-pinyon text-4xl tracking-widest pt-4">
+					I use Arch BTW
+				</div>
+				<p className="txt !m-0">
+					Here are some of the projects that I have worked on.
+				</p>
 			</div>
-			<h3 className="txt">
-				Here are some of the projects that I have worked on.
-			</h3>
 			<div className="flex flex-col flex-wrap items-center justify-center md:flex-row xl:mx-auto xl:max-w-7xl">
 				{/* //? The xl: arguments limit the items to 3 columns on larger displays */}
 				<ProjectCard

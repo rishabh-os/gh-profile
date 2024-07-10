@@ -63,7 +63,9 @@ export function ExpInfo({
 									</motion.div>
 								)}
 							>
-								<div className="">{details}</div>
+								<div className="description bg-zinc-200 dark:bg-zinc-800 rounded-xl p-4">
+									{details}
+								</div>
 							</AccordionItem>
 						</Accordion>
 					) : (
