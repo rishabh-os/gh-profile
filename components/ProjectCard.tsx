@@ -66,16 +66,14 @@ function ProjectCard({
 		}
 	});
 	return (
-		<Card radius="lg" shadow="lg" className="anim border-none m-4 w-96">
-			<div className="p-0">
-				<Image
-					radius="lg"
-					src={img.src}
-					width="100%"
-					className="w-full object-cover object-top max-h-64"
-					alt="Project Picture"
-				/>
-			</div>
+		<Card radius="lg" shadow="lg" className="anim border-none m-4 w-80 md:w-96">
+			<Image
+				radius="lg"
+				src={img.src}
+				width="100%"
+				className="w-full object-cover object-top max-h-64"
+				alt="Project Picture"
+			/>
 			<CardBody>
 				<h4 className="my-2 text-2xl font-bold tracking-tight">{title}</h4>
 				<p className="h-20 max-w-fit">{description}</p>

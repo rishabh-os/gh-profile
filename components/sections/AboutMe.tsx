@@ -8,7 +8,7 @@ import {
 } from "@nextui-org/react";
 const AboutMe = () => {
 	return (
-		<div className="mx-auto flex items-center justify-center" id="About Me">
+		<div className="mx-4 flex items-center justify-center" id="About Me">
 			<Card className="max-w-lg shadow-secondary-300 shadow-xl border-2 border-secondary-200">
 				<CardHeader className="pb-0 pt-2 px-4">
 					<h2 className="sectionheading">About Me</h2>
