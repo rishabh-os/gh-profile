@@ -6,7 +6,7 @@
   @apply !opacity-100 translate-x-0;
 }
 
-/* ? Staggered transitions for 2 */
+/* ? Staggered transitions for 3 */
 @media (min-width: 1150px) {
   .anim:nth-child(2) {
     transition-delay: 200ms;
@@ -25,6 +25,18 @@
   }
 
   .anim:nth-child(6) {
+    transition-delay: 400ms;
+  }
+
+  .anim:nth-child(7) {
+    transition-delay: 0ms;
+  }
+
+  .anim:nth-child(8) {
+    transition-delay: 200ms;
+  }
+
+  .anim:nth-child(9) {
     transition-delay: 400ms;
   }
 }
@@ -49,5 +61,17 @@
 
   .anim:nth-child(6) {
     transition-delay: 200ms;
+  }
+
+  .anim:nth-child(7) {
+    transition-delay: 0ms;
+  }
+
+  .anim:nth-child(8) {
+    transition-delay: 200ms;
+  }
+
+  .anim:nth-child(9) {
+    transition-delay: 0ms;
   }
 }

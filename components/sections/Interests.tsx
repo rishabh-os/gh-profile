@@ -77,7 +77,6 @@ const Interests = () => {
 					title="This website!"
 					description="My personal profile on the web, made with React, Next.js and TailwindCSS"
 				/>
-
 				<ProjectCard
 					link="https://github.com/rishabh-os/Dot-Files"
 					linktext="GitHub"
