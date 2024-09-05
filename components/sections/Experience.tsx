@@ -60,6 +60,7 @@ const Experience = () => {
 									href="/output_print.pdf"
 									key="ThesisLink"
 									variant="ghost"
+									className="font-medium"
 								>
 									<HiDocumentText className="mr-2 h-5 w-5" />
 									Thesis
@@ -71,6 +72,7 @@ const Experience = () => {
 									href="https://thesis-presentation.vercel.app"
 									key="PresentationLink"
 									variant="ghost"
+									className="font-medium"
 								>
 									<HiChartSquareBar className="mr-2 h-5 w-5" />
 									Defense Presentation

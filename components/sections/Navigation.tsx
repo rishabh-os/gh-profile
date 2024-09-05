@@ -33,7 +33,11 @@ const Navigation = () => {
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				{menuItems.map((item, _) => (
 					<NavbarItem key={`${item}`}>
-						<Link color="foreground" href={`#${item}`}>
+						<Link
+							color="foreground"
+							className="text-lg scale-100 hover:text-primary transition-all duration-300"
+							href={`#${item}`}
+						>
 							{item}
 						</Link>
 					</NavbarItem>
@@ -60,7 +64,7 @@ const Navigation = () => {
 					<NavbarMenuItem key={`${item}`}>
 						<Link
 							color="primary"
-							className="w-full"
+							className="w-full flex items-center justify-center text-lg"
 							href={`#${item}`}
 							size="lg"
 							onPressStart={() => setIsMenuOpen(false)}

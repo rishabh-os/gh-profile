@@ -88,6 +88,7 @@ function ProjectCard({
 						as={Link}
 						variant="ghost"
 						color="primary"
+						className="tracking-wide font-medium"
 						showAnchorIcon
 						disableRipple
 						anchorIcon={<HiArrowRight />}
@@ -101,6 +102,7 @@ function ProjectCard({
 							as={Link}
 							variant="ghost"
 							color="primary"
+							className="tracking-wide font-medium"
 							showAnchorIcon
 							disableRipple
 							anchorIcon={<HiArrowRight />}
