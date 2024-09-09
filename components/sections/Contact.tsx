@@ -1,4 +1,3 @@
-"use client";
 import { Card, CardBody } from "@nextui-org/react";
 import { SocialIcon } from "react-social-icons";
 

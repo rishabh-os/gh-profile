@@ -1,7 +1,6 @@
 "use client";
 import {
 	Navbar,
-	NavbarBrand,
 	NavbarContent,
 	NavbarItem,
 	NavbarMenuToggle,

@@ -1,10 +1,5 @@
 "use client";
-import {
-	useViewportScroll,
-	useTransform,
-	useSpring,
-	motion,
-} from "framer-motion";
+import { useScroll, useTransform, useSpring, motion } from "framer-motion";
 import { useState, useRef, useEffect, type ReactNode } from "react";
 
 type ParallaxProps = {
@@ -25,17 +20,15 @@ const Example = ({ children }: ParallaxProps): JSX.Element => {
 	// E.G: 50px from the top
 	const offsetHeight = 50;
 	// Vertical scroll distance in pixels.
-	const { scrollY } = useViewportScroll();
+	const { scrollY } = useScroll();
 	// Transforms scroll and image height values to opacity values
 	const yRange = useTransform(scrollY, [imageHeight - offsetHeight, 0], [0, 1]);
 	const opacity = useSpring(yRange, { stiffness: 400, damping: 40 });
 
 	return (
-		<div className="">
-			<motion.div ref={ref} style={{ opacity }}>
-				{children}
-			</motion.div>
-		</div>
+		<motion.div ref={ref} style={{ opacity }}>
+			{children}
+		</motion.div>
 	);
 };
 export default Example;

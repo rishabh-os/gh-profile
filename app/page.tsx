@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 			<ThemeProvider attribute="class" defaultTheme="dark">
 				<div id="Home" className="overflow-clip">
 					<Navigation />
-					<section className=" flex h-[47vh] items-center justify-center">
+					<section className="flex h-[47vh] items-center justify-center">
 						<MotionDiv
 							initial="hidden"
 							animate="visible"

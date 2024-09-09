@@ -1,6 +1,4 @@
 "use client";
-
-import { Button } from "@nextui-org/react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
@@ -21,7 +19,7 @@ export function ThemeSwitcher() {
 				className="stroke-none"
 				sunColor="black"
 				moonColor="white"
-				onChange={(e) => setTheme(theme === "dark" ? "light" : "dark")}
+				onChange={(_) => setTheme(theme === "dark" ? "light" : "dark")}
 				size={30}
 				checked={theme === "dark"}
 			/>

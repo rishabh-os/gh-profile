@@ -1,5 +1,4 @@
 "use client";
-
 import Image, { type StaticImageData } from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
