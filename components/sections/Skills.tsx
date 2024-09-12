@@ -101,7 +101,7 @@ const Skills = () => {
 						exp={1}
 					/>
 					<SkillBadge
-						classNames="bg-gradient-to-r from-slate-900 to-slate-800 shadow-slate-700"
+						classNames="bg-gradient-to-r from-slate-900 to-slate-800 shadow-slate-900"
 						icon={tailwind}
 						name="TailwindCSS"
 						exp={2}

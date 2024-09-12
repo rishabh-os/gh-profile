@@ -17,7 +17,7 @@ function SkillBadge({ icon, name, classNames, exp }: SkillProps) {
 	return (
 		<motion.div
 			ref={ref}
-			className="mb-2 font-inter"
+			className="mb-2 font-inter saturate-[.80]"
 			style={{
 				scale: isInView ? 1 : 2,
 				opacity: isInView ? 1 : 0,
