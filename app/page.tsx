@@ -9,6 +9,8 @@ import Parallax from "../components/Parallax";
 import MotionDiv from "../components/MotionDiv";
 import { Divider, Link, NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "next-themes";
+import Image from "next/image";
+import sound from "../assets/result1.png";
 const Home: NextPage = () => {
 	const date = new Date(process.env.NEXT_PUBLIC_LASTMOD ?? "2023-12-01");
 	const month = date.toLocaleString("default", { month: "long" });
@@ -19,7 +21,8 @@ const Home: NextPage = () => {
 			<ThemeProvider attribute="class" defaultTheme="dark">
 				<div id="Home" className="overflow-clip">
 					<Navigation />
-					<section className="flex h-[47vh] items-center justify-center">
+					<div className="layer1" />
+					<section className="flex items-center justify-center">
 						<MotionDiv
 							initial="hidden"
 							animate="visible"
@@ -43,7 +46,7 @@ const Home: NextPage = () => {
 								},
 							}}
 						>
-							<h1 className="mx-2 mt-48 justify-center text-center font-victormono text-7xl font-bold">
+							<h1 className="mx-2 my-40 justify-center text-center font-victormono text-7xl font-bold">
 								Welcome to my
 								<br />
 								website!
@@ -68,6 +71,24 @@ const Home: NextPage = () => {
 								className="underline decoration-2 underline-offset-2 font-bold"
 							>
 								Victor Mono
+							</Link>
+							<br />
+							The theme is{" "}
+							<Link
+								isExternal
+								href="https://catppuccin.com"
+								className="underline decoration-2 underline-offset-2 font-bold"
+							>
+								Catpuccin (Macchiato)
+							</Link>
+							<br />
+							Header inspired by{" "}
+							<Link
+								isExternal
+								href="https://github.com/zhichaoh/catppuccin-wallpapers/blob/main/misc/cat-sound.png"
+								className="underline decoration-2 underline-offset-2 font-bold"
+							>
+								this wallpaper
 							</Link>
 						</p>
 					</footer>

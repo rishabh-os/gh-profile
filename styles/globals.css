@@ -15,12 +15,8 @@ body {
   @apply font-inter;
 }
 
-.hero {
-  @apply bg-[#23a6d5];
-}
-
 .layer1 {
-  background-image: url("/layered-waves-haikei.svg");
+  background-image: url("/result1.png");
   background-repeat: no-repeat;
   background-position: center;
   @apply h-96 w-full bg-cover;
