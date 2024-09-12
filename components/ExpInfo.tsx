@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import type { ReactElement } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";
 import { Accordion, AccordionItem, Card } from "@nextui-org/react";
 interface ExpInfoProps {
@@ -8,7 +8,7 @@ interface ExpInfoProps {
 	description: string;
 	// ? Explicitly indicate that these can be null
 	details?: string;
-	buttons?: Array<ReactNode>;
+	buttons?: Array<ReactElement>;
 }
 
 export function ExpInfo({
@@ -63,7 +63,7 @@ export function ExpInfo({
 									</motion.div>
 								)}
 							>
-								<div className="description bg-default-100 rounded-xl p-4">
+								<div className="description bg-content2 rounded-xl p-4">
 									{details}
 								</div>
 							</AccordionItem>

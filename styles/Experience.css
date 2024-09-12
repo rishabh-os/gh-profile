@@ -3,7 +3,7 @@
 }
 
 .line {
-  @apply relative mx-4 border-l-[2px] border-indigo-400 dark:border-indigo-500;
+  @apply relative mx-4 border-l-[2px] border-indigo-400 dark:border-cat-teal;
 }
 
 .explist {
@@ -11,7 +11,7 @@
 }
 
 .topdiv {
-  @apply absolute -left-[9px] h-4 w-4 rounded-full bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400;
+  @apply absolute -left-[9px] h-4 w-4 rounded-full bg-cat-teal;
 }
 
 .time {
@@ -19,9 +19,7 @@
 }
 
 .title {
-  @apply text-xl font-[900] text-transparent bg-clip-text font-inter tracking-wide bg-gradient-to-r from-purple-500 to-pink-500;
-  /* dark:from-purple-400 */
-  /* ? A lighter purple in dark mode helps with contrast and readability. Removed temporarily due to a bug in Tailwind */
+  @apply text-xl font-[900] text-transparent bg-clip-text font-inter tracking-wide bg-gradient-to-r from-secondary to-primary;
 }
 
 .description {

@@ -43,9 +43,9 @@ const Navigation = () => {
 				))}
 			</NavbarContent>
 			<NavbarContent justify="end">
-				<NavbarItem>
+				{/* <NavbarItem>
 					<ThemeSwitcher />
-				</NavbarItem>
+				</NavbarItem> */}
 				<NavbarItem>
 					<Button
 						as={Link}

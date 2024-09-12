@@ -61,6 +61,7 @@ const Experience = () => {
 									key="ThesisLink"
 									variant="ghost"
 									className="font-medium m-1"
+									color="secondary"
 								>
 									<HiDocumentText className="mr-2 h-5 w-5" />
 									Thesis
@@ -73,6 +74,7 @@ const Experience = () => {
 									key="PresentationLink"
 									variant="ghost"
 									className="font-medium m-1"
+									color="secondary"
 								>
 									<HiChartSquareBar className="mr-2 h-5 w-5" />
 									Defense Presentation
