@@ -49,15 +49,12 @@ html {
 /* The above shade was found by lowering lightness until it no longer met AA contrast standards */
 @keyframes move-bg {
   to {
-    background-position: var(--bg-size) 0;
+    background-position: 600% 0;
   }
 }
 
 .animated-gradient {
-  --bg-size: 600%;
-  background: linear-gradient(90deg,
-      hsl(var(--nextui-primary)),
-      hsl(var(--nextui-secondary)),
-      hsl(var(--nextui-primary))) 0 0 / var(--bg-size) 100%;
-  animation: move-bg 20s infinite linear;
+  background-size: 600%;
+  animation: move-bg 10s infinite linear;
+  @apply bg-gradient-to-r from-primary via-secondary to-primary shadow-lg font-bold;
 }

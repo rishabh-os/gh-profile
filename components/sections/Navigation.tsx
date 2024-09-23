@@ -50,7 +50,7 @@ const Navigation = () => {
 					<Button
 						as={Link}
 						color="primary"
-						className="animated-gradient font-bold"
+						className="animated-gradient"
 						href="#Contact"
 					>
 						Contact Me
