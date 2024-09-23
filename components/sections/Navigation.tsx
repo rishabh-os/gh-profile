@@ -10,7 +10,6 @@ import {
 	Button,
 } from "@nextui-org/react";
 import { useState } from "react";
-import { ThemeSwitcher } from "../ThemeSwitcher";
 
 const Navigation = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,9 +42,6 @@ const Navigation = () => {
 				))}
 			</NavbarContent>
 			<NavbarContent justify="end">
-				{/* <NavbarItem>
-					<ThemeSwitcher />
-				</NavbarItem> */}
 				<NavbarItem>
 					<Button
 						as={Link}
@@ -63,7 +59,7 @@ const Navigation = () => {
 					<NavbarMenuItem key={`${item}`}>
 						<Link
 							color="primary"
-							className="w-full flex items-center justify-center text-lg"
+							className="w-full flex items-center justify-center text-2xl my-1"
 							href={`#${item}`}
 							size="lg"
 							onPressStart={() => setIsMenuOpen(false)}
