@@ -4,20 +4,13 @@ import "../styles/Popup.css";
 import "../styles/Interests.css";
 
 import type { Metadata, Viewport } from "next";
-import { Inter, Manrope, Pinyon_Script, Victor_Mono } from "next/font/google";
+import { Inter, Pinyon_Script, Victor_Mono } from "next/font/google";
 
 const inter = Inter({
 	subsets: ["latin"],
 	display: "swap",
 	weight: ["300", "400", "500", "600"],
 	variable: "--font-inter",
-});
-
-const manrope = Manrope({
-	subsets: ["latin"],
-	display: "swap",
-	weight: "300",
-	variable: "--font-manrope",
 });
 
 //? For Arch BTW */
@@ -43,7 +36,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${inter.variable} ${manrope.variable} ${pinyon.variable} ${victormono.variable}`}
+				className={`${inter.variable} ${pinyon.variable} ${victormono.variable}`}
 			>
 				{children}
 			</body>

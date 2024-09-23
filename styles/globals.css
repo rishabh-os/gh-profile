@@ -15,19 +15,12 @@ body {
   @apply font-inter;
 }
 
-.layer1 {
-  background-image: url("/result1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  @apply h-96 w-full bg-cover;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 .sectionheading {
-  @apply prose mx-auto py-10 text-center font-manrope text-5xl dark:prose-invert;
+  @apply prose mx-auto py-10 text-center font-inter text-5xl dark:prose-invert;
 }
 
 .subsectionheading {

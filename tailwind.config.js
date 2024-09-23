@@ -10,8 +10,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				victormono: ["Victor Mono", "monospace"],
-				manrope: ["var(--font-manrope)", "sans-serif"],
+				victormono: ["var(--font-victormono)", "monospace"],
 				inter: ["var(--font-inter)", "sans-serif"],
 				pinyon: ["var(--font-pinyon)", "cursive"],
 			},
