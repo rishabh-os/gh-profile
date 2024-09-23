@@ -9,8 +9,6 @@ import Parallax from "../components/Parallax";
 import MotionDiv from "../components/MotionDiv";
 import { Divider, Link, NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "next-themes";
-import Image from "next/image";
-import sound from "../assets/result1.png";
 const Home: NextPage = () => {
 	const date = new Date(process.env.NEXT_PUBLIC_LASTMOD ?? "2023-12-01");
 	const month = date.toLocaleString("default", { month: "long" });
@@ -60,7 +58,7 @@ const Home: NextPage = () => {
 					<Experience />
 					<Skills />
 					<Contact />
-					<Divider className="my-4 h-1" />
+					<Divider className="mt-4 h-1" />
 					<footer className="footer flex justify-center p-4 text-center ">
 						<p>
 							Last updated on {displayDate} <br /> If you like the monospace
@@ -81,7 +79,7 @@ const Home: NextPage = () => {
 							>
 								Catpuccin (Macchiato)
 							</Link>
-							<br />
+							{/* <br />
 							Header inspired by{" "}
 							<Link
 								isExternal
@@ -89,7 +87,7 @@ const Home: NextPage = () => {
 								className="underline decoration-2 underline-offset-2 font-bold"
 							>
 								this wallpaper
-							</Link>
+							</Link> */}
 						</p>
 					</footer>
 				</div>
