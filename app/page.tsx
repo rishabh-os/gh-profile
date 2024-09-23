@@ -44,7 +44,7 @@ const Home: NextPage = () => {
 								},
 							}}
 						>
-							<h1 className="mx-2 my-40 justify-center text-center font-victormono text-7xl font-bold">
+							<h1 className="mx-2 my-40 justify-center text-center font-victormono text-7xl font-bold tracking-tight">
 								Welcome to my
 								<br />
 								website!
