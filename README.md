@@ -4,6 +4,8 @@ This is my personal profile on the web.
 
 Built with a mobile-first approach. Made with React, Next.js and TailwindCSS. Deployed with Vercel.
 
+Favicon made from favicon.io.
+
 And installable as a PWA! (if you choose to do so)
 
 ## Build Instructions
