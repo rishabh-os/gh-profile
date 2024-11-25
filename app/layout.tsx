@@ -5,6 +5,7 @@ import "../styles/Interests.css";
 
 import type { Metadata, Viewport } from "next";
 import { Inter, Pinyon_Script, Victor_Mono } from "next/font/google";
+import { CSPostHogProvider } from "./providers";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -35,11 +36,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body
-				className={`${inter.variable} ${pinyon.variable} ${victormono.variable}`}
-			>
-				{children}
-			</body>
+			<CSPostHogProvider>
+				<body
+					className={`${inter.variable} ${pinyon.variable} ${victormono.variable}`}
+				>
+					{children}
+				</body>
+			</CSPostHogProvider>
 		</html>
 	);
 }

@@ -15,6 +15,7 @@ import julia from "../../assets/logos/julia.svg";
 import rust from "../../assets/logos/rust.svg";
 import astro from "../../assets/logos/astro.svg";
 
+// ? Add docker and update the years maybe lol
 const Skills = () => {
 	return (
 		<section id="Skills">
