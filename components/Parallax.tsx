@@ -12,7 +12,6 @@ type ParallaxProps = {
 	children: ReactNode;
 	offset?: number;
 };
-// ! Do not update framer motion as that just breaks the beautiful parallax setup I already have
 const Parallax = ({ children, offset = 120 }: ParallaxProps): JSX.Element => {
 	const prefersReducedMotion = useReducedMotion();
 	const [elementTop, setElementTop] = useState(0);
