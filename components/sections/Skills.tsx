@@ -14,8 +14,8 @@ import tailwind from "../../assets/logos/tailwindcss.svg";
 import julia from "../../assets/logos/julia.svg";
 import rust from "../../assets/logos/rust.svg";
 import astro from "../../assets/logos/astro.svg";
+import docker from "../../assets/logos/docker.svg";
 
-// ? Add docker and update the years maybe lol
 const Skills = () => {
 	return (
 		<section id="Skills">
@@ -27,7 +27,7 @@ const Skills = () => {
 						classNames="bg-gradient-to-r from-sky-500 to-sky-400 shadow-sky-500"
 						icon={python}
 						name="Python"
-						exp={5}
+						exp={7}
 					/>
 					<SkillBadge
 						classNames="bg-gradient-to-r from-[#FF6F00] to-[#FFA800] shadow-orange-500"
@@ -39,19 +39,13 @@ const Skills = () => {
 						classNames="bg-gradient-to-r from-[#F04B2F] to-[#F05F42] shadow-red-500"
 						icon={pytorch}
 						name="Pytorch"
-						exp={1}
+						exp={2}
 					/>
 					<SkillBadge
 						classNames="bg-gradient-to-r from-sky-800 to-sky-600 shadow-sky-600"
 						icon={plotly}
 						name="Plotly"
-						exp={3}
-					/>
-					<SkillBadge
-						classNames="bg-gradient-to-r from-orange-600 to-orange-500 shadow-orange-600"
-						icon={sklearn}
-						name="Scikit-Learn"
-						exp={3}
+						exp={4}
 					/>
 				</div>
 				<h3 className="subsectionheading">App Development</h3>
@@ -60,13 +54,13 @@ const Skills = () => {
 						classNames="bg-gradient-to-r from-blue-500 to-sky-400 shadow-blue-400"
 						icon={flutter}
 						name="Flutter"
-						exp={3}
+						exp={4}
 					/>
 					<SkillBadge
 						classNames="bg-gradient-to-r from-blue-500 to-sky-400 shadow-blue-400"
 						icon={dart}
 						name="Dart"
-						exp={3}
+						exp={4}
 					/>
 				</div>
 				<h3 className="subsectionheading">Web Development</h3>
@@ -75,19 +69,19 @@ const Skills = () => {
 						classNames="bg-gradient-to-r from-emerald-700 to-emerald-500 shadow-emerald-500"
 						icon={vue}
 						name="Vue.js"
-						exp={2}
+						exp={3}
 					/>
 					<SkillBadge
 						classNames="bg-gradient-to-r from-sky-600 to-sky-500 shadow-sky-500"
 						icon={react}
 						name="React.js"
-						exp={3}
+						exp={4}
 					/>
 					<SkillBadge
 						classNames="bg-gradient-to-r from-[#E03871] to-[#EE40EE] shadow-pink-500"
 						icon={astro}
 						name="Astro"
-						exp={1}
+						exp={2}
 					/>
 					<SkillBadge
 						classNames="bg-gradient-to-r from-green-700 to-green-600 shadow-green-500"
@@ -102,10 +96,16 @@ const Skills = () => {
 						exp={1}
 					/>
 					<SkillBadge
+						classNames="bg-gradient-to-r from-[#1D63ED] to-[#1D63ED]/50 shadow-blue-500"
+						icon={docker}
+						name="Docker"
+						exp={1}
+					/>
+					<SkillBadge
 						classNames="bg-gradient-to-r from-slate-900 to-slate-800 shadow-slate-900"
 						icon={tailwind}
 						name="TailwindCSS"
-						exp={2}
+						exp={3}
 					/>
 				</div>
 				<h3 className="subsectionheading">Fleeting Interests</h3>
