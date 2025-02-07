@@ -1,4 +1,5 @@
-import { Card, CardBody } from "@nextui-org/react";
+"use client";
+import { Card, CardBody } from "@heroui/react";
 import { SocialIcon } from "react-social-icons";
 
 const Contact = () => {

@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { HiArrowRight, HiDocumentText, HiChartSquareBar } from "react-icons/hi";
 import { ExpInfo } from "../ExpInfo";
-import { Button, Link } from "@nextui-org/react";
+import { Button, Link } from "@heroui/react";
 const Experience = () => {
 	useEffect(() => {
 		if (typeof window !== "undefined") {

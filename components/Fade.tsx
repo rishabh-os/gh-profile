@@ -1,6 +1,6 @@
 "use client";
 import { useScroll, useTransform, useSpring, motion } from "framer-motion";
-import { useState, useRef, useEffect, type ReactNode } from "react";
+import { useState, useRef, useEffect, type ReactNode, type JSX } from "react";
 
 type ParallaxProps = {
 	children: ReactNode;

@@ -1,7 +1,8 @@
+"use client";
 import { motion } from "framer-motion";
 import type { ReactElement } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";
-import { Accordion, AccordionItem, Card } from "@nextui-org/react";
+import { Accordion, AccordionItem, Card } from "@heroui/react";
 interface ExpInfoProps {
 	time: string;
 	title: string;

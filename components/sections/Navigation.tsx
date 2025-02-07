@@ -8,7 +8,7 @@ import {
 	NavbarMenuItem,
 	Link,
 	Button,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { useState } from "react";
 
 const Navigation = () => {

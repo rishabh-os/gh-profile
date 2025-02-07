@@ -1,4 +1,6 @@
 "use client";
+import { HeroUIProvider } from "@heroui/react";
+import { ThemeProvider } from "next-themes";
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
 
@@ -11,4 +13,14 @@ if (typeof window !== "undefined") {
 }
 export function CSPostHogProvider({ children }: { children: React.ReactNode }) {
 	return <PostHogProvider client={posthog}>{children}</PostHogProvider>;
+}
+
+export function CSThemeProvider({ children }: { children: React.ReactNode }) {
+	return (
+		<HeroUIProvider>
+			<ThemeProvider attribute="class" defaultTheme="dark">
+				{children}
+			</ThemeProvider>
+		</HeroUIProvider>
+	);
 }

@@ -1,11 +1,6 @@
+"use client";
 import pp from "../../assets/PXL_20220111_082227181.jpg";
-import {
-	Card,
-	CardBody,
-	Image,
-	CardHeader,
-	CardFooter,
-} from "@nextui-org/react";
+import { Card, CardBody, Image, CardHeader, CardFooter } from "@heroui/react";
 const AboutMe = () => {
 	return (
 		<div className="mx-4 flex items-center justify-center" id="About Me">

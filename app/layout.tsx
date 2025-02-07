@@ -5,7 +5,9 @@ import "../styles/Interests.css";
 
 import type { Metadata, Viewport } from "next";
 import { Inter, Pinyon_Script, Victor_Mono } from "next/font/google";
-import { CSPostHogProvider } from "./providers";
+import { CSPostHogProvider, CSThemeProvider } from "./providers";
+import { ThemeProvider } from "next-themes";
+import { HeroUIProvider } from "@heroui/react";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -35,12 +37,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<CSPostHogProvider>
 				<body
 					className={`${inter.variable} ${pinyon.variable} ${victormono.variable}`}
 				>
-					{children}
+					<CSThemeProvider>{children}</CSThemeProvider>
 				</body>
 			</CSPostHogProvider>
 		</html>

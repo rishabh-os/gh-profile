@@ -2,7 +2,7 @@
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import type { StaticImageData } from "next/image";
 import { confirmAlert } from "react-confirm-alert";
-import { useEffect } from "react";
+import { useEffect, type JSX } from "react";
 import {
 	Card,
 	CardFooter,
@@ -10,7 +10,7 @@ import {
 	Button,
 	Link,
 	CardBody,
-} from "@nextui-org/react";
+} from "@heroui/react";
 
 // ? Need to define interface so that I can use it as a JSX element
 interface ProjectProps {
