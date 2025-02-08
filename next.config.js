@@ -1,9 +1,12 @@
-const withPWA = require("next-pwa")({
+import withPWAInit from "@ducanh2912/next-pwa";
+const withPWA = withPWAInit({
 	dest: "public",
 	register: true,
 	skipWaiting: true,
 	disable: process.env.NODE_ENV === "development",
 });
-const nextConfig = withPWA({});
+const nextConfig = withPWA({
+	pageExtensions: ["ts", "tsx", "jsx", "md", "mdx"],
+});
 
-module.exports = nextConfig;
+export default nextConfig;

@@ -6,8 +6,6 @@ import "../styles/Interests.css";
 import type { Metadata, Viewport } from "next";
 import { Inter, Pinyon_Script, Victor_Mono } from "next/font/google";
 import { CSPostHogProvider, CSThemeProvider } from "./providers";
-import { ThemeProvider } from "next-themes";
-import { HeroUIProvider } from "@heroui/react";
 
 const inter = Inter({
 	subsets: ["latin"],
