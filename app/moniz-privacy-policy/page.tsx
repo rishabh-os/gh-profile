@@ -8,10 +8,10 @@ const Page: NextPage = () => {
 				Moniz Privacy Policy
 			</h1>
 			<div className="text-lg p-8">
-				This privacy policy describes how Moniz (the "App") collects, uses, and
-				protects your data. Because Moniz is Free and Open Source Software
-				(FOSS), the code is publicly available for review, which allows for
-				greater transparency.
+				This privacy policy describes how Moniz (the &quot;App&quot;) collects,
+				uses, and protects your data. Because Moniz is Free and Open Source
+				Software (FOSS), the code is publicly available for review, which allows
+				for greater transparency.
 			</div>
 			<div className="text-lg p-8">
 				<div className="text-xl font-bold pb-4">Data Collection:</div>
@@ -21,8 +21,8 @@ const Page: NextPage = () => {
 				These reports help us identify and fix bugs. These reports may contain
 				information about your device model, operating system version, and the
 				state of the App at the time of the crash. They do not include personal
-				information that could identify you. You can learn more about Sentry's
-				data processing practices{" "}
+				information that could identify you. You can learn more about
+				Sentry&apos;s data processing practices{" "}
 				<Link
 					href="https://sentry.io/privacy/"
 					className="underline decoration-2 decoration-double"
@@ -35,7 +35,8 @@ const Page: NextPage = () => {
 				collect anonymized usage statistics using PostHog (posthog.com). This
 				data helps us understand how Moniz is being used and improve its
 				functionality. This data is anonymized and does not identify you
-				personally. You can learn more about PostHog's data processing practices{" "}
+				personally. You can learn more about PostHog&apos;s data processing
+				practices{" "}
 				<Link
 					href="https://posthog.com/privacy"
 					className="underline decoration-2 decoration-double"
@@ -50,13 +51,13 @@ const Page: NextPage = () => {
 				Moniz is used solely for the purpose of improving the App and fixing
 				bugs. We do not sell your data to third parties.{" "}
 				<div className="font-bold py-4">Data Sharing:</div> We share anonymized
-				crash reports with Sentry for the purpose of improving Moniz's
+				crash reports with Sentry for the purpose of improving Moniz&apos;s
 				stability. We share anonymized usage statistics with PostHog to
 				understand how Moniz is used. We will never share your personal
 				information with third parties for marketing or advertising purposes.{" "}
 				<div className="font-bold py-4">Changes to this Privacy Policy:</div> We
 				may update this Privacy Policy from time to time. Any changes will be
-				posted within the app or on [Specify where, e.g., the app's
+				posted within the app or on [Specify where, e.g., the app&apos;s
 				website/repository]. Your continued use of Moniz following the posting
 				of such changes constitutes your acceptance of the revised Privacy
 				Policy. <div className="font-bold py-4">Contact Us:</div> If you have
