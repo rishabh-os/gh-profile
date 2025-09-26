@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "@catppuccin/tailwindcss/macchiato.css";
+@import "@nuxt/ui";
+
+@theme {
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-mono: 'Victor Mono', monospace;
+}
