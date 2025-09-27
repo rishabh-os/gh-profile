@@ -4,7 +4,7 @@
       <NuxtLayout>
         <UMain>
           <Navbar />
-          <UContainer class="max-w-5xl">
+          <UContainer class="max-w-5xl mt-24">
             <NuxtPage />
           </UContainer>
         </UMain>

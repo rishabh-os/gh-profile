@@ -6,18 +6,22 @@ const items = ref<NavigationMenuItem[][]>([
         {
             label: 'Home',
             icon: 'lucide:house',
+            to: '/',
         },
         {
             label: 'Interests',
             icon: 'lucide:star',
+            to: '/interests',
         },
         {
             label: 'Experience',
             icon: 'lucide:keyboard',
+            to: '/experience',
         },
         {
             label: 'Skills',
             icon: 'lucide:library',
+            to: '/skills',
         }
     ],
 ])
