@@ -2,8 +2,11 @@
   <div>
     <UApp>
       <NuxtLayout>
-        <UMain class="relative">
-          <NuxtPage />
+        <UMain>
+          <Navbar />
+          <UContainer class="max-w-5xl">
+            <NuxtPage />
+          </UContainer>
         </UMain>
       </NuxtLayout>
     </UApp>

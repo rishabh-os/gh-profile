@@ -21,6 +21,8 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@catppuccin/tailwindcss": "^1.0.0"
+    "@catppuccin/tailwindcss": "^1.0.0",
+    "@iconify-json/lucide": "^1.2.68",
+    "@iconify-json/mdi": "^1.2.3"
   }
 }
