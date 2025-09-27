@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NuxtPwaAssets />
     <UApp>
       <NuxtLayout>
         <UMain>
