@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
   css: ['~/assets/css/main.css'],
   app: {
-		pageTransition: { name: "page", mode: "out-in" },
+		// pageTransition: { name: "page", mode: "out-in" },
 		head: {
 			title: "Rishabh's Profile",
 		},
