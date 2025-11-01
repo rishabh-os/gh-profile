@@ -5,6 +5,7 @@
 @theme {
     --font-sans: 'Inter', system-ui, sans-serif;
     --font-mono: 'Victor Mono', monospace;
+    --font-pinyon: 'Pinyon Script', cursive;
 }
 
 .page-enter-active,
