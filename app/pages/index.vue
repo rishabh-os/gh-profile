@@ -1,5 +1,26 @@
+<script setup lang="ts">
+import { motion } from "motion-v"
+</script>
+
 <template>
-    <UPageHero title="Welcome to my website!" class="font-mono" />
+    <motion.div :initial="{
+        scale: 0.5,
+        opacity: 0,
+    }" :animate="{
+        scale: 1,
+        opacity: 1,
+        transition: {
+            type: 'spring',
+            bounce: 1,
+            stiffness: 100,
+            damping: 10,
+            restSpeed: 0.5,
+            delay: 0.5,
+            duration: 1,
+        }
+    }">
+        <UPageHero title="Welcome to my website!" class="font-mono" />
+    </motion.div>
     <UPageCard
         description="Hi! My name's Rishabh Wanjari. I completed my BS-MS at IISER, Pune. I currently work at Fondazione Bruno Kessler, Italy. And no, I'm still not over my college life ending."
         variant="soft" reverse class="rounded-3xl text-center max-w-xl mx-auto">
@@ -24,8 +45,8 @@
 
         You can also contact me directly, via email:
 
-        <UButton to="mailto:rishabhwanjari1@gmail.com" target="_blank" class="my-4 flex w-max mx-auto" size="lg"
-            icon="lucide:mail">
+        <UButton to="mailto:rishabhwanjari1@gmail.com" target="_blank" class="my-4 flex w-max mx-auto animated-gradient"
+            size="lg" icon="lucide:mail">
             rishabhwanjari1@gmail.com
         </UButton>
 

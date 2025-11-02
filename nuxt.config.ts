@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/ui',
     '@vite-pwa/nuxt',
+	'motion-v/nuxt'
   ],
   css: ['~/assets/css/main.css'],
   app: {

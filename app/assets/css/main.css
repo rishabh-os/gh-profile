@@ -35,7 +35,17 @@
 
 }
 
+@keyframes move-bg {
+    to {
+        background-position: 600% 0;
+    }
+}
 
+.animated-gradient {
+    background-size: 600%;
+    animation: move-bg 10s infinite linear;
+    @apply bg-gradient-to-r from-primary via-secondary to-primary shadow-lg;
+}
 
 .page-enter-active,
 .page-leave-active {
