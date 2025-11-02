@@ -1,19 +1,19 @@
 <template>
-    <div class="max-w-xl mx-auto text-center flex flex-col gap-y-10">
+    <div class="max-w-xl mx-auto text-center flex flex-col gap-y-10 py-14">
         <p>
             Although I'm a physics graduate on paper, what I'm truly passionate about is anything related to computers
             and
             coding. I'm very interested in machine learning and AI. I love to develop applications for other people.
             I also happen to be a Linux and FOSS enthusiast.
         </p>
-        <p class="font-pinyon text-6xl">
+        <p class="font-pinyon text-6xl tracking-widest">
             I use Arch BTW
         </p>
         <p>Here are some of the projects I've worked on:</p>
 
     </div>
 
-    <UBlogPosts>
+    <UBlogPosts class="pb-10">
         <UBlogPost title="Nowcasting FBK"
             description="A web app to accurately predict the next hour of weather all across Italy"
             image="images/nowcasting-fbk.png" variant="soft">
@@ -31,6 +31,30 @@
 
             <template #footer>
                 <UButton to="https://github.com/rishabh-os/moniz" target="_blank" class="my-4 flex w-max mx-auto"
+                    size="lg" variant="ghost" icon="lucide:github" trailing-icon="lucide:external-link">
+                    GitHub
+                </UButton>
+            </template>
+        </UBlogPost>
+
+        <UBlogPost title="This website!"
+            description="My personal profile on the web, made with Vue, Nuxt.js and TailwindCSS"
+            image="images/website.png" variant="soft">
+
+            <template #footer>
+                <UButton to="https://github.com/rishabh-os/gh-profile" target="_blank" class="my-4 flex w-max mx-auto"
+                    size="lg" variant="ghost" icon="lucide:github" trailing-icon="lucide:external-link">
+                    GitHub
+                </UButton>
+            </template>
+        </UBlogPost>
+
+        <UBlogPost title="Dot Files"
+            description="A collection of all my dot files for the (objectively) best desktop experience"
+            image="images/dotfiles.png" variant="soft">
+
+            <template #footer>
+                <UButton to="https://github.com/rishabh-os/Dot-Files" target="_blank" class="my-4 flex w-max mx-auto"
                     size="lg" variant="ghost" icon="lucide:github" trailing-icon="lucide:external-link">
                     GitHub
                 </UButton>
@@ -78,30 +102,6 @@
 
             <template #footer>
                 <UButton to="https://github.com/rishabh-os/Temdex" target="_blank" class="my-4 flex w-max mx-auto"
-                    size="lg" variant="ghost" icon="lucide:github" trailing-icon="lucide:external-link">
-                    GitHub
-                </UButton>
-            </template>
-        </UBlogPost>
-
-        <UBlogPost title="This website!"
-            description="My personal profile on the web, made with Vue, Nuxt.js and TailwindCSS"
-            image="images/website.png" variant="soft">
-
-            <template #footer>
-                <UButton to="https://github.com/rishabh-os/gh-profile" target="_blank" class="my-4 flex w-max mx-auto"
-                    size="lg" variant="ghost" icon="lucide:github" trailing-icon="lucide:external-link">
-                    GitHub
-                </UButton>
-            </template>
-        </UBlogPost>
-
-        <UBlogPost title="Dot Files"
-            description="A collection of all my dot files for the (objectively) best desktop experience"
-            image="images/dotfiles.png" variant="soft">
-
-            <template #footer>
-                <UButton to="https://github.com/rishabh-os/Dot-Files" target="_blank" class="my-4 flex w-max mx-auto"
                     size="lg" variant="ghost" icon="lucide:github" trailing-icon="lucide:external-link">
                     GitHub
                 </UButton>
