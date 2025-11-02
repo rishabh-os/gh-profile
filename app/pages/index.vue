@@ -8,7 +8,7 @@ function useParallax(value: MotionValue, distance: number) {
     return useSpring(range, { stiffness: 1000, damping: 100 })
 }
 
-const y = useParallax(scrollYProgress, -100);
+const y = useParallax(scrollYProgress, -200);
 </script>
 
 <template>
@@ -30,17 +30,21 @@ const y = useParallax(scrollYProgress, -100);
     }">
         <UPageHero title="Welcome to my website!" class="font-mono" />
     </motion.div>
-    <motion.div :style="{ translateY: y }" class="z-10">
+    <motion.div :style="{ translateY: y }">
         <UPageCard
             description="Hi! My name's Rishabh Wanjari. I completed my BS-MS at IISER, Pune. I currently work at Fondazione Bruno Kessler, Italy. And no, I'm still not over my college life ending."
-            variant="soft" reverse class="rounded-3xl text-center max-w-xl mx-auto shadow-2xl">
+            variant="soft" reverse
+            class="rounded-3xl text-center max-w-xl mx-auto shadow-2xl shadow-primary border-2 border-primary my-20 bg-ctp-crust z-10">
+            <!-- ? Manually specify background to override bg-elevated/50 class -->
             <NuxtImg src="images/PXL_20220111_082227181.jpg" class="rounded-full object-cover w-64 h-64 mx-auto" />
         </UPageCard>
     </motion.div>
 
-    <UPageHeader title="Contact Me" class="border-none" />
+    <UPageHeader title="Contact Me" class="border-none -z-10" :ui="{
+        title: 'mx-auto'
+    }" />
 
-    <UPageBody class="text-center mt-0 -z-10">
+    <UPageBody class="text-center mt-0">
         Here are some links to my accounts across the Internet:
         <div class="flex gap-2 my-4 justify-center">
             <NuxtLink to="https://github.com/rishabh-os" target="_blank">
