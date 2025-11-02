@@ -1,12 +1,41 @@
+@import "@nuxt/ui";
 @import "tailwindcss";
 @import "@catppuccin/tailwindcss/macchiato.css";
-@import "@nuxt/ui";
 
 @theme {
     --font-sans: 'Inter', system-ui, sans-serif;
     --font-mono: 'Victor Mono', monospace;
     --font-pinyon: 'Pinyon Script', cursive;
 }
+
+
+.dark {
+    /* ? Colors */
+    --ui-primary: var(--color-ctp-sapphire);
+    --ui-secondary: var(--color-ctp-mauve);
+    --ui-success: var(--color-ctp-green);
+    --ui-info: var(--color-ctp-blue);
+    --ui-warning: var(--color-ctp-yellow);
+    --ui-error: var(--color-ctp-red);
+
+    /* ? Background */
+    --ui-bg: var(--color-ctp-crust);
+    --ui-bg-muted: var(--color-ctp-mantle);
+    --ui-bg-elevated: var(--color-ctp-base);
+    --ui-bg-accented: var(--color-ctp-surface0);
+    --ui-bg-inverted: var(--color-ctp-text);
+
+    /* ? Text */
+    --ui-text-dimmed: var(--color-ctp-subtext1);
+    --ui-text-muted: var(--color-ctp-subtext0);
+    --ui-text-toned: var(--color-ctp-text);
+    --ui-text: var(--color-ctp-text);
+    --ui-text-highlighted: var(--color-ctp-text);
+    --ui-text-inverted: var(--color-ctp-crust);
+
+}
+
+
 
 .page-enter-active,
 .page-leave-active {

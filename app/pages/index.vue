@@ -4,7 +4,7 @@
         description="Hi! My name's Rishabh Wanjari. I completed my BS-MS at IISER, Pune. I currently work at Fondazione Bruno Kessler, Italy. And no, I'm still not over my college life ending."
         variant="soft" reverse class="rounded-3xl text-center max-w-xl mx-auto">
         <NuxtImg src="https://gh-profile-rishabh-os.vercel.app/_next/static/media/PXL_20220111_082227181.244a6862.jpg"
-            class="rounded-full w-64 h-64 mx-auto" />
+            class="rounded-full object-cover w-64 h-64 mx-auto" />
     </UPageCard>
 
     <UPageHeader title="Contact Me" class="border-none" :ui="{
