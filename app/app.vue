@@ -1,3 +1,11 @@
+<script setup lang="ts">
+useHead({
+  htmlAttrs: {
+    class: "macchiato"
+  }
+})
+</script>
+
 <template>
   <NuxtPwaAssets />
   <UApp>

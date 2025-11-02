@@ -1,5 +1,14 @@
 <script setup lang="ts">
-import { motion } from "motion-v"
+import { motion, MotionValue } from "motion-v"
+import { useScroll, useTransform, useSpring } from "motion-v"
+const { scrollYProgress } = useScroll();
+
+function useParallax(value: MotionValue, distance: number) {
+    const range = useTransform(value, [0, 1], [-distance, distance])
+    return useSpring(range, { stiffness: 1000, damping: 100 })
+}
+
+const y = useParallax(scrollYProgress, -100);
 </script>
 
 <template>
@@ -21,18 +30,17 @@ import { motion } from "motion-v"
     }">
         <UPageHero title="Welcome to my website!" class="font-mono" />
     </motion.div>
-    <UPageCard
-        description="Hi! My name's Rishabh Wanjari. I completed my BS-MS at IISER, Pune. I currently work at Fondazione Bruno Kessler, Italy. And no, I'm still not over my college life ending."
-        variant="soft" reverse class="rounded-3xl text-center max-w-xl mx-auto">
-        <NuxtImg src="images/PXL_20220111_082227181.jpg" class="rounded-full object-cover w-64 h-64 mx-auto" />
-    </UPageCard>
+    <motion.div :style="{ translateY: y }" class="z-10">
+        <UPageCard
+            description="Hi! My name's Rishabh Wanjari. I completed my BS-MS at IISER, Pune. I currently work at Fondazione Bruno Kessler, Italy. And no, I'm still not over my college life ending."
+            variant="soft" reverse class="rounded-3xl text-center max-w-xl mx-auto shadow-2xl">
+            <NuxtImg src="images/PXL_20220111_082227181.jpg" class="rounded-full object-cover w-64 h-64 mx-auto" />
+        </UPageCard>
+    </motion.div>
 
-    <UPageHeader title="Contact Me" class="border-none" :ui="{
-        // ? Make the text centered
-        wrapper: 'lg:flex-col',
-    }" />
+    <UPageHeader title="Contact Me" class="border-none" />
 
-    <UPageBody class="text-center mt-0">
+    <UPageBody class="text-center mt-0 -z-10">
         Here are some links to my accounts across the Internet:
         <div class="flex gap-2 my-4 justify-center">
             <NuxtLink to="https://github.com/rishabh-os" target="_blank">

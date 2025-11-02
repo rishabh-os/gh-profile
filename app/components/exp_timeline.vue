@@ -1,11 +1,13 @@
-<script setup>
+<script setup lang="ts">
+import { motion, useInView } from "motion-v"
+import type { TimelineItem } from '@nuxt/ui'
 defineProps({
     title: {
         type: String,
         required: true
     },
     items: {
-        type: Array,
+        type: Array as () => TimelineItem[],
         required: true
     }
 })
@@ -20,16 +22,51 @@ defineProps({
         <UTimeline :items="items" size="3xl" :default-value="10" :ui="{
             item: 'max-w-2xl'
         }" class="justify-self-center">
+            <template #date="{ item }">
+                <motion.div :initial="{
+                    translateX: '100%',
+                    opacity: 0,
+                }" :animate="{
+                    translateX: 0,
+                    opacity: 1,
+
+                }" :transition="{ duration: 1, type: 'spring' }" class="uppercase">
+                    {{ item.date }}
+                </motion.div>
+            </template>
+
+            <template #title="{ item }">
+                <motion.div :initial="{
+                    translateX: '100%',
+                    opacity: 0,
+                }" :animate="{
+                    translateX: 0,
+                    opacity: 1,
+
+                }" :transition="{ duration: 1, type: 'spring' }">
+                    {{ item.title }}
+                </motion.div>
+            </template>
+
             <template #description="{ item }">
-                <UAccordion :items="[{ label: item.description, content: item.content }]"
-                    :ui="{ content: 'bg-ctp-base rounded-xl items-center align-middle text-center justify-center my-auto', body: 'py-2' }">
+                <motion.div :initial="{
+                    translateX: '100%',
+                    opacity: 0,
+                }" :animate="{
+                    translateX: 0,
+                    opacity: 1,
 
-                    <!-- ? Only expand if content is present -->
-                    <template #trailing="{ open }">
-                        <span v-if="!item.content" />
-                    </template>
+                }" :transition="{ duration: 1, type: 'spring' }">
+                    <UAccordion :items="[{ label: item.description, content: item.content }]"
+                        :ui="{ content: 'bg-ctp-base rounded-xl items-center align-middle text-center justify-center my-auto', body: 'py-2' }">
 
-                </UAccordion>
+                        <!-- ? Only expand if content is present -->
+                        <template #trailing="{ open }">
+                            <span v-if="!item.content" />
+                        </template>
+
+                    </UAccordion>
+                </motion.div>
             </template>
         </UTimeline>
     </div>
