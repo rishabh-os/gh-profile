@@ -9,7 +9,7 @@ useHead({
 <template>
   <NuxtPwaAssets />
   <UApp>
-    <UMain>
+    <UMain data-vaul-drawer-wrapper>
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>

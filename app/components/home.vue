@@ -4,11 +4,11 @@ import { useScroll, useTransform, useSpring } from "motion-v"
 const { scrollYProgress } = useScroll();
 
 function useParallax(value: MotionValue, distance: number) {
-    const range = useTransform(value, [0, 1], [-distance, distance])
+    const range = useTransform(value, [0, 0.3], [distance, -distance])
     return useSpring(range, { stiffness: 1000, damping: 100 })
 }
 
-const y = useParallax(scrollYProgress, -200);
+const y = useParallax(scrollYProgress, 200);
 </script>
 
 <template>
