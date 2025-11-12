@@ -12,7 +12,7 @@ const y = useParallax(scrollYProgress, 200);
 </script>
 
 <template>
-    <motion.div :initial="{
+    <motion.div id="home" :initial="{
         scale: 0.5,
         opacity: 0,
     }" :animate="{
@@ -44,7 +44,7 @@ const y = useParallax(scrollYProgress, 200);
         title: 'mx-auto'
     }" />
 
-    <UPageBody class="text-center mt-0">
+    <UPageBody class="text-center mt-0 pb-0">
         Here are some links to my accounts across the Internet:
         <div class="flex gap-2 my-4 justify-center">
             <NuxtLink to="https://github.com/rishabh-os" target="_blank">
@@ -55,9 +55,9 @@ const y = useParallax(scrollYProgress, 200);
             </NuxtLink>
         </div>
 
-        You can also contact me directly, via email:
+        You can also get in touch directly, via email:
 
-        <UButton to="mailto:rishabhwanjari1@gmail.com" target="_blank" class="my-4 flex w-max mx-auto animated-gradient"
+        <UButton to="mailto:rishabhwanjari1@gmail.com" target="_blank" class="mt-4 flex w-max mx-auto animated-gradient"
             size="lg" icon="lucide:mail">
             rishabhwanjari1@gmail.com
         </UButton>

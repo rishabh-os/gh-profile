@@ -12,7 +12,7 @@ const work_items = ref([
         title: 'Associate Solution Advisor, Deloitte, India',
         description: 'Engaged in thorough analysis and validation of financial models for banks. Conducted assessments, used statistical methods, and collaborated with teams to improve accuracy and performance.',
         icon: 'lucide:banknote',
-        content: 'Confidentiality agreements forbid me from going into more detail. Suffice to say, the clients we worked with were large MNCs that greatly benefited from the work we did together.'
+        content: 'Deloitte is a terrible place to work at. All consulting companies are a cancer upon this earth. If you or someone you know is working at one, leave right now and never look back.'
     }
 ])
 
@@ -64,8 +64,10 @@ const education_items = ref([
 </script>
 
 <template>
-    <ExpTimeline title="Work" :items="work_items" />
-    <ExpTimeline title="Projects" :items="project_items" />
-    <ExpTimeline title="Education" :items="education_items" />
+    <div id="experience">
+        <ExpTimeline title="Work" :items="work_items" />
+        <ExpTimeline title="Projects" :items="project_items" />
+        <ExpTimeline title="Education" :items="education_items" />
+    </div>
 
 </template>

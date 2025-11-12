@@ -58,7 +58,7 @@ defineProps({
 
                 }" :transition="{ duration: 1, type: 'spring' }">
                     <UAccordion :items="[{ label: item.description, content: item.content }]"
-                        :ui="{ content: 'bg-ctp-base rounded-xl items-center align-middle text-center justify-center my-auto', body: 'py-2' }">
+                        :ui="{ content: 'bg-ctp-base rounded-xl items-center align-middle text-center justify-center my-auto', body: 'p-2' }">
 
                         <!-- ? Only expand if content is present -->
                         <template #trailing="{ open }">

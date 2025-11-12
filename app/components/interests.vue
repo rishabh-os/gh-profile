@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-xl mx-auto text-center flex flex-col gap-y-10 py-14">
+    <div id="interests" class="max-w-xl mx-auto text-center flex flex-col gap-y-10 py-14">
         <p>
             Although I'm a physics graduate on paper, what I'm truly passionate about is anything related to computers
             and
