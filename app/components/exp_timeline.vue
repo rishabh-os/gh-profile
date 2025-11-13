@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { motion, useInView } from "motion-v"
+import { motion } from "motion-v"
 import type { TimelineItem } from '@nuxt/ui'
 defineProps({
     title: {
@@ -15,8 +15,7 @@ defineProps({
 
 <template>
     <UPageHeader :title="title" class="border-none" :ui="{
-        // ? Make the text centered
-        wrapper: 'lg:flex-col',
+        title: 'font-normal'
     }" />
     <div class="overflow-clip">
         <UTimeline :items="items" size="3xl" :default-value="10" :ui="{

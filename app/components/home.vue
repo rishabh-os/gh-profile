@@ -40,9 +40,7 @@ const y = useParallax(scrollYProgress, 200);
         </UPageCard>
     </motion.div>
 
-    <UPageHeader title="Contact Me" class="border-none -z-10" :ui="{
-        title: 'mx-auto'
-    }" />
+    <UPageHeader title="Contact Me" class="border-none -z-10" />
 
     <UPageBody class="text-center mt-0 pb-0">
         Here are some links to my accounts across the Internet:
