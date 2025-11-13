@@ -1,22 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
-  modules: [
-    '@nuxt/image',
-    '@nuxt/scripts',
-    '@nuxt/ui',
-    '@vite-pwa/nuxt',
-	'motion-v/nuxt'
-  ],
-  css: ['~/assets/css/main.css'],
-  app: {
+	compatibilityDate: '2025-07-15',
+	devtools: { enabled: true },
+	modules: [
+		'@nuxt/image',
+		'@nuxt/scripts',
+		'@nuxt/ui',
+		'@vite-pwa/nuxt',
+		'motion-v/nuxt',
+		"@nuxtjs/mdc",
+	],
+	css: ['~/assets/css/main.css'],
+	app: {
 		// pageTransition: { name: "page", mode: "out-in" },
 		head: {
 			title: "Rishabh's Profile",
 		},
 	},
-  pwa: {
+	pwa: {
 		client: {
 			periodicSyncForUpdates: 3600,
 		},
@@ -28,7 +29,7 @@ export default defineNuxtConfig({
 			type: "module",
 		},
 		manifest: {
-			id:  "gh-profile-rishabh-os",
+			id: "gh-profile-rishabh-os",
 			name: "Rishabh's Profile",
 			short_name: "Rishabh's Profile",
 			description: "My personal website!",

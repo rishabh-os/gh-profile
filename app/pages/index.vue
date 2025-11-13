@@ -2,4 +2,5 @@
     <Home />
     <Interests />
     <Experience />
+    <Skills />
 </template>

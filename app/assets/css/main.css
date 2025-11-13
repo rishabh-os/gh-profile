@@ -8,6 +8,11 @@
     --font-pinyon: 'Pinyon Script', cursive;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
 
 .dark {
     /* ? Colors */
@@ -44,7 +49,7 @@
 .animated-gradient {
     background-size: 600%;
     animation: move-bg 10s infinite linear;
-    @apply bg-gradient-to-r from-primary via-secondary to-primary shadow-lg;
+    @apply bg-linear-to-r from-primary via-secondary to-primary shadow-lg;
 }
 
 .page-enter-active,
