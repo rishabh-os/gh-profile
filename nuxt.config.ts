@@ -12,9 +12,16 @@ export default defineNuxtConfig({
 	],
 	css: ['~/assets/css/main.css'],
 	app: {
-		// pageTransition: { name: "page", mode: "out-in" },
 		head: {
 			title: "Rishabh's Profile",
+		},
+	},
+	runtimeConfig: {
+		public: {
+			date: new Date().toLocaleDateString('en-US', {
+				month: 'long',
+				year: 'numeric'
+			}),
 		},
 	},
 	pwa: {
