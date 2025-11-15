@@ -10,7 +10,7 @@ interface SkillProps {
 
 const props = defineProps<SkillProps>()
 
-const badgeRef = ref<HTMLElement | null>(null)
+const badgeRef = useTemplateRef<HTMLElement | null>('badgeRef')
 // @ts-expect-error
 // ? Idk y no intellisense
 const isInView = useInView(badgeRef, { once: true })

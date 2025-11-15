@@ -4,7 +4,7 @@
     <UPageHeader title="Machine Learning" class="border-none" :ui="{
         title: 'font-normal text-3xl!'
     }" />
-    <div class="flex flex-wrap justify-center items-center">
+    <div class="flex flex-wrap justify-center items-center overflow-hidden">
 
         <SkillBadge class="bg-linear-to-r from-sky-500 to-sky-400 shadow-sky-500" icon=python name="Python" />
         <SkillBadge class="bg-linear-to-r from-[#FF6F00] to-[#FFA800] shadow-orange-500" icon=tensorflow
@@ -16,7 +16,7 @@
     <UPageHeader title="Mobile Dev" class="border-none" :ui="{
         title: 'font-normal text-3xl!'
     }" />
-    <div class="flex flex-wrap justify-center items-center">
+    <div class="flex flex-wrap justify-center items-center overflow-hidden">
 
         <SkillBadge class="bg-linear-to-r from-blue-500 to-sky-400 shadow-blue-400" icon=flutter name="Flutter" />
         <SkillBadge class="bg-linear-to-r from-blue-500 to-sky-400 shadow-blue-400" icon=dart name="Dart" />
@@ -25,7 +25,7 @@
     <UPageHeader title="Web Dev" class="border-none" :ui="{
         title: 'font-normal text-3xl!'
     }" />
-    <div class="flex flex-wrap justify-center items-center">
+    <div class="flex flex-wrap justify-center items-center overflow-hidden">
         <SkillBadge class="bg-linear-to-r from-emerald-700 to-emerald-500 shadow-emerald-500" icon=vue name="Vue.js" />
         <SkillBadge class="bg-linear-to-r from-sky-600 to-sky-500 shadow-sky-500" icon=react name="React.js" />
         <SkillBadge class="bg-linear-to-r from-[#E03871] to-[#EE40EE] shadow-pink-500" icon=astro name="Astro" />
@@ -39,7 +39,7 @@
     <UPageHeader title="Fleeting Interests" class="border-none" :ui="{
         title: 'font-normal text-3xl!'
     }" />
-    <div class="flex flex-wrap justify-center items-center">
+    <div class="flex flex-wrap justify-center items-center overflow-hidden">
 
         <SkillBadge class="bg-linear-to-r from-gray-600 to-gray-500 shadow-gray-500" icon=julia name="Julia" />
         <SkillBadge class="bg-linear-to-r from-[#CE412B] to-orange-600 shadow-orange-500" icon=rust name="Rust" />
