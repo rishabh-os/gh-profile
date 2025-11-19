@@ -1,14 +1,18 @@
 <script setup lang="ts">
 import { motion, useInView } from "motion-v"
-import { useTemplateRef } from "vue"
+import { ref } from "vue"
 
-const elementRef = useTemplateRef<HTMLElement | null>('elementRef')
-// @ts-ignore
-const isInView = useInView(elementRef, { once: true })
+const props = defineProps<{
+    delay?: number
+}>()
+
+const containerRef = ref<HTMLElement | null>(null)
+// @ts-expect-error
+const isInView = useInView(containerRef, { once: true })
 </script>
 
 <template>
-    <motion.div ref="elementRef" :initial="{
+    <motion.div ref="containerRef" :initial="{
         translateX: '100%',
         opacity: 0,
     }" :animate="isInView ? {
@@ -17,7 +21,8 @@ const isInView = useInView(elementRef, { once: true })
     } : {
         translateX: '100%',
         opacity: 0,
-    }" :transition="{ duration: 1, type: 'spring', bounce: 0.2 }">
+    }" :transition="{ duration: 1, type: 'spring', bounce: 0.2, delay: props.delay }" class="h-full"
+        style="height: 100%">
         <slot />
     </motion.div>
 </template>
