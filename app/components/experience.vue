@@ -22,6 +22,15 @@ const project_items = ref([
         title: "Anomaly Detection in CCTV Footage, under Aniruddha Pant, AlgoAnalytics, Pune",
         description: "An advanced system using unsupervised anomaly and outlier detection techniques was developed to enhance security for customers through real-time reporting of incidents.",
         content: "I've included a link to my final presentation as well as my entire thesis. What more detail do you want?!",
+        links: [{
+            label: 'Defense Presentation',
+            url: 'https://thesis-presentation.vercel.app/',
+            icon: 'lucide:presentation',
+        }, {
+            label: 'Thesis',
+            url: 'https://gh-profile-rishabh-os.vercel.app/output_print.pdf',
+            icon: 'lucide:file-text',
+        }],
         icon: 'lucide:camera',
     },
     {

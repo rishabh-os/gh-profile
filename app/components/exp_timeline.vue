@@ -43,6 +43,13 @@ defineProps({
                         </template>
 
                     </UAccordion>
+
+                    <div v-if="item.links" class="flex gap-4 justify-start pt-4">
+                        <UButton v-for="link in item.links" :key="link.label" :to="link.url" target="_blank"
+                            variant="outline" :icon="link.icon" trailing-icon="lucide:external-link">
+                            {{ link.label }}
+                        </UButton>
+                    </div>
                 </SlideIn>
             </template>
         </UTimeline>
