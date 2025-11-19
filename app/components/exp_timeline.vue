@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { motion } from "motion-v"
 import type { TimelineItem } from '@nuxt/ui'
 defineProps({
     title: {
@@ -22,40 +21,19 @@ defineProps({
             item: 'max-w-2xl'
         }" class="justify-self-center">
             <template #date="{ item }">
-                <motion.div :initial="{
-                    translateX: '100%',
-                    opacity: 0,
-                }" :animate="{
-                    translateX: 0,
-                    opacity: 1,
-
-                }" :transition="{ duration: 1, type: 'spring' }" class="uppercase">
+                <SlideIn class="uppercase">
                     {{ item.date }}
-                </motion.div>
+                </SlideIn>
             </template>
 
             <template #title="{ item }">
-                <motion.div :initial="{
-                    translateX: '100%',
-                    opacity: 0,
-                }" :animate="{
-                    translateX: 0,
-                    opacity: 1,
-
-                }" :transition="{ duration: 1, type: 'spring' }">
+                <SlideIn>
                     {{ item.title }}
-                </motion.div>
+                </SlideIn>
             </template>
 
             <template #description="{ item }">
-                <motion.div :initial="{
-                    translateX: '100%',
-                    opacity: 0,
-                }" :animate="{
-                    translateX: 0,
-                    opacity: 1,
-
-                }" :transition="{ duration: 1, type: 'spring' }">
+                <SlideIn>
                     <UAccordion :items="[{ label: item.description, content: item.content }]"
                         :ui="{ content: 'bg-ctp-base rounded-xl items-center align-middle text-center justify-center my-auto', body: 'p-2' }">
 
@@ -65,7 +43,7 @@ defineProps({
                         </template>
 
                     </UAccordion>
-                </motion.div>
+                </SlideIn>
             </template>
         </UTimeline>
     </div>

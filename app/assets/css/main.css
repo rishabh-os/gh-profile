@@ -50,14 +50,3 @@ html {
     animation: move-bg 10s infinite linear;
     @apply bg-linear-to-r from-primary via-secondary to-primary shadow-lg;
 }
-
-.page-enter-active,
-.page-leave-active {
-    transition: all 0.4s;
-}
-
-.page-enter-from,
-.page-leave-to {
-    opacity: 0;
-    filter: blur(1rem);
-}
