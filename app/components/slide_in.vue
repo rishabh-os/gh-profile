@@ -21,8 +21,7 @@ const isInView = useInView(containerRef, { once: true })
     } : {
         translateX: '100%',
         opacity: 0,
-    }" :transition="{ duration: 1, type: 'spring', bounce: 0.2, delay: props.delay }" class="h-full"
-        style="height: 100%">
+    }" :transition="{ duration: 1, type: 'spring', bounce: 0.2, delay: props.delay }" class="h-full">
         <slot />
     </motion.div>
 </template>

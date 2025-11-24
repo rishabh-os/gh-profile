@@ -9,7 +9,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    @apply scroll-smooth overflow-x-hidden;
 }
 
 
