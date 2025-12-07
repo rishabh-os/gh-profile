@@ -1,75 +1,32 @@
-# Nuxt Minimal Starter
+## Introduction
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is my personal profile on the web.
 
-## Setup
+Built with a mobile-first approach. Made with Vue, Nuxt.js and TailwindCSS. Deployed with Vercel.
 
-Make sure to install dependencies:
+Favicon made from favicon.io.
 
-```bash
-# npm
-npm install
+And installable as a PWA! (if you choose to do so)
 
-# pnpm
-pnpm install
+## Build Instructions
 
-# yarn
-yarn install
+This repository uses bun, you can install learn how to install it from [here](https://bun.com/docs/installation).
 
-# bun
-bun install
-```
+1. Clone this repository locally
+    ```bash
+    git clone https://github.com/rishabh-os/gh-profile.git
+    ```
+2. cd into the directory
+    ```bash
+    cd gh-profile
+    ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+3. Install and run using Yarn
+    ```bash
+    bun install
+    bun dev
+    ```
+4. To build for production/deployment, run
+    ```bash
+    bun run build
+    ```
