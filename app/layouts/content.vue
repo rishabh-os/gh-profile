@@ -1,5 +1,5 @@
 <template>
-    <UContainer class="pt-18">
+    <UContainer class="pt-4">
         <slot />
     </UContainer>
 </template>
