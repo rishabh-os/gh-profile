@@ -33,6 +33,7 @@ const items = ref<NavigationMenuItem[][]>([
         direction: 'top',
         handle: false,
         overlay: false,
+        class: 'bg-default/75 backdrop-blur',
     }">
 
         <UNavigationMenu :items="items" />
