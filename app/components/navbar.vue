@@ -7,6 +7,7 @@ const items = ref<NavigationMenuItem[][]>([
             label: 'Home',
             icon: 'lucide:house',
             to: '#home',
+
         },
         {
             label: 'Interests',
@@ -31,7 +32,7 @@ const items = ref<NavigationMenuItem[][]>([
     <UHeader mode="drawer" title="" :menu="{
         direction: 'top',
         handle: false,
-        shouldScaleBackground: true
+        overlay: false,
     }">
 
         <UNavigationMenu :items="items" />

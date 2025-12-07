@@ -12,6 +12,9 @@ html {
     @apply scroll-smooth overflow-x-hidden;
 }
 
+div {
+    @apply scroll-mt-12;
+}
 
 .dark {
     /* ? Colors */

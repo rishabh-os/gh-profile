@@ -1,5 +1,5 @@
 <template>
-    <UPageHeader title="Skills" class="border-none" />
+    <UPageHeader title="Skills" id="skills" class="border-none" />
 
     <UPageHeader title="Machine Learning" class="border-none" :ui="{
         title: 'font-normal text-3xl!'
