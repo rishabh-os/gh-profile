@@ -84,7 +84,7 @@ const projects = [
 
     <UBlogPosts>
         <SlideIn v-for="(project, index) in projects" :key="project.title" :delay="(index % 3) * 0.1">
-            <UBlogPost :title="project.title" :description="project.description" :image="project.image" variant="soft"
+            <UBlogPost :title="project.title" :description="project.description" :image="{ src: project.image, loading: 'lazy' }" variant="soft"
                 class="h-full">
                 <template #footer>
                     <UButton :to="project.link" target="_blank" class="my-4 flex w-max mx-auto" size="lg"

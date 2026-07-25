@@ -24,7 +24,7 @@ const y = useParallax(scrollYProgress, 200);
             stiffness: 100,
             damping: 10,
             restSpeed: 0.5,
-            delay: 0.5,
+            delay: 0.1,
             duration: 1,
         }
     }">
@@ -36,7 +36,8 @@ const y = useParallax(scrollYProgress, 200);
             variant="soft" reverse
             class="rounded-3xl text-center max-w-xl mx-auto shadow-2xl shadow-primary border-2 border-primary my-20 bg-ctp-crust z-10">
             <!-- ? Manually specify background to override bg-elevated/50 class -->
-            <NuxtImg src="images/PXL_20220111_082227181.jpg" class="rounded-full object-cover w-64 h-64 mx-auto" />
+            <NuxtImg src="images/PXL_20220111_082227181.jpg" width="512" height="512" format="webp"
+                class="rounded-full object-cover w-64 h-64 mx-auto" />
         </UPageCard>
     </motion.div>
 

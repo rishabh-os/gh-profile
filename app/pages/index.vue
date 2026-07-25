@@ -1,6 +1,6 @@
 <template>
     <Home />
-    <Interests />
-    <Experience />
-    <Skills />
+    <LazyInterests />
+    <LazyExperience />
+    <LazySkills />
 </template>
