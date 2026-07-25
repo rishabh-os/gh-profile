@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { motion, useInView } from "motion-v"
-import { ref } from "vue"
 
 interface SkillProps {
     icon: string
@@ -11,7 +10,6 @@ interface SkillProps {
 const props = defineProps<SkillProps>()
 
 const badgeRef = useTemplateRef<HTMLElement | null>('badgeRef')
-// @ts-expect-error
 // ? Idk y no intellisense
 const isInView = useInView(badgeRef, { once: true })
 </script>
